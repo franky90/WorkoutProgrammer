@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Programmer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="main-component">
+        <div class="heading">
+            <h1> Compose Your Workout</h1>
+            <p> Dostosuj workout do swoich potrzeb ! </p>
+        </div>
+        <div class="training-options">
+            <div class="training-style1">
+
+                <h3> Select Your Goal</h3>
+                <input id="strength" type="radio" name="training" value="strength">
+                <label for="strength">Strength</label>
+                <input id="endurance" type="radio" name="training" value="endurance">
+                <label for="endurance">Endurance</label>
+
+            </div>
+            <div class="training-style2">
+
+                <h3> Choose Intensity</h3>
+                <input id="regular" type="radio" name="intensity" value="regular">
+                <label for="regular">Regular</label>
+                <input id="supersets" type="radio" name="intensity" value="supersets">
+                <label for="supersets">Supersets</label>
+
+            </div>
+
+        </div>
+        <div class="pump-container">
+            <div class="super-pump">
+                <img class="pump-img" src="./images/musculo.png" alt="pump">
+                <div class="pump-txt">
+                    <h3> Super Pump</h3>
+                </div>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="grid-container">
+                <div class="btn-container">
+
+                    <button class="btn btn1" type="button"><img class="random-img" src="./images/random.png" alt="">
+                        Shoulders </button>
+                </div>
+                <div class="grid-item or1">
+                    <h3>Order</h3>
+                </div>
+                <div class="grid-item ex ex1">
+                    <h3>Exercise</h3>
+                </div>
+                <div class="grid-item se1">
+                    <h3>Sets</h3>
+                </div>
+                <div class="grid-item rep1">
+                    <h3>Reps</h3>
+                </div>
+                <div class="grid-item res1">
+                    <h3>Rest</h3>
+                </div>
+                <div class="grid-item wei1">
+                    <h3>Weight</h3>
+                </div>
+
+            </div>
+            <div class="grid-container">
+                <div class="btn-container">
+                    <button class="btn btn2" type="button"><img class="random-img" src="./images/random.png" alt="">
+                        <br> Legs </button>
+                </div>
+                <div class="grid-item or2">
+                    <h3>Order</h3>
+                </div>
+                <div class="grid-item ex ex2">
+                    <h3>Exercise</h3>
+                </div>
+                <div class="grid-item se2">
+                    <h3>Sets</h3>
+                </div>
+                <div class="grid-item rep2">
+                    <h3>Reps</h3>
+                </div>
+                <div class="grid-item res2">
+                    <h3>Rest</h3>
+                </div>
+                <div class="grid-item wei2">
+                    <h3>Weight</h3>
+                </div>
+
+            </div>
+            <div class="grid-container">
+                <div class="btn-container">
+                    <button class="btn btn3" type="button"><img class="random-img" src="./images/random.png" alt=""><br>
+                        Chest </button>
+                </div>
+                <div class="grid-item or3">
+                    <h3>Order</h3>
+                </div>
+                <div class="grid-item ex ex3">
+                    <h3>Exercise</h3>
+                </div>
+                <div class="grid-item se3">
+                    <h3>Sets</h3>
+                </div>
+                <div class="grid-item rep3">
+                    <h3>Reps</h3>
+                </div>
+                <div class="grid-item res3">
+                    <h3>Rest</h3>
+                </div>
+                <div class="grid-item wei3">
+                    <h3>Weight</h3>
+                </div>
+
+            </div>
+            <div class="grid-container">
+                <div class="btn-container">
+                    <button class="btn btn4" type="button"><img class="random-img" src="./images/random.png" alt=""><br>
+                        Back </button>
+                </div>
+                <div class="grid-item or4">
+                    <h3>Order</h3>
+                </div>
+                <div class="grid-item ex ex4">
+                    <h3>Exercise</h3>
+                </div>
+                <div class="grid-item se4">
+                    <h3>Sets</h3>
+                </div>
+                <div class="grid-item rep4">
+                    <h3>Reps</h3>
+                </div>
+                <div class="grid-item res4">
+                    <h3>Rest</h3>
+                </div>
+                <div class="grid-item wei4">
+                    <h3>Weight</h3>
+                </div>
+
+            </div>
+            <div class="grid-container">
+                <div class="btn-container">
+                    <button class="btn btn5" type="button"><img class="random-img" src="./images/random.png" alt=""><br>
+                        Abs </button>
+                </div>
+                <div class="grid-item or5">
+                    <h3>Order</h3>
+                </div>
+                <div class="grid-item ex ex5">
+                    <h3>Exercise</h3>
+                </div>
+                <div class="grid-item se5">
+                    <h3>Sets</h3>
+                </div>
+                <div class="grid-item rep5">
+                    <h3>Reps</h3>
+                </div>
+                <div class="grid-item res5">
+                    <h3>Rest</h3>
+                </div>
+                <div class="grid-item wei5">
+                    <h3>Weight</h3>
+                </div>
+
+            </div>
+            <div class="grid-container super-pump1" id="pump1">
+                <div class="btn-container">
+                    <button class="btn btn6" type="button"><img class="random-img" src="./images/random.png" alt=""><br>
+                        Pump </button>
+                </div>
+                <div class="grid-item or6">
+                    <h3>X1</h3>
+                </div>
+                <div class="grid-item ex ex6">
+                    <h3>Exercise</h3>
+                </div>
+                <div class="grid-item se6">
+                    <h3>Sets</h3>
+                </div>
+                <div class="grid-item rep6">
+                    <h3>Reps</h3>
+                </div>
+                <div class="grid-item res6">
+                    <h3>Rest</h3>
+                </div>
+                <div class="grid-item wei6">
+                    <h3>Weight</h3>
+                </div>
+
+            </div>
+            <div class="grid-container super-pump2" id="pump2">
+                <div class="btn-container">
+                    <button class="btn btn7" type="button"><img class="random-img" src="./images/random.png" alt=""><br>
+                        Pump </button>
+                </div>
+                <div class="grid-item or7">
+                    <h3>X2</h3>
+                </div>
+                <div class="grid-item ex ex7">
+                    <h3>Exercise</h3>
+                </div>
+                <div class="grid-item se7">
+                    <h3>Sets</h3>
+                </div>
+                <div class="grid-item rep7">
+                    <h3>Reps</h3>
+                </div>
+                <div class="grid-item res7">
+                    <h3>Rest</h3>
+                </div>
+                <div class="grid-item wei7">
+                    <h3>Weight</h3>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div obiekty>
+        <div obiekt 1 skladajacy sie z 6 okienek>
+
+        </div>
+    </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
