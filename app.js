@@ -280,7 +280,7 @@
 
    //All Hyperlinks
    ex1.addEventListener("click", exerciseDetailsOne);
-   // ex2.addEventListener("click",exerciseDetailsTwo);
+   ex2.addEventListener("click",exerciseDetailsTwo);
    // ex3.addEventListener("click",exerciseDetailsThree);
    // ex4.addEventListener("click",exerciseDetailsFour);
    // ex5.addEventListener("click",exerciseDetailsFive);
@@ -296,8 +296,8 @@
       var exerciseDetailsContent = document.querySelector(".exercise-text");
 
       if (exerciseTitle === "Military Press") {
-         exerciseTitleExternal = exerciseTitle;
-         exerciseDetailsContent.innerHTML = "<p>Opis ćwiczenia Military press</p>";
+         exerciseTitleExternal.innerHTML = exerciseTitle;
+         exerciseDetailsContent.innerHTML = "<p>Opis ćwiczenia Military Press</p>";
          exerciseImage.src = "./images/military.jpg";
 
       } else if (exerciseTitle === "Shoulder press with dumbbells") {
@@ -306,34 +306,34 @@
          exerciseImage.src = "./images/shoulderPress.jpg";
       } else {
          exerciseTitleExternal.innerHTML = exerciseTitle;
-         exerciseDetailsContent.innerHTML = "<p>Opis ćwiczenia BehindNeckPress</p>";
-         exerciseImage.src = "./images/musculo.png";
+         exerciseDetailsContent.innerHTML = "<p>Opis ćwiczenia Behind NeckPress</p>";
+         exerciseImage.src = "./images/behingNeckPress.jpg";
       };
    };
 
-   //Second Function
+   // Second Function
+   function exerciseDetailsTwo() {
+      var exerciseTitle = ex2.textContent;
+      var exerciseImage = document.querySelector(".exercise-image");
+      var exerciseTitleExternal = document.querySelector(".exercise-title");
+      var exerciseDetailsContent = document.querySelector(".exercise-text");
 
-   // function exerciseDetailsTwo(){
-   //    var exerciseTitle = ex2.textContent;
-   //    var exerciseImage = document.querySelector(".exercise-image");
-   //    var exerciseTitleExternal = document.querySelector(".exercise-title").textContent;
-   //    var exerciseDetailsContent = document.querySelector(".exercise-text").innerHTML;
+      if (exerciseTitle === "Back Squat") {
+         exerciseTitleExternal.innerHTML = exerciseTitle;
+         exerciseDetailsContent.innerHTML = "<p>Opis ćwiczenia Back Squat</p>";
+         exerciseImage.src = "./images/backSquat.jpg";
 
-   // if(exerciseTitle === "Back Squat"){
-   //    exerciseTitleExternal = exerciseTitle;
-   //    exerciseDetailsContent = "<p>Opis ćwiczenia 1 z rzędu drugiego</p>";
-   //    exerciseImage.src= "./images/dupa.jpg";
-
-   // }else if(exerciseTitle === "Goblet Squat"){
-   //    exerciseTitleExternal = exerciseTitle;
-   //    exerciseDetailsContent = "<p>Opis ćwiczenia 2 z rzędu drugiego</p>";
-   //    exerciseImage.src= "./images/shoulderPress.jpg";
-   // }else{
-   //    exerciseTitleExternal = exerciseTitle;
-   //    exerciseDetailsContent = "<p>Opis ćwiczenia 3 z rzędu drugiego</p>";
-   //    exerciseImage.src= "./images/musculo.png";
-   // };
-   // };
+      } else if (exerciseTitle === "Goblet Squat") {
+         exerciseTitleExternal.innerHTML = exerciseTitle;
+         exerciseDetailsContent.innerHTML = "<p>Opis ćwiczenia Goblet Squat</p>";
+         exerciseImage.src = "./images/gobletSquat.jpg";
+      } else {
+         exerciseTitleExternal.innerHTML = exerciseTitle;
+         exerciseDetailsContent.innerHTML = "<p>Opis ćwiczenia Leg Press Machine</p>";
+         exerciseImage.src = "./images/legPressMachine.jpg";
+      };
+   };
+  
 
 
 
