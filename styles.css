@@ -1,128 +1,154 @@
-body{
+body {
     font-family: Lato;
 }
 
-.main-component{
+.main-component {
     display: block;
     margin: 0px auto;
     width: 1280px;
     height: 800px;
     background-color: aquamarine;
 }
-.heading{
+
+.heading {
     text-align: center;
     width: 50%;
     padding: 10px;
     margin: auto;
 }
-.training-options{
+
+.training-options {
     display: grid;
     grid-template-columns: auto auto;
     background-color: #2196F3;
     padding: 10px;
     grid-gap: 5px;
 }
-.training-style1{
+
+.training-style1 {
     text-align: center;
     padding-left: 350px;
 }
-.training-style2{
+
+.training-style2 {
     text-align: center;
     padding-right: 350px;
 }
-.pump-container{
-    margin: 0px auto;
-    height:70px;
-    
-    width: 30%;
-    
-       }
-       .super-pump{
-          background-color: rgb(255, 187, 0);
-           width: 50%;
-        margin:auto;
-        padding-top:5px;
-        margin-top: 10px;
-        border: solid;
-        border-radius: 5px;
-       
-        
-       }
 
-  .pump-img{
-      padding-left: 20px;
-      height:50px;
-      float: left;
-  }
- .main-container{
+.pump-container {
+    margin: 0px auto;
+    height: 70px;
+
+    width: 30%;
+
+}
+
+.super-pump {
+    background-color: rgb(255, 187, 0);
+    width: 50%;
+    margin: auto;
+    padding-top: 5px;
+    margin-top: 10px;
+    border: solid;
+    border-radius: 5px;
+
+
+}
+
+.pump-img {
+    padding-left: 20px;
+    height: 50px;
+    float: left;
+}
+
+.main-container {
     padding-top: 10px;
 }
-.grid-container{
+
+.grid-container {
     display: grid;
     grid-template-columns: 100px 100px auto 150px 150px 150px 150px;
     background-color: #2196F3;
     padding: 2px;
     grid-gap: 5px;
-          
+
 }
-.grid-item{
-   
-background-color: rgba(255, 255, 255, 0.8);
-  font-size: 20px;
-  text-align: center;
-  
+
+.grid-item {
+
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+    text-align: center;
+
 }
-.ex{
+
+.ex {
     text-align: left;
     padding-left: 20px;
 }
-.btn{
+
+.btn {
     height: 50px;
     width: 90px;
     border-radius: 5px;
-   
+
 }
-.btn-container{
+
+.btn-container {
     margin: 10px auto;
-    
-    }
-.random-img{
-    height:20px;
-    width:20px;
+
 }
-.super-pump1{
+
+.random-img {
+    height: 20px;
+    width: 20px;
+}
+
+.super-pump1 {
     /* visibility: hidden; */
     /* display: none; */
 }
-.super-pump2{
+
+.super-pump2 {
     /* visibility: hidden; */
     /* display: none; */
-} 
-.bottom-container{
+}
+
+.bottom-container {
     height: 400px;
     display: block;
     width: 100%;
-    
-    margin:30px auto;
-    background-color: tan;
-    
-}
-.image-container{
-   
-}
-.exercise-image{
-    margin-left: 200px;
-    width: 50%;
-    float:left;
-}
-.exercise-title{
-    padding-top: 30px;
-    font-size: 24px;
-text-align: center;
- }
- .exercise-text{
-     font-size: 16px;
-     padding-right: 250px;
-     margin-left: 20px;
 
- }
+    margin: 30px auto;
+    background-color: tan;
+
+}
+
+.image-container {
+    padding-top: 30px;
+    padding-left: 300px;
+}
+
+.exercise-image {
+
+    width: 40%;
+    float: left;
+}
+
+.exercise-title {
+    font-size: 24px;
+    float: right;
+    width: 40%;
+    padding-right: 120px;
+    padding-top: 30px;
+    
+
+}
+.exercise-text{
+    font-size: 16px;
+    float: right;
+    width: 40%;
+    padding-right: 120px;
+    
+    height: 180px;
+}

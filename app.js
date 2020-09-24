@@ -259,35 +259,70 @@ var pumpTwoArray = ["<h3>Ez bar scullcrushers</h3>", "<h3>Triceps pushdown high 
    function superPump() {
       var superPump1 = document.getElementById("pump1");
       var superPump2 = document.getElementById("pump2");
-      if(superPump1.style.visibility === "hidden"){
-         superPump1.style.visibility = "visible"; 
-         superPump2.style.visibility = "visible"; 
+      if(superPump1.style.display === "none"){
+         superPump1.style.display = "grid"; 
+         superPump2.style.display = "grid"; 
       }else{
-         superPump1.style.visibility = "hidden";  
-         superPump2.style.visibility = "hidden";
+         superPump1.style.display = "none";  
+         superPump2.style.display = "none";
       };
-
-
-//       var superPump1 = document.getElementById("pump1");
-//       var superPump2 = document.getElementById("pump2");
-// if(superPump1.style.display = "grid"){
-//    superPump1.style.display = "none";
-//    superPump2.style.display = "none";
-// }else if(superPump1.style.display = "none"){
-//       superPump1.style.display = "grid";
-//       superPump2.style.display = "grid";
-//    };
 };
-      
+
+
+// Image Hyperlinks
+ex1.addEventListener("click",exerciseDetails);
+
+function exerciseDetails(){
+   var exerciseTitle = ex1.textContent;
+   var exerciseImage = document.querySelector(".exercise-image");
+   document.querySelector(".exercise-title").textContent = exerciseTitle;
+   document.querySelector(".exercise-text").innerHTML = "<p> TUTAJ ZNAJDUJE SIE OPIS CWICZENIA</p>"
+   
+   exerciseImage.src= "./images/military.jpg"
+
+}
 
 
 
-      // var superPump1 = document.querySelector(".super-pump1");
-      // var superPump2 = document.querySelector(".super-pump2");
-      // // if (superPump1.style.display === "none"){
-      // superPump1.style.display === "grid";
-      // superPump2.style.display === "grid";
-      // // }else{
-      // //    superPump1.style.display = "none";
-      // //    superPump2.style.display = "none";
-      // // };
+
+// var exerciseN = document.querySelector("ex"+ exnumber);
+
+// var exnumber = 0;
+//   switch (exnumber) {
+//      case 1:
+// exercise = document.querySelector("ex1");
+        
+//         break;
+//         case 2:
+//          exercise = document.querySelector("ex2");
+                 
+//                  break;
+//                  case 3:
+// exercise = document.querySelector("ex3");
+        
+//         break;
+//         case 4:
+// exercise = document.querySelector("ex4");
+        
+//         break;
+//         case 1:
+// exercise = document.querySelector("ex1");
+        
+//         break;
+//         case 5:
+// exercise = document.querySelector("ex5");
+        
+//         break;
+//         case 6:
+// exercise = document.querySelector("ex6");
+        
+//         break;      
+//         case 7:
+// exercise = document.querySelector("ex7");
+        
+//         break;
+
+//         default:
+//          exercise = document.querySelector("ex7");
+//         break;
+//   }
