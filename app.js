@@ -78,23 +78,38 @@
       ex5.innerHTML = result;
       return;
    }
-   //Pump1
-   // var pumpOneArray = ["<h3>PUMP</h3>", "<h3>Sit ups</h3>", "<h3>Crunches</h3>"];
-   // var ex6 = document.querySelector(".ex6");
-   // var btn6 = document.querySelector(".btn6");
-   // btn6.addEventListener("click", pumpOneEx);
-   // ex6.innerHTML = absArray[0];
+   // Pump1
+   var pumpOneArray = ["<h3>Ez bar supinated biceps curls</h3>", "<h3>Dumbbells neutral grip biceps curls</h3>", "<h3>Dumbbells Incline Curls</h3>"];
+   var ex6 = document.querySelector(".ex6");
+   var btn6 = document.querySelector(".btn6");
+   btn6.addEventListener("click", pumpOneEx);
+   ex6.innerHTML = pumpOneArray[0];
 
 
-   // function pumpOneEx() {
-   //    var searchTerm = ex6.innerHTML;
-   //    var index = pumpOneArray.indexOf(searchTerm) + 1;
-   //    if (index == pumpOneArray.length) index = 0;
-   //    var result = pumpOneArray[index];
-   //    ex6.innerHTML = result;
-   //    return;
+   function pumpOneEx() {
+      var searchTerm = ex6.innerHTML;
+      var index = pumpOneArray.indexOf(searchTerm) + 1;
+      if (index == pumpOneArray.length) index = 0;
+      var result = pumpOneArray[index];
+      ex6.innerHTML = result;
+      return;
+   }
+//Pump2
+var pumpTwoArray = ["<h3>Ez bar scullcrushers</h3>", "<h3>Triceps pushdown high pulley</h3>", "<h3>Dumbbell triceps extension above head</h3>"];
+   var ex7 = document.querySelector(".ex7");
+   var btn7 = document.querySelector(".btn7");
+   btn7.addEventListener("click", pumpTwoEx);
+   ex7.innerHTML = pumpTwoArray[0];
 
 
+   function pumpTwoEx() {
+      var searchTerm = ex7.innerHTML;
+      var index = pumpTwoArray.indexOf(searchTerm) + 1;
+      if (index == pumpTwoArray.length) index = 0;
+      var result = pumpTwoArray[index];
+      ex7.innerHTML = result;
+      return;
+   }
    // Gloabal Variables for Table
 
    var sets, se1, se2, se3, se4, se5;
