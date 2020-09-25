@@ -454,7 +454,7 @@
       document.getElementById("super-pump-header").textContent = "Random Workout";
       document.querySelector(".training-style1").style.display = "none";
       document.querySelector(".training-style2").style.display = "none";
-      
+
 
       for (i = 1; i < 8; i++) {
          buttons[i] = document.querySelector(".btn" + i).style.display = "none";
@@ -472,7 +472,7 @@
 
       document.querySelector(".training-style1").style.display = "block";
       document.querySelector(".training-style2").style.display = "block";
-      
+
       document.getElementById("super-pump-header").textContent = "Super Pump";
    };
 
@@ -481,8 +481,61 @@
    document.querySelector(".fbw").addEventListener("click", showButtons);
 
    // Function for random Split Exercises
+   // var chestOne = {
 
-   function splitRandom() {
+   //    //Podmiana Order
+   //    or1: or1.innerHTML = "<h3>A</h3>",
+   //    or2: or2.innerHTML = "<h3>B</h3>",
+   //    or3: or3.innerHTML = "<h3>C</h3>",
+   //    or4: or4.innerHTML = "<h3>D</h3>",
+   //    or5: or5.innerHTML = "<h3>E</h3>",
+
+   //    //Podmiana Exercises
+
+   //    ex1: ex1.innerHTML = "<h3>Dips</h3>",
+   //    ex2: ex2.innerHTML = "<h3>Barbell Bench Press</h3>",
+   //    ex3: ex3.innerHTML = "<h3>Incline Dumbbells Press</h3>",
+   //    ex4: ex4.innerHTML = "<h3>Decline Barbell Press</h3>",
+   //    ex5: ex5.innerHTML = "<h3>Dumbbells Flyes</h3>",
+
+   //    //Podmiana Sets
+   //    se1: se1.innerHTML = "<h3>5</h3>",
+   //    se2: se2.innerHTML = "<h3>3</h3>",
+   //    se3: se3.innerHTML = "<h3>3</h3>",
+   //    se4: se4.innerHTML = "<h3>3</h3>",
+   //    se5: se5.innerHTML = "<h3>3</h3>",
+
+   //    //Podmiana Reps
+
+   //    rep1: rep1.innerHTML = "<h3>5</h3>",
+   //    rep2: rep2.innerHTML = "<h3>10</h3>",
+   //    rep3: rep3.innerHTML = "<h3>10</h3>",
+   //    rep4: rep4.innerHTML = "<h3>12</h3>",
+   //    rep5: rep5.innerHTML = "<h3>15</h3>",
+
+   //    //Podmiana Rest
+
+   //    res1: res1.innerHTML = "<h3>120</h3>",
+   //    res2: res2.innerHTML = "<h3>90</h3>",
+   //    res3: res3.innerHTML = "<h3>90</h3>",
+   //    res4: res4.innerHTML = "<h3>60</h3>",
+   //    res5: res5.innerHTML = "<h3>60</h3>",
+
+   //    wei1: wei1.innerHTML = "<h3>80%RM</h3>",
+   //    wei2: wei2.innerHTML = "<h3>70%>RM</h3>",
+   //    wei3: wei3.innerHTML = "<h3>60%>RM</h3>",
+   //    wei4: wei4.innerHTML = "<h3>60%>RM</h3>",
+   //    wei5: wei5.innerHTML = "<h3>60%>RM</h3>"
+   // };
+
+
+
+
+
+
+
+
+   function splitChestOne() {
 
       //Podmiana Order
       or1.innerHTML = "<h3>A</h3>";
@@ -527,8 +580,108 @@
       wei3.innerHTML = "<h3>60%>RM</h3>";
       wei4.innerHTML = "<h3>60%>RM</h3>";
       wei5.innerHTML = "<h3>60%>RM</h3>";
+
+      superButton.removeEventListener("click", splitChestOne);
+      superButton.addEventListener("click", splitChestTwo);
    };
 
+function splitChestTwo(){
+    //Podmiana Order
+    or1.innerHTML = "<h3>A</h3>";
+    or2.innerHTML = "<h3>B</h3>";
+    or3.innerHTML = "<h3>C</h3>";
+    or4.innerHTML = "<h3>D</h3>";
+    or5.innerHTML = "<h3>E</h3>";
+
+    //Podmiana Exercises
+
+    ex1.innerHTML = "<h3>Burpees</h3>";
+    ex2.innerHTML = "<h3>Barbell Bench Press</h3>";
+    ex3.innerHTML = "<h3>Incline Dumbbells Press</h3>";
+    ex4.innerHTML = "<h3>Decline Barbell Press</h3>";
+    ex5.innerHTML = "<h3>Dumbbells Flyes</h3>";
+
+    //Podmiana Sets
+    se1.innerHTML = "<h3>5</h3>";
+    se2.innerHTML = "<h3>3</h3>";
+    se3.innerHTML = "<h3>3</h3>";
+    se4.innerHTML = "<h3>3</h3>";
+    se5.innerHTML = "<h3>3</h3>";
+
+    //Podmiana Reps
+
+    rep1.innerHTML = "<h3>5</h3>";
+    rep2.innerHTML = "<h3>10</h3>";
+    rep3.innerHTML = "<h3>10</h3>";
+    rep4.innerHTML = "<h3>12</h3>";
+    rep5.innerHTML = "<h3>15</h3>";
+
+    //Podmiana Rest
+
+    res1.innerHTML = "<h3>120</h3>";
+    res2.innerHTML = "<h3>90</h3>";
+    res3.innerHTML = "<h3>90</h3>";
+    res4.innerHTML = "<h3>60</h3>";
+    res5.innerHTML = "<h3>60</h3>";
+
+    wei1.innerHTML = "<h3>80%RM</h3>";
+    wei2.innerHTML = "<h3>70%>RM</h3>";
+    wei3.innerHTML = "<h3>60%>RM</h3>";
+    wei4.innerHTML = "<h3>60%>RM</h3>";
+    wei5.innerHTML = "<h3>60%>RM</h3>";
+
+    superButton.removeEventListener("click", splitChestTwo);
+    superButton.addEventListener("click", splitChestThree);
+};
+
+function splitChestThree(){
+    //Podmiana Order
+    or1.innerHTML = "<h3>A</h3>";
+    or2.innerHTML = "<h3>B</h3>";
+    or3.innerHTML = "<h3>C</h3>";
+    or4.innerHTML = "<h3>D</h3>";
+    or5.innerHTML = "<h3>E</h3>";
+
+    //Podmiana Exercises
+
+    ex1.innerHTML = "<h3>Pajacyki</h3>";
+    ex2.innerHTML = "<h3>Barbell Bench Press</h3>";
+    ex3.innerHTML = "<h3>Incline Dumbbells Press</h3>";
+    ex4.innerHTML = "<h3>Decline Barbell Press</h3>";
+    ex5.innerHTML = "<h3>Dumbbells Flyes</h3>";
+
+    //Podmiana Sets
+    se1.innerHTML = "<h3>5</h3>";
+    se2.innerHTML = "<h3>3</h3>";
+    se3.innerHTML = "<h3>3</h3>";
+    se4.innerHTML = "<h3>3</h3>";
+    se5.innerHTML = "<h3>3</h3>";
+
+    //Podmiana Reps
+
+    rep1.innerHTML = "<h3>5</h3>";
+    rep2.innerHTML = "<h3>10</h3>";
+    rep3.innerHTML = "<h3>10</h3>";
+    rep4.innerHTML = "<h3>12</h3>";
+    rep5.innerHTML = "<h3>15</h3>";
+
+    //Podmiana Rest
+
+    res1.innerHTML = "<h3>120</h3>";
+    res2.innerHTML = "<h3>90</h3>";
+    res3.innerHTML = "<h3>90</h3>";
+    res4.innerHTML = "<h3>60</h3>";
+    res5.innerHTML = "<h3>60</h3>";
+
+    wei1.innerHTML = "<h3>80%RM</h3>";
+    wei2.innerHTML = "<h3>70%>RM</h3>";
+    wei3.innerHTML = "<h3>60%>RM</h3>";
+    wei4.innerHTML = "<h3>60%>RM</h3>";
+    wei5.innerHTML = "<h3>60%>RM</h3>";
+
+    superButton.removeEventListener("click", splitChestThree);
+    superButton.addEventListener("click", splitChestOne);
+};
 
 
    //Split Button
@@ -538,6 +691,9 @@
    function handleSplitButton() {
       hideButtons();
       superButton.removeEventListener("click", superPump);
-      superButton.addEventListener("click", splitRandom);
+      superButton.addEventListener("click", splitChestOne);
 
    };
+   
+   
+   
