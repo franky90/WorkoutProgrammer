@@ -3,7 +3,7 @@
    var sets, se1, se2, se3, se4, se5;
    var reps, rep1, rep2, rep3, rep4, rep5;
    var rest, res1, res2, res3, res4, res5;
-   var or1, or2, or3, or4, or5;
+   var or1, or2, or3, or4, or5, or6, or7;
    var weights, wei1, wei2, wei3, wei4, wei5;
    var ex1, ex2, ex3, ex4, ex5, ex6, ex7;
    var buttons, btn1, btn2, btn3, btn4, btn5, btn6, btn7;
@@ -15,7 +15,9 @@
    se3 = document.querySelector(".se3");
    se4 = document.querySelector(".se4");
    se5 = document.querySelector(".se5");
-   sets = [se1, se2, se3, se4, se5];
+   se6 = document.querySelector(".se6");
+   se7 = document.querySelector(".se7");
+   sets = [se1, se2, se3, se4, se5, se6, se7];
 
 
    rep1 = document.querySelector(".rep1");
@@ -23,20 +25,26 @@
    rep3 = document.querySelector(".rep3");
    rep4 = document.querySelector(".rep4");
    rep5 = document.querySelector(".rep5");
-   reps = [rep1, rep2, rep3, rep4, rep5];
+   rep6 = document.querySelector(".rep6");
+   rep7 = document.querySelector(".rep7");
+   reps = [rep1, rep2, rep3, rep4, rep5, rep6, rep7];
 
    res1 = document.querySelector(".res1");
    res2 = document.querySelector(".res2");
    res3 = document.querySelector(".res3");
    res4 = document.querySelector(".res4");
    res5 = document.querySelector(".res5");
-   rest = [res1, res2, res3, res4, res5];
+   res6 = document.querySelector(".res6");
+   res7 = document.querySelector(".res7");
+   rest = [res1, res2, res3, res4, res5, res6, res7];
 
    or1 = document.querySelector(".or1");
    or2 = document.querySelector(".or2");
    or3 = document.querySelector(".or3");
    or4 = document.querySelector(".or4");
    or5 = document.querySelector(".or5");
+   or6 = document.querySelector(".or6");
+   or7 = document.querySelector(".or7");
    ord = [or1, or2, or3, or4, or5];
 
    wei1 = document.querySelector(".wei1");
@@ -44,7 +52,9 @@
    wei3 = document.querySelector(".wei3");
    wei4 = document.querySelector(".wei4");
    wei5 = document.querySelector(".wei5");
-   weights = [wei1, wei2, wei3, wei4, wei5]
+   wei6 = document.querySelector(".wei6");
+   wei7 = document.querySelector(".wei7");
+   weights = [wei1, wei2, wei3, wei4, wei5, wei6, wei7];
 
 
    ex1 = document.querySelector(".ex1");
@@ -55,12 +65,21 @@
    ex6 = document.querySelector(".ex6");
    ex7 = document.querySelector(".ex7");
 
+   var containerOne, ontainerTwo, ontainerThree, ontainerFour, ontainerFive, ontainerSix, ontainerSeven;
+
+   containerOne = document.querySelector(".container-one");
+   containerTwo = document.querySelector(".container-two");
+   containerThree = document.querySelector(".container-three");
+   containerFour = document.querySelector(".container-four");
+   containerFive = document.querySelector(".container-five");
+   containerSix = document.querySelector(".container-six");
+   containerSeven = document.querySelector(".container-seven");
 
    //  Shoulders
    var shoulderArray = ["<h3>Military Press</h3>", "<h3>Shoulder press with dumbbells</h3>", "<h3>Behind neck barbell press</h3>"];
    btn1 = document.querySelector(".btn1");
    btn1.addEventListener("click", shoulderEx);
-   ex1.innerHTML = shoulderArray[0];
+   ex1.innerHTML = "<h3>-</h3>";
 
 
    function shoulderEx() {
@@ -76,7 +95,7 @@
 
    btn2 = document.querySelector(".btn2");
    btn2.addEventListener("click", legsEx);
-   ex2.innerHTML = legsArray[0];
+   ex2.innerHTML = "<h3>-</h3>";
 
 
    function legsEx() {
@@ -92,7 +111,7 @@
 
    btn3 = document.querySelector(".btn3");
    btn3.addEventListener("click", chestEx);
-   ex3.innerHTML = chestArray[0];
+   ex3.innerHTML = "<h3>-</h3>";
 
 
    function chestEx() {
@@ -108,7 +127,7 @@
 
    btn4 = document.querySelector(".btn4");
    btn4.addEventListener("click", backEx);
-   ex4.innerHTML = backArray[0];
+   ex4.innerHTML = "<h3>-</h3>";
 
 
    function backEx() {
@@ -124,7 +143,7 @@
 
    btn5 = document.querySelector(".btn5");
    btn5.addEventListener("click", absEx);
-   ex5.innerHTML = absArray[0];
+   ex5.innerHTML = "<h3>-</h3>";
 
 
    function absEx() {
@@ -140,7 +159,7 @@
 
    btn6 = document.querySelector(".btn6");
    btn6.addEventListener("click", pumpOneEx);
-   ex6.innerHTML = pumpOneArray[0];
+   ex6.innerHTML = "<h3>-</h3>";
 
 
    function pumpOneEx() {
@@ -156,7 +175,7 @@
 
    btn7 = document.querySelector(".btn7");
    btn7.addEventListener("click", pumpTwoEx);
-   ex7.innerHTML = pumpTwoArray[0];
+   ex7.innerHTML = "<h3>-</h3>";
 
 
    function pumpTwoEx() {
@@ -464,7 +483,14 @@
    //Show buttons Function
 
    function showButtons() {
-      superButton.style.display = "block";
+
+      superButton.removeEventListener("click", splitChestOne);
+      superButton.removeEventListener("click", splitChestTwo);
+      superButton.removeEventListener("click", splitChestThree);
+      superButton.addEventListener("click", superPump);
+
+      containerSix.style.display = "none";
+      containerSeven.style.display = "none";
 
       for (i = 1; i < 8; i++) {
          buttons[i] = document.querySelector(".btn" + i).style.display = "inline-block";
@@ -472,7 +498,6 @@
 
       document.querySelector(".training-style1").style.display = "block";
       document.querySelector(".training-style2").style.display = "block";
-
       document.getElementById("super-pump-header").textContent = "Super Pump";
    };
 
@@ -480,63 +505,10 @@
 
    document.querySelector(".fbw").addEventListener("click", showButtons);
 
-   // Function for random Split Exercises
-   // var chestOne = {
-
-   //    //Podmiana Order
-   //    or1: or1.innerHTML = "<h3>A</h3>",
-   //    or2: or2.innerHTML = "<h3>B</h3>",
-   //    or3: or3.innerHTML = "<h3>C</h3>",
-   //    or4: or4.innerHTML = "<h3>D</h3>",
-   //    or5: or5.innerHTML = "<h3>E</h3>",
-
-   //    //Podmiana Exercises
-
-   //    ex1: ex1.innerHTML = "<h3>Dips</h3>",
-   //    ex2: ex2.innerHTML = "<h3>Barbell Bench Press</h3>",
-   //    ex3: ex3.innerHTML = "<h3>Incline Dumbbells Press</h3>",
-   //    ex4: ex4.innerHTML = "<h3>Decline Barbell Press</h3>",
-   //    ex5: ex5.innerHTML = "<h3>Dumbbells Flyes</h3>",
-
-   //    //Podmiana Sets
-   //    se1: se1.innerHTML = "<h3>5</h3>",
-   //    se2: se2.innerHTML = "<h3>3</h3>",
-   //    se3: se3.innerHTML = "<h3>3</h3>",
-   //    se4: se4.innerHTML = "<h3>3</h3>",
-   //    se5: se5.innerHTML = "<h3>3</h3>",
-
-   //    //Podmiana Reps
-
-   //    rep1: rep1.innerHTML = "<h3>5</h3>",
-   //    rep2: rep2.innerHTML = "<h3>10</h3>",
-   //    rep3: rep3.innerHTML = "<h3>10</h3>",
-   //    rep4: rep4.innerHTML = "<h3>12</h3>",
-   //    rep5: rep5.innerHTML = "<h3>15</h3>",
-
-   //    //Podmiana Rest
-
-   //    res1: res1.innerHTML = "<h3>120</h3>",
-   //    res2: res2.innerHTML = "<h3>90</h3>",
-   //    res3: res3.innerHTML = "<h3>90</h3>",
-   //    res4: res4.innerHTML = "<h3>60</h3>",
-   //    res5: res5.innerHTML = "<h3>60</h3>",
-
-   //    wei1: wei1.innerHTML = "<h3>80%RM</h3>",
-   //    wei2: wei2.innerHTML = "<h3>70%>RM</h3>",
-   //    wei3: wei3.innerHTML = "<h3>60%>RM</h3>",
-   //    wei4: wei4.innerHTML = "<h3>60%>RM</h3>",
-   //    wei5: wei5.innerHTML = "<h3>60%>RM</h3>"
-   // };
-
-
-
-
-
-
-
-
    function splitChestOne() {
-
+      containerSix.style.display = "none";
+      containerSeven.style.display = "none";
+      containerFive.style.display = "grid";
       //Podmiana Order
       or1.innerHTML = "<h3>A</h3>";
       or2.innerHTML = "<h3>B</h3>";
@@ -585,115 +557,136 @@
       superButton.addEventListener("click", splitChestTwo);
    };
 
-function splitChestTwo(){
-    //Podmiana Order
-    or1.innerHTML = "<h3>A</h3>";
-    or2.innerHTML = "<h3>B</h3>";
-    or3.innerHTML = "<h3>C</h3>";
-    or4.innerHTML = "<h3>D</h3>";
-    or5.innerHTML = "<h3>E</h3>";
+   function splitChestTwo() {
+      containerSix.style.display = "grid";
+      containerSeven.style.display = "grid";
 
-    //Podmiana Exercises
+      //Podmiana Order
+      or1.innerHTML = "<h3>A1</h3>";
+      or2.innerHTML = "<h3>A2</h3>";
+      or3.innerHTML = "<h3>B1</h3>";
+      or4.innerHTML = "<h3>B2</h3>";
+      or5.innerHTML = "<h3>C1</h3>";
+      or6.innerHTML = "<h3>C2</h3>";
+      or7.innerHTML = "<h3>D</h3>";
 
-    ex1.innerHTML = "<h3>Burpees</h3>";
-    ex2.innerHTML = "<h3>Barbell Bench Press</h3>";
-    ex3.innerHTML = "<h3>Incline Dumbbells Press</h3>";
-    ex4.innerHTML = "<h3>Decline Barbell Press</h3>";
-    ex5.innerHTML = "<h3>Dumbbells Flyes</h3>";
 
-    //Podmiana Sets
-    se1.innerHTML = "<h3>5</h3>";
-    se2.innerHTML = "<h3>3</h3>";
-    se3.innerHTML = "<h3>3</h3>";
-    se4.innerHTML = "<h3>3</h3>";
-    se5.innerHTML = "<h3>3</h3>";
+      //Podmiana Exercises
 
-    //Podmiana Reps
+      ex1.innerHTML = "<h3>Barbell incline bench press</h3>";
+      ex2.innerHTML = "<h3>Incline Dumbbell Fly</h3>";
+      ex3.innerHTML = "<h3>Push ups</h3>";
+      ex4.innerHTML = "<h3>Cable Crossover</h3>";
+      ex5.innerHTML = "<h3>Dumbbells bench press</h3>";
+      ex6.innerHTML = "<h3>Pec deck</h3>";
+      ex7.innerHTML = "<h3>Triceps pushdowns machine</h3>";
 
-    rep1.innerHTML = "<h3>5</h3>";
-    rep2.innerHTML = "<h3>10</h3>";
-    rep3.innerHTML = "<h3>10</h3>";
-    rep4.innerHTML = "<h3>12</h3>";
-    rep5.innerHTML = "<h3>15</h3>";
 
-    //Podmiana Rest
+      //Podmiana Sets
+      se1.innerHTML = "<h3>3</h3>";
+      se2.innerHTML = "<h3>3</h3>";
+      se3.innerHTML = "<h3>3</h3>";
+      se4.innerHTML = "<h3>3</h3>";
+      se5.innerHTML = "<h3>3</h3>";
+      se6.innerHTML = "<h3>3</h3>";
+      se7.innerHTML = "<h3>3</h3>";
 
-    res1.innerHTML = "<h3>120</h3>";
-    res2.innerHTML = "<h3>90</h3>";
-    res3.innerHTML = "<h3>90</h3>";
-    res4.innerHTML = "<h3>60</h3>";
-    res5.innerHTML = "<h3>60</h3>";
+      //Podmiana Reps
 
-    wei1.innerHTML = "<h3>80%RM</h3>";
-    wei2.innerHTML = "<h3>70%>RM</h3>";
-    wei3.innerHTML = "<h3>60%>RM</h3>";
-    wei4.innerHTML = "<h3>60%>RM</h3>";
-    wei5.innerHTML = "<h3>60%>RM</h3>";
+      rep1.innerHTML = "<h3>10 8 6</h3>";
+      rep2.innerHTML = "<h3>10 8 6</h3>";
+      rep3.innerHTML = "<h3>10</h3>";
+      rep4.innerHTML = "<h3>10</h3>";
+      rep5.innerHTML = "<h3>12 12 failure</h3>";
+      rep6.innerHTML = "<h3>12 12 failure</h3>";
+      rep7.innerHTML = "<h3>15 15 failure</h3>";
 
-    superButton.removeEventListener("click", splitChestTwo);
-    superButton.addEventListener("click", splitChestThree);
-};
+      //Podmiana Rest
 
-function splitChestThree(){
-    //Podmiana Order
-    or1.innerHTML = "<h3>A</h3>";
-    or2.innerHTML = "<h3>B</h3>";
-    or3.innerHTML = "<h3>C</h3>";
-    or4.innerHTML = "<h3>D</h3>";
-    or5.innerHTML = "<h3>E</h3>";
+      res1.innerHTML = "<h3>10</h3>";
+      res2.innerHTML = "<h3>90</h3>";
+      res3.innerHTML = "<h3>10</h3>";
+      res4.innerHTML = "<h3>90</h3>";
+      res5.innerHTML = "<h3>10</h3>";
+      res6.innerHTML = "<h3>90</h3>";
+      res7.innerHTML = "<h3>90</h3>";
 
-    //Podmiana Exercises
+      wei1.innerHTML = "<h3>70%>RM</h3>";
+      wei2.innerHTML = "<h3>adjust</h3>";
+      wei3.innerHTML = "<h3>adjust</h3>";
+      wei4.innerHTML = "<h3>adjust</h3>";
+      wei5.innerHTML = "<h3>adjust</h3>";
+      wei6.innerHTML = "<h3>adjust</h3>";
+      wei7.innerHTML = "<h3>adjust</h3>";
 
-    ex1.innerHTML = "<h3>Pajacyki</h3>";
-    ex2.innerHTML = "<h3>Barbell Bench Press</h3>";
-    ex3.innerHTML = "<h3>Incline Dumbbells Press</h3>";
-    ex4.innerHTML = "<h3>Decline Barbell Press</h3>";
-    ex5.innerHTML = "<h3>Dumbbells Flyes</h3>";
+      superButton.removeEventListener("click", splitChestTwo);
+      superButton.addEventListener("click", splitChestThree);
+   };
 
-    //Podmiana Sets
-    se1.innerHTML = "<h3>5</h3>";
-    se2.innerHTML = "<h3>3</h3>";
-    se3.innerHTML = "<h3>3</h3>";
-    se4.innerHTML = "<h3>3</h3>";
-    se5.innerHTML = "<h3>3</h3>";
+   function splitChestThree() {
+      containerFive.style.display = "none";
+      containerSix.style.display = "none";
+      containerSeven.style.display = "none";
 
-    //Podmiana Reps
+      //Podmiana Order
+      or1.innerHTML = "<h3>A1</h3>";
+      or2.innerHTML = "<h3>A2</h3>";
+      or3.innerHTML = "<h3>A3</h3>";
+      or4.innerHTML = "<h3>A4</h3>";
 
-    rep1.innerHTML = "<h3>5</h3>";
-    rep2.innerHTML = "<h3>10</h3>";
-    rep3.innerHTML = "<h3>10</h3>";
-    rep4.innerHTML = "<h3>12</h3>";
-    rep5.innerHTML = "<h3>15</h3>";
 
-    //Podmiana Rest
 
-    res1.innerHTML = "<h3>120</h3>";
-    res2.innerHTML = "<h3>90</h3>";
-    res3.innerHTML = "<h3>90</h3>";
-    res4.innerHTML = "<h3>60</h3>";
-    res5.innerHTML = "<h3>60</h3>";
+      //Podmiana Exercises
 
-    wei1.innerHTML = "<h3>80%RM</h3>";
-    wei2.innerHTML = "<h3>70%>RM</h3>";
-    wei3.innerHTML = "<h3>60%>RM</h3>";
-    wei4.innerHTML = "<h3>60%>RM</h3>";
-    wei5.innerHTML = "<h3>60%>RM</h3>";
+      ex1.innerHTML = "<h3>Dips</h3>";
+      ex2.innerHTML = "<h3>Bar dips</h3>";
+      ex3.innerHTML = "<h3>Push ups</h3>";
+      ex4.innerHTML = "<h3>Dumbbells flor press</h3>";
 
-    superButton.removeEventListener("click", splitChestThree);
-    superButton.addEventListener("click", splitChestOne);
-};
+
+
+      //Podmiana Sets
+      se1.innerHTML = "<h3>5</h3>";
+      se2.innerHTML = "<h3>5</h3>";
+      se3.innerHTML = "<h3>5</h3>";
+      se4.innerHTML = "<h3>5</h3>";
+
+
+      //Podmiana Reps
+
+      rep1.innerHTML = "<h3>10</h3>";
+      rep2.innerHTML = "<h3>10</h3>";
+      rep3.innerHTML = "<h3>10</h3>";
+      rep4.innerHTML = "<h3>10</h3>";
+
+
+      //Podmiana Rest
+
+      res1.innerHTML = "<h3>10</h3>";
+      res2.innerHTML = "<h3>10</h3>";
+      res3.innerHTML = "<h3>10</h3>";
+      res4.innerHTML = "<h3>180</h3>";
+
+
+      wei1.innerHTML = "<h3>adjust</h3>";
+      wei2.innerHTML = "<h3>adjust</h3>";
+      wei3.innerHTML = "<h3>adjust</h3>";
+      wei4.innerHTML = "<h3>adjust</h3>";
+
+
+      superButton.removeEventListener("click", splitChestThree);
+      superButton.addEventListener("click", splitChestOne);
+   };
 
 
    //Split Button
-   var splitButton = document.querySelector(".split");
+   var splitButton = document.querySelector(".split-chest");
    splitButton.addEventListener("click", handleSplitButton);
 
    function handleSplitButton() {
       hideButtons();
+      splitChestOne();
       superButton.removeEventListener("click", superPump);
-      superButton.addEventListener("click", splitChestOne);
+      superButton.addEventListener("click", splitChestTwo);
 
    };
-   
-   
-   

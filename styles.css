@@ -54,8 +54,7 @@ body {
     color: white;
     padding: 14px 16px;
     background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
+    
   }
   
   /* Add a red background color to navbar links on hover */
@@ -96,11 +95,6 @@ body {
     background-color: #14b1ab;
     color: white;
   }
-
-
-
-
-
 .training-options {
     display: grid;
     grid-template-columns: auto auto;
@@ -122,11 +116,8 @@ body {
 .pump-container {
     margin: 0px auto;
     height: 70px;
-
     width: 30%;
-
 }
-
 .super-pump {
     background-color: rgb(255, 187, 0);
     width: 65%;
@@ -162,7 +153,24 @@ body {
     background-color: rgba(255, 255, 255, 0.8);
     font-size: 20px;
     text-align: center;
+}
 
+.container-zero{
+    
+    height: 30px;
+    margin-top: 10px;
+    background-color:#14b1ab ;
+    grid-gap: 5px;
+}
+.table-title{
+    margin: 0px 0px;
+    border-right: 2px solid;
+    background-color:transparent;
+    font-size: 20px;
+    text-align: center;
+}
+.table-title h3{
+    margin: 0px 0px;
 }
 
 .ex {
