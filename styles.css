@@ -92,6 +92,10 @@ body {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+  .active {
+    background-color: #14b1ab;
+    color: white;
+  }
 
 
 
@@ -113,6 +117,10 @@ body {
 .training-style2 {
     text-align: center;
     padding-right: 350px;
+    
+}
+.trainin-style2-center{
+padding-left:480px;
 }
 
 .pump-container {
@@ -125,20 +133,19 @@ body {
 
 .super-pump {
     background-color: rgb(255, 187, 0);
-    width: 50%;
+    width: 65%;
     margin: auto;
     padding-top: 5px;
     margin-top: 10px;
     border: solid;
     border-radius: 5px;
-
-
 }
 
 .pump-img {
     padding-left: 20px;
     height: 50px;
     float: left;
+    padding-right: 5px;
 }
 
 .main-container {
@@ -182,16 +189,6 @@ body {
 .random-img {
     height: 20px;
     width: 20px;
-}
-
-.super-pump1 {
-    /* visibility: hidden; */
-    /* display: none; */
-}
-
-.super-pump2 {
-    /* visibility: hidden; */
-    /* display: none; */
 }
 
 .bottom-container {

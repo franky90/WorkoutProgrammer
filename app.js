@@ -6,6 +6,9 @@
    var or1, or2, or3, or4, or5;
    var weights, wei1, wei2, wei3, wei4, wei5;
    var ex1, ex2, ex3, ex4, ex5, ex6, ex7;
+   var buttons, btn1, btn2, btn3, btn4, btn5, btn6, btn7;
+
+   buttons = [btn1, btn2, btn3, btn4, btn5, btn6, btn7];
 
    se1 = document.querySelector(".se1");
    se2 = document.querySelector(".se2");
@@ -55,7 +58,7 @@
 
    //  Shoulders
    var shoulderArray = ["<h3>Military Press</h3>", "<h3>Shoulder press with dumbbells</h3>", "<h3>Behind neck barbell press</h3>"];
-   var btn1 = document.querySelector(".btn1");
+   btn1 = document.querySelector(".btn1");
    btn1.addEventListener("click", shoulderEx);
    ex1.innerHTML = shoulderArray[0];
 
@@ -71,7 +74,7 @@
    // Legs 
    var legsArray = ["<h3>Back Squat</h3>", "<h3>Goblet Squat</h3>", "<h3>Leg press machine</h3>"];
 
-   var btn2 = document.querySelector(".btn2");
+   btn2 = document.querySelector(".btn2");
    btn2.addEventListener("click", legsEx);
    ex2.innerHTML = legsArray[0];
 
@@ -87,7 +90,7 @@
    //Chest
    var chestArray = ["<h3>Barbell bench press</h3>", "<h3>Push ups</h3>", "<h3>Dumbbells incline chest press</h3>"];
 
-   var btn3 = document.querySelector(".btn3");
+   btn3 = document.querySelector(".btn3");
    btn3.addEventListener("click", chestEx);
    ex3.innerHTML = chestArray[0];
 
@@ -103,7 +106,7 @@
    //Back 
    var backArray = ["<h3>Pull ups</h3>", "<h3>Reversed rows</h3>", "<h3>Dumbbell rows</h3>"];
 
-   var btn4 = document.querySelector(".btn4");
+   btn4 = document.querySelector(".btn4");
    btn4.addEventListener("click", backEx);
    ex4.innerHTML = backArray[0];
 
@@ -119,7 +122,7 @@
    //Abs
    var absArray = ["<h3>Hanging legs raises</h3>", "<h3>Sit ups</h3>", "<h3>Crunches</h3>"];
 
-   var btn5 = document.querySelector(".btn5");
+   btn5 = document.querySelector(".btn5");
    btn5.addEventListener("click", absEx);
    ex5.innerHTML = absArray[0];
 
@@ -135,7 +138,7 @@
    // Pump1
    var pumpOneArray = ["<h3>Ez bar supinated biceps curls</h3>", "<h3>Dumbbells neutral grip biceps curls</h3>", "<h3>Dumbbells Incline Curls</h3>"];
 
-   var btn6 = document.querySelector(".btn6");
+   btn6 = document.querySelector(".btn6");
    btn6.addEventListener("click", pumpOneEx);
    ex6.innerHTML = pumpOneArray[0];
 
@@ -151,7 +154,7 @@
    //Pump2
    var pumpTwoArray = ["<h3>Ez bar scullcrushers</h3>", "<h3>Triceps pushdown high pulley</h3>", "<h3>Dumbbell triceps extension above head</h3>"];
 
-   var btn7 = document.querySelector(".btn7");
+   btn7 = document.querySelector(".btn7");
    btn7.addEventListener("click", pumpTwoEx);
    ex7.innerHTML = pumpTwoArray[0];
 
@@ -264,7 +267,7 @@
    //SUPER PUMP
 
    var superButton = document.querySelector(".super-pump");
-   superButton.addEventListener("click", superPump);
+   var superButtonHandle = superButton.addEventListener("click", superPump);
 
    function superPump() {
       var superPump1 = document.getElementById("pump1");
@@ -283,9 +286,9 @@
    ex2.addEventListener("click", exerciseDetailsTwo);
    ex3.addEventListener("click", exerciseDetailsThree);
    ex4.addEventListener("click", exerciseDetailsFour);
-   ex5.addEventListener("click",exerciseDetailsFive);
-   ex6.addEventListener("click",exerciseDetailsSix);
-   ex7.addEventListener("click",exerciseDetailsSeven);
+   ex5.addEventListener("click", exerciseDetailsFive);
+   ex6.addEventListener("click", exerciseDetailsSix);
+   ex7.addEventListener("click", exerciseDetailsSeven);
 
 
    var exerciseImage = document.querySelector(".exercise-image");
@@ -318,7 +321,7 @@
       exerciseTitle = ex1.textContent;
       exerciseTitleOne = "Military Press";
       exerciseTitleTwo = "Shoulder press with dumbbells";
-      
+
 
       exerciseTextOne = "<p>Opis ćwiczenia Military Press</p>";
       exerciseTextTwo = "<p>Opis ćwiczenia Shoulder Press Dummbeells</p>";
@@ -337,7 +340,7 @@
       exerciseTitle = ex2.textContent;
       exerciseTitleOne = "Back Squat";
       exerciseTitleTwo = "Goblet Squat";
-    
+
 
       exerciseTextOne = "<p>Opis ćwiczenia Back Squat</p>";
       exerciseTextTwo = "<p>Opis ćwiczenia Goblet Squat</p>";
@@ -350,13 +353,13 @@
       bottomContainerUpdate();
    };
 
-//Function Three
+   //Function Three
 
    function exerciseDetailsThree() {
       exerciseTitle = ex3.textContent;
       exerciseTitleOne = "Barbell bench press";
       exerciseTitleTwo = "Push ups";
-    
+
 
       exerciseTextOne = "<p>Opis ćwiczenia Barbell bench press </p>";
       exerciseTextTwo = "<p>Opis ćwiczenia Push ups </p>";
@@ -375,7 +378,7 @@
       exerciseTitle = ex4.textContent;
       exerciseTitleOne = "Pull ups";
       exerciseTitleTwo = "Reversed rows";
-    
+
 
       exerciseTextOne = "<p>Opis ćwiczenia Pull ups </p>";
       exerciseTextTwo = "<p>Opis ćwiczenia Reversed rows </p>";
@@ -394,7 +397,7 @@
       exerciseTitle = ex5.textContent;
       exerciseTitleOne = "Hanging legs raises";
       exerciseTitleTwo = "Sit ups";
-    
+
 
       exerciseTextOne = "<p>Opis ćwiczenia Hanging legs raises</p>";
       exerciseTextTwo = "<p>Opis ćwiczenia Sit ups </p>";
@@ -413,7 +416,7 @@
       exerciseTitle = ex6.textContent;
       exerciseTitleOne = "Ez bar supinated biceps curls";
       exerciseTitleTwo = "Dumbbells neutral grip biceps curls";
-    
+
 
       exerciseTextOne = "<p>Opis ćwiczenia Ez bar supinated biceps curls </p>";
       exerciseTextTwo = "<p>Opis ćwiczenia Dumbbells neutral grip biceps curls </p>";
@@ -432,7 +435,7 @@
       exerciseTitle = ex7.textContent;
       exerciseTitleOne = "Ez bar scullcrushers";
       exerciseTitleTwo = "Triceps pushdown high pulley";
-    
+
 
       exerciseTextOne = "<p>Opis ćwiczenia Ez bar scullcrushers </p>";
       exerciseTextTwo = "<p>Opis ćwiczenia Triceps pushdown high pulley </p>";
@@ -444,4 +447,60 @@
 
       bottomContainerUpdate();
    };
-   
+
+   //Hide buttons Function
+
+   function hideButtons() {
+      document.getElementById("super-pump-header").textContent = "Random Workout";
+      document.querySelector(".training-style1").style.display = "none";
+      document.querySelector(".training-style2").classList.add("trainin-style2-center");
+
+      for (i = 1; i < 8; i++) {
+         buttons[i] = document.querySelector(".btn" + i).style.display = "none";
+      };
+   };
+
+   //Show buttons Function
+
+   function showButtons() {
+      superButton.style.display = "block";
+
+      for (i = 1; i < 8; i++) {
+         buttons[i] = document.querySelector(".btn" + i).style.display = "inline-block";
+      };
+
+      document.querySelector(".training-style1").style.display = "block";
+      document.querySelector(".training-style2").classList.remove("trainin-style2-center");
+      document.getElementById("super-pump-header").textContent = "Super Pump";
+   };
+
+   //FBW Button
+
+   document.querySelector(".fbw").addEventListener("click", showButtons);
+
+
+   //Split Button
+   var splitButton = document.querySelector(".split");
+   splitButton.addEventListener("click", handleSplitButton);
+
+   function handleSplitButton() {
+      hideButtons();
+      superButtonHandle = superButton.addEventListener("click", splitRandom);
+
+   };
+
+   // Function for random Split Exercises
+
+   var tablecontent{
+or1: or1,
+or2: or2,
+or3: or3,
+or4: or4,
+or5: or5,
+or6: or6,
+or7: or7,
+   };
+
+   function splitRAndom(){
+
+   }
