@@ -267,7 +267,7 @@
    //SUPER PUMP
 
    var superButton = document.querySelector(".super-pump");
-   var superButtonHandle = superButton.addEventListener("click", superPump);
+   superButton.addEventListener("click", superPump);
 
    function superPump() {
       var superPump1 = document.getElementById("pump1");
@@ -453,7 +453,8 @@
    function hideButtons() {
       document.getElementById("super-pump-header").textContent = "Random Workout";
       document.querySelector(".training-style1").style.display = "none";
-      document.querySelector(".training-style2").classList.add("trainin-style2-center");
+      document.querySelector(".training-style2").style.display = "none";
+      
 
       for (i = 1; i < 8; i++) {
          buttons[i] = document.querySelector(".btn" + i).style.display = "none";
@@ -470,13 +471,64 @@
       };
 
       document.querySelector(".training-style1").style.display = "block";
-      document.querySelector(".training-style2").classList.remove("trainin-style2-center");
+      document.querySelector(".training-style2").style.display = "block";
+      
       document.getElementById("super-pump-header").textContent = "Super Pump";
    };
 
    //FBW Button
 
    document.querySelector(".fbw").addEventListener("click", showButtons);
+
+   // Function for random Split Exercises
+
+   function splitRandom() {
+
+      //Podmiana Order
+      or1.innerHTML = "<h3>A</h3>";
+      or2.innerHTML = "<h3>B</h3>";
+      or3.innerHTML = "<h3>C</h3>";
+      or4.innerHTML = "<h3>D</h3>";
+      or5.innerHTML = "<h3>E</h3>";
+
+      //Podmiana Exercises
+
+      ex1.innerHTML = "<h3>Dips</h3>";
+      ex2.innerHTML = "<h3>Barbell Bench Press</h3>";
+      ex3.innerHTML = "<h3>Incline Dumbbells Press</h3>";
+      ex4.innerHTML = "<h3>Decline Barbell Press</h3>";
+      ex5.innerHTML = "<h3>Dumbbells Flyes</h3>";
+
+      //Podmiana Sets
+      se1.innerHTML = "<h3>5</h3>";
+      se2.innerHTML = "<h3>3</h3>";
+      se3.innerHTML = "<h3>3</h3>";
+      se4.innerHTML = "<h3>3</h3>";
+      se5.innerHTML = "<h3>3</h3>";
+
+      //Podmiana Reps
+
+      rep1.innerHTML = "<h3>5</h3>";
+      rep2.innerHTML = "<h3>10</h3>";
+      rep3.innerHTML = "<h3>10</h3>";
+      rep4.innerHTML = "<h3>12</h3>";
+      rep5.innerHTML = "<h3>15</h3>";
+
+      //Podmiana Rest
+
+      res1.innerHTML = "<h3>120</h3>";
+      res2.innerHTML = "<h3>90</h3>";
+      res3.innerHTML = "<h3>90</h3>";
+      res4.innerHTML = "<h3>60</h3>";
+      res5.innerHTML = "<h3>60</h3>";
+
+      wei1.innerHTML = "<h3>80%RM</h3>";
+      wei2.innerHTML = "<h3>70%>RM</h3>";
+      wei3.innerHTML = "<h3>60%>RM</h3>";
+      wei4.innerHTML = "<h3>60%>RM</h3>";
+      wei5.innerHTML = "<h3>60%>RM</h3>";
+   };
+
 
 
    //Split Button
@@ -485,22 +537,7 @@
 
    function handleSplitButton() {
       hideButtons();
-      superButtonHandle = superButton.addEventListener("click", splitRandom);
+      superButton.removeEventListener("click", superPump);
+      superButton.addEventListener("click", splitRandom);
 
    };
-
-   // Function for random Split Exercises
-
-   var tablecontent{
-or1: or1,
-or2: or2,
-or3: or3,
-or4: or4,
-or5: or5,
-or6: or6,
-or7: or7,
-   };
-
-   function splitRAndom(){
-
-   }
