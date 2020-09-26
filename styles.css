@@ -1,43 +1,73 @@
 body {
     font-family: Lato;
+    background-image: url("./images/backgroundimg.jpg")
 }
 
 .main-component {
+   
     display: block;
     margin: 0px auto;
     width: 1280px;
     height: 800px;
-    background-color: aquamarine;
+    background-color: inherit;
 }
 
 .heading {
-    text-align: center;
-    width: 50%;
-    padding: 10px;
-    margin: auto;
+    position: relative;
+    text-align: left;
+    width: 80%;
+    padding-top: 80px;
+    margin: 0px auto;
+    height: 400px;
+}
+.heading h1{
+    color: #f3ecc2;
+    margin:0px;
+    font-size: 70px;
+}
+.heading h3{
+    color: #f3ecc2;
+    font-size: 30px;
+    margin-top: 20px;
+    
+}
+.heading img{
+    position: absolute;
+    right:50px;
+    bottom:0px;
+    width:54%;
+    height:auto;
 }
 
 
 /* Navbar container */
 .navbar {
+    border-bottom: 2px solid #f9d56e;
+   
     margin: auto;
     overflow: hidden;
-    background-color: #333;
+    background-color: #e8505b;
+    height:100px;
+    border-radius: 10px 10px 0px 0px;
+    
     
   }
   .topnav-centered{
-      padding-left: 520px;
- 
+      width:36%;
+      padding-top: 25px;
+      margin: 0px auto;
+   
   }
   
   /* Links inside the navbar */
   .navbar a {
     float: left;
-    font-size: 16px;
+    font-size: 18px;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    
   }
   
   /* The dropdown container */
@@ -48,18 +78,19 @@ body {
   
   /* Dropdown button */
   .dropdown .dropbtn {
-    font-size: 16px;
+    font-size: 20px;
     border: none;
     outline: none;
     color: white;
     padding: 14px 16px;
     background-color: inherit;
+    width: 150px;
     
   }
   
   /* Add a red background color to navbar links on hover */
   .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    color: #f9d56e;
   }
   
   /* Dropdown content (hidden by default) */
@@ -84,7 +115,7 @@ body {
   
   /* Add a grey background color to dropdown links on hover */
   .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: #e8505b;
   }
   
   /* Show the dropdown menu on hover */
@@ -96,13 +127,17 @@ body {
     color: white;
   }
 .training-options {
+    
     display: grid;
     grid-template-columns: auto auto;
-    background-color: #2196F3;
+    background-color: #e8505b;
     padding: 10px;
     grid-gap: 5px;
+    height:150px;
 }
-
+.training-options h3{
+    padding-top: 25px;
+}
 .training-style1 {
     text-align: center;
     padding-left: 350px;
@@ -114,35 +149,38 @@ body {
     
 }
 .pump-container {
+    border-top: 2px solid #f9d56e;
+    padding:5px 0px 30px;
     margin: 0px auto;
     height: 70px;
-    width: 30%;
+    width: 100%;
+    background-color: #e8505b ;
 }
 .super-pump {
     background-color: rgb(255, 187, 0);
-    width: 65%;
-    margin: auto;
+    width: 20%;
+    margin: 0px auto;
     padding-top: 5px;
     margin-top: 10px;
-    border: solid;
+    height:60px;
     border-radius: 5px;
 }
 
 .pump-img {
-    padding-left: 20px;
+    padding-left:20px;
     height: 50px;
     float: left;
     padding-right: 5px;
 }
 
 .main-container {
-    padding-top: 10px;
+    
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: 100px 100px auto 150px 150px 150px 150px;
-    background-color: #2196F3;
+    background-color: #14b1ab;
     padding: 2px;
     grid-gap: 5px;
 
@@ -156,9 +194,10 @@ body {
 }
 
 .container-zero{
+    padding: 20px 0px;
     
     height: 30px;
-    margin-top: 10px;
+    
     background-color:#14b1ab ;
     grid-gap: 5px;
 }
@@ -193,15 +232,17 @@ body {
 .random-img {
     height: 20px;
     width: 20px;
+
+    
 }
 
 .bottom-container {
     height: 400px;
     display: block;
     width: 100%;
-
-    margin: 30px auto;
-    background-color: tan;
+    border-radius: 0px 0px 10px 10px;
+    margin: 0px auto 30px;
+    background-color: #e8505b;
 
 }
 
