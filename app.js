@@ -556,6 +556,8 @@
       document.getElementById("super-pump-header").textContent = "Random Workout";
       document.querySelector(".training-style1").style.display = "none";
       document.querySelector(".training-style2").style.display = "none";
+      exerciseImage.src = "./images/hulk.jpg";
+      
 
 
       for (i = 1; i < 8; i++) {
@@ -571,6 +573,7 @@
       superButton.removeEventListener("click", splitChestTwo);
       superButton.removeEventListener("click", splitChestThree);
       superButton.addEventListener("click", superPump);
+      exerciseImage.src = "./images/hulk.jpg";
 
       containerSix.style.display = "none";
       containerSeven.style.display = "none";
