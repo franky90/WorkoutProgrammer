@@ -312,243 +312,160 @@
 
    var exerciseImage = document.querySelector(".exercise-image");
    var exerciseTitleExternal = document.querySelector(".exercise-title");
-   var exerciseDetailsContent = document.querySelector(".exercise-details");
+   var exerciseDetailsContent = document.querySelector(".exercise-text");
+   var exerciseTitle
 
+   var exerciseTitleOne, exerciseTitleTwo, exerciseTitleThree;
+   var exerciseTextOne, exerciseTextTwo, exerciseTextThree;
+   var exerciseImgOne, exerciseImgTwo;
 
+   function bottomContainerUpdate() {
+      if (exerciseTitle === exerciseTitleOne) {
+         exerciseTitleExternal.innerHTML = exerciseTitle;
+         exerciseDetailsContent.innerHTML = exerciseTextOne;
+         exerciseImage.src = exerciseImgOne;
 
-   //Functions for Exercises from 1 - 7 which display name of exercise in exercise-title 
-   function exerciseDetailsOne() {
-      exerciseTitleExternal.innerHTML = ex1.innerHTML;
-      checkExerciseTitle ();
+      } else if (exerciseTitle === exerciseTitleTwo) {
+         exerciseTitleExternal.innerHTML = exerciseTitle;
+         exerciseDetailsContent.innerHTML = exerciseTextTwo;
+         exerciseImage.src = exerciseImgTwo;
+      } else {
+         exerciseTitleExternal.innerHTML = exerciseTitle;
+         exerciseDetailsContent.innerHTML = exerciseTextThree;
+         exerciseImage.src = exerciseImgThree;
+      };
    };
+   // Image Hyperlinks Exercise One
+   function exerciseDetailsOne() {
+      exerciseTitle = ex1.textContent;
+      exerciseTitleOne = "Military Press";
+      exerciseTitleTwo = "Shoulder press with dumbbells";
+
+
+      exerciseTextOne = "<p>Opis ćwiczenia Military Press</p>";
+      exerciseTextTwo = "<p>Opis ćwiczenia Shoulder Press Dummbeells</p>";
+      exerciseTextThree = "<p>Opis ćwiczenia Behind NeckPress</p>";
+
+      exerciseImgOne = "./images/military.jpg";
+      exerciseImgTwo = "./images/shoulderPress.jpg";
+      exerciseImgThree = "./images/behingNeckPress.jpg";
+
+      bottomContainerUpdate();
+   };
+
+   //Function Two
 
    function exerciseDetailsTwo() {
-      exerciseTitleExternal.innerHTML = ex2.innerHTML;
-      checkExerciseTitle ();
+      exerciseTitle = ex2.textContent;
+      exerciseTitleOne = "Back Squat";
+      exerciseTitleTwo = "Goblet Squat";
+
+
+      exerciseTextOne = "<p>Opis ćwiczenia Back Squat</p>";
+      exerciseTextTwo = "<p>Opis ćwiczenia Goblet Squat</p>";
+      exerciseTextThree = "<p>Opis ćwiczenia Leg Press Machine</p>";
+
+      exerciseImgOne = "./images/backSquat.jpg";
+      exerciseImgTwo = "./images/gobletSquat.jpg";
+      exerciseImgThree = "./images/legPressMachine.jpg";
+
+      bottomContainerUpdate();
    };
+
+   //Function Three
 
    function exerciseDetailsThree() {
-      exerciseTitleExternal.innerHTML = ex3.innerHTML;
-      checkExerciseTitle ();
+      exerciseTitle = ex3.textContent;
+      exerciseTitleOne = "Barbell bench press";
+      exerciseTitleTwo = "Push ups";
+
+
+      exerciseTextOne = "<p>Opis ćwiczenia Barbell bench press </p>";
+      exerciseTextTwo = "<p>Opis ćwiczenia Push ups </p>";
+      exerciseTextThree = "<p>Opis ćwiczenia Dumbbells incline chest press</p>";
+
+      exerciseImgOne = "./images/";
+      exerciseImgTwo = "./images/";
+      exerciseImgThree = "./images/";
+
+      bottomContainerUpdate();
    };
+
+   //Function Four
 
    function exerciseDetailsFour() {
-      exerciseTitleExternal.innerHTML = ex4.innerHTML;
-      checkExerciseTitle ();
+      exerciseTitle = ex4.textContent;
+      exerciseTitleOne = "Pull ups";
+      exerciseTitleTwo = "Reversed rows";
+
+
+      exerciseTextOne = "<p>Opis ćwiczenia Pull ups </p>";
+      exerciseTextTwo = "<p>Opis ćwiczenia Reversed rows </p>";
+      exerciseTextThree = "<p>Opis ćwiczenia Dumbbell rows</p>";
+
+      exerciseImgOne = "./images/";
+      exerciseImgTwo = "./images/";
+      exerciseImgThree = "./images/";
+
+      bottomContainerUpdate();
    };
+
+   //Function Five
 
    function exerciseDetailsFive() {
-      exerciseTitleExternal.innerHTML = ex5.innerHTML;
-      checkExerciseTitle ();
+      exerciseTitle = ex5.textContent;
+      exerciseTitleOne = "Hanging legs raises";
+      exerciseTitleTwo = "Sit ups";
+
+
+      exerciseTextOne = "<p>Opis ćwiczenia Hanging legs raises</p>";
+      exerciseTextTwo = "<p>Opis ćwiczenia Sit ups </p>";
+      exerciseTextThree = "<p>Opis ćwiczenia Crunches </p>";
+
+      exerciseImgOne = "./images/";
+      exerciseImgTwo = "./images/";
+      exerciseImgThree = "./images/";
+
+      bottomContainerUpdate();
    };
+
+   //Function Six
 
    function exerciseDetailsSix() {
-      exerciseTitleExternal.innerHTML = ex6.innerHTML;
-      checkExerciseTitle ();
+      exerciseTitle = ex6.textContent;
+      exerciseTitleOne = "Ez bar supinated biceps curls";
+      exerciseTitleTwo = "Dumbbells neutral grip biceps curls";
+
+
+      exerciseTextOne = "<p>Opis ćwiczenia Ez bar supinated biceps curls </p>";
+      exerciseTextTwo = "<p>Opis ćwiczenia Dumbbells neutral grip biceps curls </p>";
+      // exerciseTextThree = "<p>Opis ćwiczenia </p>";
+
+      exerciseImgOne = "./images/";
+      exerciseImgTwo = "./images/";
+      exerciseImgThree = "./images/";
+
+      bottomContainerUpdate();
    };
+
+   //Function Seven
 
    function exerciseDetailsSeven() {
-      exerciseTitleExternal.innerHTML = ex7.innerHTML;
-      checkExerciseTitle ();
+      exerciseTitle = ex7.textContent;
+      exerciseTitleOne = "Ez bar scullcrushers";
+      exerciseTitleTwo = "Triceps pushdown high pulley";
+
+
+      exerciseTextOne = "<p>Opis ćwiczenia Ez bar scullcrushers </p>";
+      exerciseTextTwo = "<p>Opis ćwiczenia Triceps pushdown high pulley </p>";
+      // exerciseTextThree = "<p>Opis ćwiczenia </p>";
+
+      exerciseImgOne = "./images/";
+      exerciseImgTwo = "./images/";
+      exerciseImgThree = "./images/";
+
+      bottomContainerUpdate();
    };
-
-   //Change exercise-img and exercise-description - dependend from exercise-title
-
-   function checkExerciseTitle (){
- switch (exerciseTitleExternal.textContent) {
-   case "Military Press":
-      exerciseDetailsContent.textContent = "opis prostego cwiczenia Military press";
-      exerciseImage.src = "./images/military.jpg";
-      break;
-      case "Shoulder press with dumbbells":
-      exerciseDetailsContent.textContent = "opis prostego cwiczenia Shoulder press";
-      exerciseImage.src = "./images/shoulderPress.jpg";
-      break;
-      case "Behind neck barbell press":
-      exerciseDetailsContent.textContent = "opis prostego cwiczenia Behind neck barbell press";
-      exerciseImage.src = "./images/behindNeckPress.jpg";
-      break;
-      case "Back Squat":
-      exerciseDetailsContent.textContent = "opis prostego cwiczenia Back Squat";
-      exerciseImage.src = "./images/backSquat.jpg";
-      break;
-      case "Goblet Squat":
-      exerciseDetailsContent.textContent = "opis prostego cwiczenia Goblet Squat";
-      exerciseImage.src = "./images/gobletSquat.jpg";
-      break;
-      case "Dips":
-      exerciseDetailsContent.textContent = "opis prostego cwiczenia Dips";
-      exerciseImage.src = "./images/dips.png";
-      break;
-
-   default:
-      exerciseDetailsContent.textContent = "This exercise doesn't have details yet";
-      exerciseImage.src = "./images/soon.jpg";
-      break;
-};
-
-
-};
-
-
-
-
-
-   // var exerciseTitle
-
-   // var exerciseTitleOne, exerciseTitleTwo, exerciseTitleThree;
-   // var exerciseTextOne, exerciseTextTwo, exerciseTextThree;
-   // var exerciseImgOne, exerciseImgTwo;
-
-
-
-   // function bottomContainerUpdate() {
-   //    if (exerciseTitle === exerciseTitleOne) {
-   //       exerciseTitleExternal.innerHTML = exerciseTitle;
-   //       exerciseDetailsContent.innerHTML = exerciseTextOne;
-   //       exerciseImage.src = exerciseImgOne;
-
-   //    } else if (exerciseTitle === exerciseTitleTwo) {
-   //       exerciseTitleExternal.innerHTML = exerciseTitle;
-   //       exerciseDetailsContent.innerHTML = exerciseTextTwo;
-   //       exerciseImage.src = exerciseImgTwo;
-   //    } else {
-   //       exerciseTitleExternal.innerHTML = exerciseTitle;
-   //       exerciseDetailsContent.innerHTML = exerciseTextThree;
-   //       exerciseImage.src = exerciseImgThree;
-   //    };
-   // };
-   // // Image Hyperlinks Exercise One
-   // function exerciseDetailsOne() {
-   //    exerciseTitle = ex1.textContent;
-   //    exerciseTitleOne = "Military Press";
-   //    exerciseTitleTwo = "Shoulder press with dumbbells";
-
-
-   //    exerciseTextOne = "<p>Opis ćwiczenia Military Press</p>";
-   //    exerciseTextTwo = "<p>Opis ćwiczenia Shoulder Press Dummbeells</p>";
-   //    exerciseTextThree = "<p>Opis ćwiczenia Behind NeckPress</p>";
-
-   //    exerciseImgOne = "./images/military.jpg";
-   //    exerciseImgTwo = "./images/shoulderPress.jpg";
-   //    exerciseImgThree = "./images/behingNeckPress.jpg";
-
-   //    bottomContainerUpdate();
-   // };
-
-   // //Function Two
-
-   // function exerciseDetailsTwo() {
-   //    exerciseTitle = ex2.textContent;
-   //    exerciseTitleOne = "Back Squat";
-   //    exerciseTitleTwo = "Goblet Squat";
-
-
-   //    exerciseTextOne = "<p>Opis ćwiczenia Back Squat</p>";
-   //    exerciseTextTwo = "<p>Opis ćwiczenia Goblet Squat</p>";
-   //    exerciseTextThree = "<p>Opis ćwiczenia Leg Press Machine</p>";
-
-   //    exerciseImgOne = "./images/backSquat.jpg";
-   //    exerciseImgTwo = "./images/gobletSquat.jpg";
-   //    exerciseImgThree = "./images/legPressMachine.jpg";
-
-   //    bottomContainerUpdate();
-   // };
-
-   // //Function Three
-
-   // function exerciseDetailsThree() {
-   //    exerciseTitle = ex3.textContent;
-   //    exerciseTitleOne = "Barbell bench press";
-   //    exerciseTitleTwo = "Push ups";
-
-
-   //    exerciseTextOne = "<p>Opis ćwiczenia Barbell bench press </p>";
-   //    exerciseTextTwo = "<p>Opis ćwiczenia Push ups </p>";
-   //    exerciseTextThree = "<p>Opis ćwiczenia Dumbbells incline chest press</p>";
-
-   //    exerciseImgOne = "./images/";
-   //    exerciseImgTwo = "./images/";
-   //    exerciseImgThree = "./images/";
-
-   //    bottomContainerUpdate();
-   // };
-
-   // //Function Four
-
-   // function exerciseDetailsFour() {
-   //    exerciseTitle = ex4.textContent;
-   //    exerciseTitleOne = "Pull ups";
-   //    exerciseTitleTwo = "Reversed rows";
-
-
-   //    exerciseTextOne = "<p>Opis ćwiczenia Pull ups </p>";
-   //    exerciseTextTwo = "<p>Opis ćwiczenia Reversed rows </p>";
-   //    exerciseTextThree = "<p>Opis ćwiczenia Dumbbell rows</p>";
-
-   //    exerciseImgOne = "./images/";
-   //    exerciseImgTwo = "./images/";
-   //    exerciseImgThree = "./images/";
-
-   //    bottomContainerUpdate();
-   // };
-
-   // //Function Five
-
-   // function exerciseDetailsFive() {
-   //    exerciseTitle = ex5.textContent;
-   //    exerciseTitleOne = "Hanging legs raises";
-   //    exerciseTitleTwo = "Sit ups";
-
-
-   //    exerciseTextOne = "<p>Opis ćwiczenia Hanging legs raises</p>";
-   //    exerciseTextTwo = "<p>Opis ćwiczenia Sit ups </p>";
-   //    exerciseTextThree = "<p>Opis ćwiczenia Crunches </p>";
-
-   //    exerciseImgOne = "./images/";
-   //    exerciseImgTwo = "./images/";
-   //    exerciseImgThree = "./images/";
-
-   //    bottomContainerUpdate();
-   // };
-
-   // //Function Six
-
-   // function exerciseDetailsSix() {
-   //    exerciseTitle = ex6.textContent;
-   //    exerciseTitleOne = "Ez bar supinated biceps curls";
-   //    exerciseTitleTwo = "Dumbbells neutral grip biceps curls";
-
-
-   //    exerciseTextOne = "<p>Opis ćwiczenia Ez bar supinated biceps curls </p>";
-   //    exerciseTextTwo = "<p>Opis ćwiczenia Dumbbells neutral grip biceps curls </p>";
-   //    // exerciseTextThree = "<p>Opis ćwiczenia </p>";
-
-   //    exerciseImgOne = "./images/";
-   //    exerciseImgTwo = "./images/";
-   //    exerciseImgThree = "./images/";
-
-   //    bottomContainerUpdate();
-   // };
-
-   // //Function Seven
-
-   // function exerciseDetailsSeven() {
-   //    exerciseTitle = ex7.textContent;
-   //    exerciseTitleOne = "Ez bar scullcrushers";
-   //    exerciseTitleTwo = "Triceps pushdown high pulley";
-
-
-   //    exerciseTextOne = "<p>Opis ćwiczenia Ez bar scullcrushers </p>";
-   //    exerciseTextTwo = "<p>Opis ćwiczenia Triceps pushdown high pulley </p>";
-   //    // exerciseTextThree = "<p>Opis ćwiczenia </p>";
-
-   //    exerciseImgOne = "./images/";
-   //    exerciseImgTwo = "./images/";
-   //    exerciseImgThree = "./images/";
-
-   //    bottomContainerUpdate();
-   // };
 
    //Hide buttons Function
 
