@@ -6,9 +6,9 @@
    var or1, or2, or3, or4, or5, or6, or7;
    var weights, wei1, wei2, wei3, wei4, wei5;
    var ex1, ex2, ex3, ex4, ex5, ex6, ex7;
-   var buttons, btn1, btn2, btn3, btn4, btn5, btn6, btn7;
+   var buttons, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8 , btn9;
 
-   buttons = [btn1, btn2, btn3, btn4, btn5, btn6, btn7];
+   buttons = [btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8 , btn9];
 
    se1 = document.querySelector(".se1");
    se2 = document.querySelector(".se2");
@@ -65,7 +65,7 @@
    ex6 = document.querySelector(".ex6");
    ex7 = document.querySelector(".ex7");
 
-   var containerOne, ontainerTwo, ontainerThree, ontainerFour, ontainerFive, ontainerSix, ontainerSeven;
+   var containerOne, containerTwo, containerThree, containerFour, containerFive, containerSix, containerSeven, containerEight, containerNine;
 
    containerOne = document.querySelector(".container-one");
    containerTwo = document.querySelector(".container-two");
@@ -74,6 +74,8 @@
    containerFive = document.querySelector(".container-five");
    containerSix = document.querySelector(".container-six");
    containerSeven = document.querySelector(".container-seven");
+   containerSeven = document.querySelector(".container-eight");
+   containerSeven = document.querySelector(".container-nine");
 
    //  Shoulders
    var shoulderArray = ["<h3>Military Press</h3>", "<h3>Shoulder press with dumbbells</h3>", "<h3>Behind neck barbell press</h3>"];
@@ -169,7 +171,7 @@
       var result = pumpOneArray[index];
       ex6.innerHTML = result;
       return;
-   }
+   };
    //Pump2
    var pumpTwoArray = ["<h3>Ez bar scullcrushers</h3>", "<h3>Triceps pushdown high pulley</h3>", "<h3>Dumbbell triceps extension above head</h3>"];
 
@@ -185,7 +187,44 @@
       var result = pumpTwoArray[index];
       ex7.innerHTML = result;
       return;
-   }
+   };
+
+   //Endurance1
+   // var enduranceOneArray = ["<h3>Sprints </h3>", "<h3>Farmer Walks</h3>", "<h3>Slum Ball</h3>"];
+
+   // btn6 = document.querySelector(".btn6");
+   // btn6.addEventListener("click", enduranceOneEx);
+   // ex6.innerHTML = "<h3>-</h3>";
+
+
+   // function enduranceOneEx() {
+   //    var searchTerm = ex6.innerHTML;
+   //    var index = enduranceOneArray.indexOf(searchTerm) + 1;
+   //    if (index == enduranceOneArray.length) index = 0;
+   //    var result = enduranceOneArray[index];
+   //    ex6.innerHTML = result;
+   //    return;
+   // };
+
+   //Endurance2
+   // var enduranceTwoArray = ["<h3>Endurance 1 </h3>", "<h3>Endurance 1 2</h3>", "<h3>Endurance  3</h3>"];
+
+   // btn7 = document.querySelector(".btn7");
+   // btn7.addEventListener("click", enduranceTwoEx);
+   // ex7.innerHTML = "<h3>-</h3>";
+
+
+   // function enduranceTwoEx() {
+   //    var searchTerm = ex7.innerHTML;
+   //    var index = enduranceTwoArray.indexOf(searchTerm) + 1;
+   //    if (index == enduranceTwoArray.length) index = 0;
+   //    var result = enduranceTwoArray[index];
+   //    ex7.innerHTML = result;
+   //    return;
+   // };
+
+
+
 
    //Strength
    var strengthRadio = document.getElementById("strength");
@@ -300,6 +339,24 @@
       };
    };
 
+   // SUPER ENDURANCE
+   // var superEndurance = document.querySelector(".super-endurance");
+   // superEndurance.addEventListener("click", superPump);
+
+   // function superPump() {
+   //    var superPump1 = document.getElementById("pump1");
+   //    var superPump2 = document.getElementById("pump2");
+   //    if (superPump1.style.display === "none") {
+   //       superPump1.style.display = "grid";
+   //       superPump2.style.display = "grid";
+   //    } else {
+   //       superPump1.style.display = "none";
+   //       superPump2.style.display = "none";
+   //    };
+   // };
+
+
+
    //EventListeners for exercises from 1 to 7
    ex1.addEventListener("click", exerciseDetailsOne);
    ex2.addEventListener("click", exerciseDetailsTwo);
@@ -319,76 +376,76 @@
    //Functions for Exercises from 1 - 7 which display name of exercise in exercise-title 
    function exerciseDetailsOne() {
       exerciseTitleExternal.innerHTML = ex1.innerHTML;
-      checkExerciseTitle ();
+      checkExerciseTitle();
    };
 
    function exerciseDetailsTwo() {
       exerciseTitleExternal.innerHTML = ex2.innerHTML;
-      checkExerciseTitle ();
+      checkExerciseTitle();
    };
 
    function exerciseDetailsThree() {
       exerciseTitleExternal.innerHTML = ex3.innerHTML;
-      checkExerciseTitle ();
+      checkExerciseTitle();
    };
 
    function exerciseDetailsFour() {
       exerciseTitleExternal.innerHTML = ex4.innerHTML;
-      checkExerciseTitle ();
+      checkExerciseTitle();
    };
 
    function exerciseDetailsFive() {
       exerciseTitleExternal.innerHTML = ex5.innerHTML;
-      checkExerciseTitle ();
+      checkExerciseTitle();
    };
 
    function exerciseDetailsSix() {
       exerciseTitleExternal.innerHTML = ex6.innerHTML;
-      checkExerciseTitle ();
+      checkExerciseTitle();
    };
 
    function exerciseDetailsSeven() {
       exerciseTitleExternal.innerHTML = ex7.innerHTML;
-      checkExerciseTitle ();
+      checkExerciseTitle();
    };
 
    //Change exercise-img and exercise-description - dependend from exercise-title
 
-   function checkExerciseTitle (){
- switch (exerciseTitleExternal.textContent) {
-   case "Military Press":
-      exerciseDetailsContent.textContent = "opis prostego cwiczenia Military press";
-      exerciseImage.src = "./images/military.jpg";
-      break;
-      case "Shoulder press with dumbbells":
-      exerciseDetailsContent.textContent = "opis prostego cwiczenia Shoulder press";
-      exerciseImage.src = "./images/shoulderPress.jpg";
-      break;
-      case "Behind neck barbell press":
-      exerciseDetailsContent.textContent = "opis prostego cwiczenia Behind neck barbell press";
-      exerciseImage.src = "./images/behindNeckPress.jpg";
-      break;
-      case "Back Squat":
-      exerciseDetailsContent.textContent = "opis prostego cwiczenia Back Squat";
-      exerciseImage.src = "./images/backSquat.jpg";
-      break;
-      case "Goblet Squat":
-      exerciseDetailsContent.textContent = "opis prostego cwiczenia Goblet Squat";
-      exerciseImage.src = "./images/gobletSquat.jpg";
-      break;
-      case "Dips":
-      exerciseDetailsContent.textContent = "opis prostego cwiczenia Dips";
-      exerciseImage.src = "./images/dips.png";
-      break;
+   function checkExerciseTitle() {
+      switch (exerciseTitleExternal.textContent) {
+         case "Military Press":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Military press";
+            exerciseImage.src = "./images/military.jpg";
+            break;
+         case "Shoulder press with dumbbells":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Shoulder press";
+            exerciseImage.src = "./images/shoulderPress.jpg";
+            break;
+         case "Behind neck barbell press":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Behind neck barbell press";
+            exerciseImage.src = "./images/behindNeckPress.jpg";
+            break;
+         case "Back Squat":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Back Squat";
+            exerciseImage.src = "./images/backSquat.jpg";
+            break;
+         case "Goblet Squat":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Goblet Squat";
+            exerciseImage.src = "./images/gobletSquat.jpg";
+            break;
+         case "Dips":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Dips";
+            exerciseImage.src = "./images/dips.png";
+            break;
 
-   default:
-      exerciseDetailsContent.textContent = "This exercise doesn't have details yet";
-      exerciseImage.src = "./images/soon.jpg";
-      break;
-};
+         default:
+            exerciseDetailsContent.textContent = "This exercise doesn't have details yet";
+            exerciseImage.src = "./images/soon.jpg";
+            break;
+      };
 
 
-};
+   };
 
 
 
@@ -558,11 +615,14 @@
       document.querySelector(".training-style2").style.display = "none";
       document.querySelector(".training-options").style.display = "none";
       document.querySelector(".routine-details").style.display = "block";
+      document.querySelector(".super-endurance").style.display = "none";
+      superButton.classList.add("super-pump-center");
+
       exerciseImage.src = "./images/hulk.jpg";
-      
 
 
-      for (i = 1; i < 8; i++) {
+
+      for (i = 1; i < buttons.length; i++) {
          buttons[i] = document.querySelector(".btn" + i).style.display = "none";
       };
    };
@@ -576,7 +636,11 @@
       superButton.removeEventListener("click", splitChestThree);
       document.querySelector(".training-options").style.display = "grid";
       document.querySelector(".routine-details").style.display = "none";
+      document.querySelector(".super-endurance").style.display = "block";
       superButton.addEventListener("click", superPump);
+      superButton.classList.remove("super-pump-center");
+      superButton.classList.add("super-pump");
+
       exerciseImage.src = "./images/hulk.jpg";
 
       containerSix.style.display = "none";
