@@ -4,12 +4,12 @@ body {
 }
 
 .main-component {
-   
     display: block;
     margin: 0px auto;
     width: 1280px;
-    height: 800px;
+   
     background-color: inherit;
+    
 }
 
 .heading {
@@ -20,64 +20,68 @@ body {
     margin: 0px auto;
     height: 400px;
 }
-.heading h1{
+
+.heading h1 {
     color: #f3ecc2;
-    margin:0px;
+    margin: 0px;
     font-size: 70px;
 }
-.heading h3{
+
+.heading h3 {
     color: #f3ecc2;
     font-size: 30px;
     margin-top: 20px;
-    
+
 }
-.heading img{
+
+.heading img {
     position: absolute;
-    right:50px;
-    bottom:0px;
-    width:54%;
-    height:auto;
+    right: 50px;
+    bottom: 0px;
+    width: 54%;
+    height: auto;
 }
 
 
 /* Navbar container */
 .navbar {
     border-bottom: 2px solid #f9d56e;
-   
+
     margin: auto;
     overflow: hidden;
     background-color: #e8505b;
-    height:100px;
+    height: 100px;
     border-radius: 10px 10px 0px 0px;
-    
-    
-  }
-  .topnav-centered{
-      width:36%;
-      padding-top: 25px;
-      margin: 0px auto;
-   
-  }
-  
-  /* Links inside the navbar */
-  .navbar a {
+
+
+}
+
+.topnav-centered {
+    width: 36%;
+    padding-top: 25px;
+    margin: 0px auto;
+
+}
+
+/* Links inside the navbar */
+.navbar a {
     float: left;
     font-size: 18px;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    
-  }
-  
-  /* The dropdown container */
-  .dropdown {
+
+}
+
+/* The dropdown container */
+.dropdown {
     float: left;
     overflow: hidden;
-  }
-  
-  /* Dropdown button */
-  .dropdown .dropbtn {
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
     font-size: 20px;
     border: none;
     outline: none;
@@ -85,59 +89,64 @@ body {
     padding: 14px 16px;
     background-color: inherit;
     width: 150px;
-    
-  }
-  
-  /* Add a red background color to navbar links on hover */
-  .navbar a:hover, .dropdown:hover .dropbtn {
+
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
     color: #f9d56e;
-  }
-  
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
     float: none;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-  }
-  
-  /* Add a grey background color to dropdown links on hover */
-  .dropdown-content a:hover {
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
     background-color: #e8505b;
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
     display: block;
-  }
-  .active {
+}
+
+.active {
     background-color: #14b1ab;
     color: white;
-  }
+}
+
 .training-options {
-    
+
     display: grid;
     grid-template-columns: auto auto;
-    background-color: #e8505b;
+    background-color: #14b1ab;
     padding: 10px;
     grid-gap: 5px;
-    height:150px;
+    height: 150px;
 }
-.training-options h3{
+
+.training-options h3 {
     padding-top: 25px;
 }
+
 .training-style1 {
     text-align: center;
     padding-left: 350px;
@@ -146,36 +155,66 @@ body {
 .training-style2 {
     text-align: center;
     padding-right: 350px;
+}
+
+.routine-details{
+display:none;
+height:200px;
+margin:auto;
+width: 100%;
+background-color: #14b1ab;
+
+}
+.routine-details img{
+    padding-top: 5px;
+    float: left;
+    width: 30%;
+    
+}
+.routine-name{
+    margin-left: 50px;
+    padding-top: 80px;
+    width: 20%;
+    float: left;
+font-size: 30px;
+color: #f3ecc2;
+}
+.routine-text{
+    margin-left: 20px;
+    padding-right: 50px;
+    padding-top: 40px;
+    width: 40%;
+   float: left;
+    color: #f3ecc2;
     
 }
 .pump-container {
     border-top: 2px solid #f9d56e;
-    padding:5px 0px 30px;
+    padding: 5px 0px 30px;
     margin: 0px auto;
     height: 70px;
     width: 100%;
-    background-color: #e8505b ;
+    background-color: #e8505b;
 }
+
 .super-pump {
     background-color: rgb(255, 187, 0);
     width: 20%;
     margin: 0px auto;
     padding-top: 5px;
     margin-top: 10px;
-    height:60px;
+    height: 60px;
     border-radius: 5px;
 }
 
 .pump-img {
-    padding-left:20px;
+    padding-left: 20px;
     height: 50px;
     float: left;
     padding-right: 5px;
 }
 
-.main-container {
-    
-}
+.main-container {}
 
 .grid-container {
     display: grid;
@@ -193,22 +232,24 @@ body {
     text-align: center;
 }
 
-.container-zero{
+.container-zero {
     padding: 20px 0px;
-    
+
     height: 30px;
-    
-    background-color:#14b1ab ;
+
+    background-color: #14b1ab;
     grid-gap: 5px;
 }
-.table-title{
+
+.table-title {
     margin: 0px 0px;
     border-right: 2px solid;
-    background-color:transparent;
+    background-color: transparent;
     font-size: 20px;
     text-align: center;
 }
-.table-title h3{
+
+.table-title h3 {
     margin: 0px 0px;
 }
 
@@ -233,7 +274,7 @@ body {
     height: 20px;
     width: 20px;
 
-    
+
 }
 
 .bottom-container {

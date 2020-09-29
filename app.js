@@ -193,7 +193,7 @@
 
    function strength() {
 
-      for (i = 0; i < sets.length; i++) {
+      for (i = 0; i < 5; i++) {
          sets[i].innerHTML = "<h3>5</h3>";
          reps[i].innerHTML = "<h3>5-8</h3>";
          rest[i].innerHTML = "<h3>120s</h3>";
@@ -214,7 +214,7 @@
    enduranceRadio.addEventListener("click", endurance);
 
    function endurance() {
-      for (i = 0; i < sets.length; i++) {
+      for (i = 0; i < 5; i++) {
          sets[i].innerHTML = "<h3>4</h3>";
          reps[i].innerHTML = "<h3>15-20</h3>";
          rest[i].innerHTML = "<h3>90s</h3>";
@@ -556,6 +556,8 @@
       document.getElementById("super-pump-header").textContent = "Random Workout";
       document.querySelector(".training-style1").style.display = "none";
       document.querySelector(".training-style2").style.display = "none";
+      document.querySelector(".training-options").style.display = "none";
+      document.querySelector(".routine-details").style.display = "block";
       exerciseImage.src = "./images/hulk.jpg";
       
 
@@ -572,6 +574,8 @@
       superButton.removeEventListener("click", splitChestOne);
       superButton.removeEventListener("click", splitChestTwo);
       superButton.removeEventListener("click", splitChestThree);
+      document.querySelector(".training-options").style.display = "grid";
+      document.querySelector(".routine-details").style.display = "none";
       superButton.addEventListener("click", superPump);
       exerciseImage.src = "./images/hulk.jpg";
 
