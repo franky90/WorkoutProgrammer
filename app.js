@@ -1,14 +1,14 @@
    // Gloabal Variables for Table
 
-   var sets, se1, se2, se3, se4, se5;
-   var reps, rep1, rep2, rep3, rep4, rep5;
-   var rest, res1, res2, res3, res4, res5;
-   var or1, or2, or3, or4, or5, or6, or7;
-   var weights, wei1, wei2, wei3, wei4, wei5;
-   var ex1, ex2, ex3, ex4, ex5, ex6, ex7;
-   var buttons, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8 , btn9;
+   var sets, se1, se2, se3, se4, se5, se8, se9;
+   var reps, rep1, rep2, rep3, rep4, rep5, rep8, rep9;
+   var rest, res1, res2, res3, res4, res5, res8, res9;
+   var or1, or2, or3, or4, or5, or6, or7, or8, or9;
+   var weights, wei1, wei2, wei3, wei4, wei5, wei6, wei7, wei8, wei9;
+   var ex1, ex2, ex3, ex4, ex5, ex6, ex7, ex8, ex9;
+   var buttons, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9;
 
-   buttons = [btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8 , btn9];
+   buttons = [btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9];
 
    se1 = document.querySelector(".se1");
    se2 = document.querySelector(".se2");
@@ -17,7 +17,9 @@
    se5 = document.querySelector(".se5");
    se6 = document.querySelector(".se6");
    se7 = document.querySelector(".se7");
-   sets = [se1, se2, se3, se4, se5, se6, se7];
+   se8 = document.querySelector(".se8");
+   se9 = document.querySelector(".se9");
+   sets = [se1, se2, se3, se4, se5, se6, se7, se8, se9];
 
 
    rep1 = document.querySelector(".rep1");
@@ -27,7 +29,9 @@
    rep5 = document.querySelector(".rep5");
    rep6 = document.querySelector(".rep6");
    rep7 = document.querySelector(".rep7");
-   reps = [rep1, rep2, rep3, rep4, rep5, rep6, rep7];
+   rep8 = document.querySelector(".rep8");
+   rep9 = document.querySelector(".rep9");
+   reps = [rep1, rep2, rep3, rep4, rep5, rep6, rep7, rep8, rep9];
 
    res1 = document.querySelector(".res1");
    res2 = document.querySelector(".res2");
@@ -36,7 +40,9 @@
    res5 = document.querySelector(".res5");
    res6 = document.querySelector(".res6");
    res7 = document.querySelector(".res7");
-   rest = [res1, res2, res3, res4, res5, res6, res7];
+   res8 = document.querySelector(".res8");
+   res9 = document.querySelector(".res9");
+   rest = [res1, res2, res3, res4, res5, res6, res7, res8, res9];
 
    or1 = document.querySelector(".or1");
    or2 = document.querySelector(".or2");
@@ -45,7 +51,9 @@
    or5 = document.querySelector(".or5");
    or6 = document.querySelector(".or6");
    or7 = document.querySelector(".or7");
-   ord = [or1, or2, or3, or4, or5];
+   or8 = document.querySelector(".or8");
+   or9 = document.querySelector(".or9");
+   ord = [or1, or2, or3, or4, or5, or6, or7, or8, or9];
 
    wei1 = document.querySelector(".wei1");
    wei2 = document.querySelector(".wei2");
@@ -54,7 +62,9 @@
    wei5 = document.querySelector(".wei5");
    wei6 = document.querySelector(".wei6");
    wei7 = document.querySelector(".wei7");
-   weights = [wei1, wei2, wei3, wei4, wei5, wei6, wei7];
+   wei8 = document.querySelector(".wei8");
+   wei9 = document.querySelector(".wei9");
+   weights = [wei1, wei2, wei3, wei4, wei5, wei6, wei7, wei8, wei9];
 
 
    ex1 = document.querySelector(".ex1");
@@ -64,6 +74,8 @@
    ex5 = document.querySelector(".ex5");
    ex6 = document.querySelector(".ex6");
    ex7 = document.querySelector(".ex7");
+   ex8 = document.querySelector(".ex8");
+   ex9 = document.querySelector(".ex9");
 
    var containerOne, containerTwo, containerThree, containerFour, containerFive, containerSix, containerSeven, containerEight, containerNine;
 
@@ -74,8 +86,8 @@
    containerFive = document.querySelector(".container-five");
    containerSix = document.querySelector(".container-six");
    containerSeven = document.querySelector(".container-seven");
-   containerSeven = document.querySelector(".container-eight");
-   containerSeven = document.querySelector(".container-nine");
+   containerEight = document.querySelector(".container-eight");
+   containerNine = document.querySelector(".container-nine");
 
    //  Shoulders
    var shoulderArray = ["<h3>Military Press</h3>", "<h3>Shoulder press with dumbbells</h3>", "<h3>Behind neck barbell press</h3>"];
@@ -189,39 +201,39 @@
       return;
    };
 
-   //Endurance1
-   // var enduranceOneArray = ["<h3>Sprints </h3>", "<h3>Farmer Walks</h3>", "<h3>Slum Ball</h3>"];
+   // Endurance1
+   var enduranceOneArray = ["<h3>Sprints </h3>", "<h3>Farmer Walks</h3>", "<h3>Slum Ball</h3>"];
 
-   // btn6 = document.querySelector(".btn6");
-   // btn6.addEventListener("click", enduranceOneEx);
-   // ex6.innerHTML = "<h3>-</h3>";
+   btn8 = document.querySelector(".btn8");
+   btn8.addEventListener("click", enduranceOneEx);
+   ex8.innerHTML = "<h3>-</h3>";
 
 
-   // function enduranceOneEx() {
-   //    var searchTerm = ex6.innerHTML;
-   //    var index = enduranceOneArray.indexOf(searchTerm) + 1;
-   //    if (index == enduranceOneArray.length) index = 0;
-   //    var result = enduranceOneArray[index];
-   //    ex6.innerHTML = result;
-   //    return;
-   // };
+   function enduranceOneEx() {
+      var searchTerm = ex8.innerHTML;
+      var index = enduranceOneArray.indexOf(searchTerm) + 1;
+      if (index == enduranceOneArray.length) index = 0;
+      var result = enduranceOneArray[index];
+      ex8.innerHTML = result;
+      return;
+   };
 
    //Endurance2
-   // var enduranceTwoArray = ["<h3>Endurance 1 </h3>", "<h3>Endurance 1 2</h3>", "<h3>Endurance  3</h3>"];
+   var enduranceTwoArray = ["<h3>Treadmill </h3>", "<h3>Cross Trainer</h3>", "<h3>Rowing Machine</h3>"];
 
-   // btn7 = document.querySelector(".btn7");
-   // btn7.addEventListener("click", enduranceTwoEx);
-   // ex7.innerHTML = "<h3>-</h3>";
+   btn9 = document.querySelector(".btn9");
+   btn9.addEventListener("click", enduranceTwoEx);
+   ex9.innerHTML = "<h3>-</h3>";
 
 
-   // function enduranceTwoEx() {
-   //    var searchTerm = ex7.innerHTML;
-   //    var index = enduranceTwoArray.indexOf(searchTerm) + 1;
-   //    if (index == enduranceTwoArray.length) index = 0;
-   //    var result = enduranceTwoArray[index];
-   //    ex7.innerHTML = result;
-   //    return;
-   // };
+   function enduranceTwoEx() {
+      var searchTerm = ex9.innerHTML;
+      var index = enduranceTwoArray.indexOf(searchTerm) + 1;
+      if (index == enduranceTwoArray.length) index = 0;
+      var result = enduranceTwoArray[index];
+      ex9.innerHTML = result;
+      return;
+   };
 
 
 
@@ -340,20 +352,20 @@
    };
 
    // SUPER ENDURANCE
-   // var superEndurance = document.querySelector(".super-endurance");
-   // superEndurance.addEventListener("click", superPump);
+   var superEndurance = document.querySelector(".super-endurance");
+   superEndurance.addEventListener("click", superEnduranceFunction);
 
-   // function superPump() {
-   //    var superPump1 = document.getElementById("pump1");
-   //    var superPump2 = document.getElementById("pump2");
-   //    if (superPump1.style.display === "none") {
-   //       superPump1.style.display = "grid";
-   //       superPump2.style.display = "grid";
-   //    } else {
-   //       superPump1.style.display = "none";
-   //       superPump2.style.display = "none";
-   //    };
-   // };
+   function superEnduranceFunction() {
+      var superEndurance1 = document.getElementById("endurance1");
+      var superEndurance2 = document.getElementById("endurance2");
+      if (superEndurance1.style.display === "none") {
+         superEndurance1.style.display = "grid";
+         superEndurance2.style.display = "grid";
+      } else {
+         superEndurance1.style.display = "none";
+         superEndurance2.style.display = "none";
+      };
+   };
 
 
 
@@ -365,6 +377,8 @@
    ex5.addEventListener("click", exerciseDetailsFive);
    ex6.addEventListener("click", exerciseDetailsSix);
    ex7.addEventListener("click", exerciseDetailsSeven);
+   ex8.addEventListener("click", exerciseDetailsEight);
+   ex9.addEventListener("click", exerciseDetailsNine);
 
 
    var exerciseImage = document.querySelector(".exercise-image");
@@ -406,6 +420,16 @@
 
    function exerciseDetailsSeven() {
       exerciseTitleExternal.innerHTML = ex7.innerHTML;
+      checkExerciseTitle();
+   };
+
+   function exerciseDetailsEight() {
+      exerciseTitleExternal.innerHTML = ex8.innerHTML;
+      checkExerciseTitle();
+   };
+
+   function exerciseDetailsNine() {
+      exerciseTitleExternal.innerHTML = ex9.innerHTML;
       checkExerciseTitle();
    };
 
@@ -662,6 +686,8 @@
    function splitChestOne() {
       containerSix.style.display = "none";
       containerSeven.style.display = "none";
+      containerEight.style.display = "none";
+      containerNine.style.display = "none";
       containerFive.style.display = "grid";
       //Podmiana Order
       or1.innerHTML = "<h3>A</h3>";
