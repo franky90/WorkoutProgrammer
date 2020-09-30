@@ -192,7 +192,7 @@ font-size: 30px;
     
 }
 .pump-container {
-    border-top: 2px solid #00adb5;
+    border-top: 2px solid #393e46;
     padding: 20px 0px 20px;
     height: 70px;
     width: 100%;
@@ -201,10 +201,11 @@ font-size: 30px;
 }
 
 .super-pump {
+    border:2px solid #00adb5;
     color:#eeeeee;
     margin-left: 350px;
     margin-right: 50px;
-    background-color: #00adb5;
+    background-color: #393e46;
     width: 20%;
     float: left;
     padding: 5px 10px 0px;    
@@ -224,11 +225,11 @@ font-size: 30px;
 }
 .super-endurance{
     color:#eeeeee;
-    background-color: #00adb5;
+    background-color: #393e46;
     width: 20%;
     float: left;
     padding: 5px 10px 0px; 
-    
+    border:2px solid #00adb5;
     height: 60px;
     border-radius: 5px;
 }
@@ -280,8 +281,10 @@ color: #eeeeee;
     height: 50px;
     width: 90px;
     border-radius: 5px;
-    background: #00adb5;
+    background: #222831;
 color: #eeeeee;
+border:1px solid #00adb5;
+
 
 }
 

@@ -3,9 +3,9 @@
    var sets, se1, se2, se3, se4, se5, se8, se9;
    var reps, rep1, rep2, rep3, rep4, rep5, rep8, rep9;
    var rest, res1, res2, res3, res4, res5, res8, res9;
-   var or1, or2, or3, or4, or5, or6, or7, or8, or9;
+   var order, or1, or2, or3, or4, or5, or6, or7, or8, or9;
    var weights, wei1, wei2, wei3, wei4, wei5, wei6, wei7, wei8, wei9;
-   var ex1, ex2, ex3, ex4, ex5, ex6, ex7, ex8, ex9;
+   var exercises, ex1, ex2, ex3, ex4, ex5, ex6, ex7, ex8, ex9;
    var buttons, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9;
 
    buttons = [btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9];
@@ -53,7 +53,7 @@
    or7 = document.querySelector(".or7");
    or8 = document.querySelector(".or8");
    or9 = document.querySelector(".or9");
-   ord = [or1, or2, or3, or4, or5, or6, or7, or8, or9];
+   order = [or1, or2, or3, or4, or5, or6, or7, or8, or9];
 
    wei1 = document.querySelector(".wei1");
    wei2 = document.querySelector(".wei2");
@@ -76,6 +76,7 @@
    ex7 = document.querySelector(".ex7");
    ex8 = document.querySelector(".ex8");
    ex9 = document.querySelector(".ex9");
+   exercises = [ex1, ex2, ex3, ex4, ex5, ex6, ex7, ex8, ex9];
 
    var containerOne, containerTwo, containerThree, containerFour, containerFive, containerSix, containerSeven, containerEight, containerNine;
 
@@ -650,6 +651,70 @@
          buttons[i] = document.querySelector(".btn" + i).style.display = "none";
       };
    };
+   //Changa data table to 
+   function defStats() {
+
+      or1.innerHTML = "<h3>-</h3>";
+      ex1.innerHTML = "<h3>-</h3>";
+      se1.innerHTML = "<h3>-</h3>";
+      rep1.innerHTML = "<h3>-</h3>";
+      res1.innerHTML = "<h3>-</h3>";
+      wei1.innerHTML = "<h3>-</h3>";
+
+      or2.innerHTML = "<h3>-</h3>";
+      ex2.innerHTML = "<h3>-</h3>";
+      se2.innerHTML = "<h3>-</h3>";
+      rep2.innerHTML = "<h3>-</h3>";
+      res2.innerHTML = "<h3>-</h3>";
+      wei2.innerHTML = "<h3>-</h3>";
+
+      or3.innerHTML = "<h3>-</h3>";
+      ex3.innerHTML = "<h3>-</h3>";
+      se3.innerHTML = "<h3>-</h3>";
+      rep3.innerHTML = "<h3>-</h3>";
+      res3.innerHTML = "<h3>-</h3>";
+      wei3.innerHTML = "<h3>-</h3>";
+
+      or4.innerHTML = "<h3>-</h3>";
+      ex4.innerHTML = "<h3>-</h3>";
+      se4.innerHTML = "<h3>-</h3>";
+      rep4.innerHTML = "<h3>-</h3>";
+      res4.innerHTML = "<h3>-</h3>";
+      wei4.innerHTML = "<h3>-</h3>";
+
+      or5.innerHTML = "<h3>-</h3>";
+      ex5.innerHTML = "<h3>-</h3>";
+      se5.innerHTML = "<h3>-</h3>";
+      rep5.innerHTML = "<h3>-</h3>";
+      res5.innerHTML = "<h3>-</h3>";
+      wei5.innerHTML = "<h3>-</h3>";
+
+      // Doesen't work
+      // for (var i = 0; 1 < 6 ; i++) {
+      //    order[i].innerHTML = "<h3>-</h3>";
+      //    exercises[i].innerHTML = "<h3>-</h3>";
+      //    sets[i].innerHTML = "<h3>-</h3>";
+      //    reps[i].innerHTML = "<h3>-</h3>";
+      //    rest[i].innerHTML = "<h3>-</h3>";
+      //    weights[i].innerHTML = "<h3>-</h3>";  
+      // };
+   };
+
+   function pumpDefault(){
+      or6.innerHTML = "<h3>E1</h3>";
+      ex6.innerHTML = "<h3>-</h3>";
+      se6.innerHTML = "<h3>3</h3>";
+      rep6.innerHTML = "<h3>12-15</h3>";
+      res6.innerHTML = "<h3>10s</h3>";
+      wei6.innerHTML = "<h3>adjust</h3>";
+
+      or7.innerHTML = "<h3>E2</h3>";
+      ex7.innerHTML = "<h3>-</h3>";
+      se7.innerHTML = "<h3>3</h3>";
+      rep7.innerHTML = "<h3>12-15</h3>";
+      res7.innerHTML = "<h3>90s</h3>";
+      wei7.innerHTML = "<h3>adjust</h3>";
+   };
 
    //Show buttons Function
 
@@ -669,14 +734,20 @@
 
       containerSix.style.display = "none";
       containerSeven.style.display = "none";
+      containerEight.style.display = "none";
+      containerNine.style.display = "none";
 
-      for (i = 1; i < 8; i++) {
+      for (i = 1; i < 9; i++) {
          buttons[i] = document.querySelector(".btn" + i).style.display = "inline-block";
       };
 
       document.querySelector(".training-style1").style.display = "block";
       document.querySelector(".training-style2").style.display = "block";
       document.getElementById("super-pump-header").textContent = "Super Pump";
+
+      //All Stats Default
+      defStats();
+      pumpDefault()
    };
 
    //FBW Button
