@@ -441,52 +441,66 @@
    var exerciseTitleExternal = document.querySelector(".exercise-title");
    var exerciseDetailsContent = document.querySelector(".exercise-details");
 
+   //Function that Scroll To Exercise Details 
+   function scrollWin() {
+      window.scrollTo(0, 2500);
+    }
+    
 
 
    //Functions for Exercises from 1 - 7 which display name of exercise in exercise-title 
    function exerciseDetailsOne() {
       exerciseTitleExternal.innerHTML = ex1.innerHTML;
       checkExerciseTitle();
+      scrollWin();
    };
 
    function exerciseDetailsTwo() {
       exerciseTitleExternal.innerHTML = ex2.innerHTML;
       checkExerciseTitle();
+      scrollWin();
    };
 
    function exerciseDetailsThree() {
       exerciseTitleExternal.innerHTML = ex3.innerHTML;
       checkExerciseTitle();
+      scrollWin();
    };
 
    function exerciseDetailsFour() {
       exerciseTitleExternal.innerHTML = ex4.innerHTML;
       checkExerciseTitle();
+      scrollWin();
    };
 
    function exerciseDetailsFive() {
       exerciseTitleExternal.innerHTML = ex5.innerHTML;
       checkExerciseTitle();
+      scrollWin();
    };
 
    function exerciseDetailsSix() {
       exerciseTitleExternal.innerHTML = ex6.innerHTML;
       checkExerciseTitle();
+      scrollWin();
    };
 
    function exerciseDetailsSeven() {
       exerciseTitleExternal.innerHTML = ex7.innerHTML;
       checkExerciseTitle();
+      scrollWin();
    };
 
    function exerciseDetailsEight() {
       exerciseTitleExternal.innerHTML = ex8.innerHTML;
       checkExerciseTitle();
+      scrollWin();
    };
 
    function exerciseDetailsNine() {
       exerciseTitleExternal.innerHTML = ex9.innerHTML;
       checkExerciseTitle();
+      scrollWin();
    };
 
    //Change exercise-img and exercise-description - dependend from exercise-title

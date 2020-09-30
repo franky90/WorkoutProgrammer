@@ -1,16 +1,17 @@
+
 body {
     font-family: Lato;
-    background: rgb(0,173,181);
-background: linear-gradient(0deg, rgba(0,173,181,1) 0%, rgba(34,40,49,1) 72%);
+    background: rgb(0, 173, 181);
+    background: linear-gradient(0deg, rgba(0, 173, 181, 1) 0%, rgba(34, 40, 49, 1) 72%);
 }
 
 .main-component {
     display: block;
     margin: 0px auto;
     width: 1280px;
-   
+
     background-color: inherit;
-    
+
 }
 
 .heading {
@@ -122,7 +123,7 @@ background: linear-gradient(0deg, rgba(0,173,181,1) 0%, rgba(34,40,49,1) 72%);
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
     background-color: #00adb5;
-    color:#eeeeee;
+    color: #eeeeee;
 }
 
 /* Show the dropdown menu on hover */
@@ -136,7 +137,7 @@ background: linear-gradient(0deg, rgba(0,173,181,1) 0%, rgba(34,40,49,1) 72%);
 }
 
 .training-options {
-    color:#eeeeee;
+    color: #eeeeee;
     display: grid;
     grid-template-columns: auto auto;
     background-color: #393e46;
@@ -159,62 +160,73 @@ background: linear-gradient(0deg, rgba(0,173,181,1) 0%, rgba(34,40,49,1) 72%);
     padding-right: 350px;
 }
 
-.routine-details{
-display:none;
-height:200px;
-margin:auto;
-width: 100%;
-background-color: #393e46;
-color: #eeeeee;
+.routine-details {
+    display: none;
+    height: 200px;
+    margin: auto;
+    width: 100%;
+    background-color: #393e46;
+    color: #eeeeee;
 
 }
-.routine-details img{
+
+.routine-details img {
     padding-top: 5px;
     float: left;
     width: 30%;
-    
+
 }
-.routine-name{
+
+.routine-name {
     margin-left: 50px;
     padding-top: 80px;
     width: 20%;
     float: left;
-font-size: 30px;
+    font-size: 30px;
 
 }
-.routine-text{
+
+.routine-text {
     margin-left: 20px;
     padding-right: 50px;
     padding-top: 40px;
     width: 40%;
-   float: left;
-    
-    
+    float: left;
+
+
 }
+
 .pump-container {
-    border-top: 2px solid #393e46;
+    
     padding: 20px 0px 20px;
     height: 70px;
     width: 100%;
     background-color: #222831;
-    
+
 }
 
 .super-pump {
-    border:2px solid #00adb5;
-    color:#eeeeee;
+    border: 1px solid #00adb5;
+    color: #eeeeee;
     margin-left: 350px;
     margin-right: 50px;
     background-color: #393e46;
     width: 20%;
     float: left;
-    padding: 5px 10px 0px;    
+    padding: 5px 10px 0px;
     height: 60px;
     border-radius: 5px;
 }
-.super-pump-center{
-    margin-right:0px;
-    margin-left:500px;
+.super-pump:hover{
+    border-color: #eeeeee;
+    background-color: #222831;
+}
+.super-pump:active{
+    transform: translateY(4px);
+}
+.super-pump-center {
+    margin-right: 0px;
+    margin-left: 500px;
 }
 
 .pump-img {
@@ -223,22 +235,29 @@ font-size: 30px;
     float: left;
     padding-right: 5px;
 }
-.super-endurance{
-    color:#eeeeee;
+
+.super-endurance {
+    color: #eeeeee;
     background-color: #393e46;
     width: 20%;
     float: left;
-    padding: 5px 10px 0px; 
-    border:2px solid #00adb5;
+    padding: 5px 10px 0px;
+    border: 2px solid #00adb5;
     height: 60px;
     border-radius: 5px;
 }
-
+.super-endurance:hover{
+    border-color: #eeeeee;
+    background-color: #222831;
+}
+.super-endurance:active{
+    transform: translateY(4px);
+}
 .grid-container {
     display: grid;
     grid-template-columns: 100px 100px auto 150px 150px 150px 150px;
     background-color: #393e46;
-    color:#eeeeee;
+    color: #eeeeee;
     padding: 2px;
     grid-gap: 5px;
 
@@ -253,7 +272,7 @@ font-size: 30px;
 
 .container-zero {
     padding: 20px 0px;
-color: #eeeeee;
+    color: #eeeeee;
     height: 30px;
 
     background-color: #393e46;
@@ -278,14 +297,27 @@ color: #eeeeee;
 }
 
 .btn {
-    height: 50px;
+    
+    height: 60px;
     width: 90px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #222831;
     border-radius: 5px;
-    background: #222831;
-color: #eeeeee;
-border:1px solid #00adb5;
+    box-shadow: 0 5px #222831;
+    border: 1px solid #00adb5;
+}
 
+.btn:hover {
+    border-color: #eeeeee;
+}
 
+.btn:active {
+
+    transform: translateY(4px);
 }
 
 .btn-container {
@@ -296,7 +328,7 @@ border:1px solid #00adb5;
 .random-img {
     height: 20px;
     width: 20px;
-    
+
 }
 
 .bottom-container {
@@ -336,6 +368,6 @@ border:1px solid #00adb5;
     float: right;
     width: 40%;
     padding-right: 120px;
-    
+
     height: 180px;
 }
