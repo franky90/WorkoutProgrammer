@@ -798,7 +798,7 @@
 
       document.querySelector(".training-style1").style.display = "block";
       document.querySelector(".training-style2").style.display = "block";
-      document.getElementById("super-pump-header").textContent = "Super Pump";
+      document.getElementById("super-pump-header").textContent = "Extra Pump";
 
       //All Stats Default
       defStats();
