@@ -203,7 +203,7 @@
    };
 
    // Endurance1
-   var enduranceOneArray = ["<h3>Sprints </h3>", "<h3>Farmer Walks</h3>", "<h3>Slum Ball</h3>"];
+   var enduranceOneArray = ["<h3>Treadmill Push</h3>", "<h3>Farmer Walks</h3>", "<h3>Slum Ball</h3>", "<h3>-</h3>"];
 
    btn8 = document.querySelector(".btn8");
    btn8.addEventListener("click", enduranceOneEx);
@@ -216,11 +216,38 @@
       if (index == enduranceOneArray.length) index = 0;
       var result = enduranceOneArray[index];
       ex8.innerHTML = result;
+
+      // Fill up table depend from exercise column
+      if (ex8.innerText === "Slum Ball") {
+         or8.innerHTML = "<h3>F1</h3>";
+         se8.innerHTML = "<h3> 3</h3>";
+         rep8.innerHTML = "<h3> 12-15</h3>";
+         res8.innerHTML = "<h3> 90-120s</h3>";
+         wei8.innerHTML = "<h3> adjust</h3>";
+      } else if (ex8.innerText === "Farmer Walks") {
+         or8.innerHTML = "<h3>F1</h3>";
+         se8.innerHTML = "<h3> 3-5</h3>";
+         rep8.innerHTML = "<h3> 45 meters</h3>";
+         res8.innerHTML = "<h3> 120s</h3>";
+         wei8.innerHTML = "<h3> adjust</h3>";
+      } else if (ex8.innerText === "Treadmill Push") {
+         or8.innerHTML = "<h3>F1</h3>";
+         se8.innerHTML = "<h3> 3-5</h3>";
+         rep8.innerHTML = "<h3> 15s</h3>";
+         res8.innerHTML = "<h3> 60s</h3>";
+         wei8.innerHTML = "<h3> body weight</h3>";
+      } else {
+         or8.innerHTML = "<h3>-</h3>";
+         se8.innerHTML = "<h3>-</h3>";
+         rep8.innerHTML = "<h3>-</h3>";
+         res8.innerHTML = "<h3>-</h3>";
+         wei8.innerHTML = "<h3>-</h3>";
+      };
       return;
    };
 
    //Endurance2
-   var enduranceTwoArray = ["<h3>Treadmill </h3>", "<h3>Cross Trainer</h3>", "<h3>Rowing Machine</h3>"];
+   var enduranceTwoArray = ["<h3>Treadmill </h3>", "<h3>Air Bike</h3>", "<h3>Rowing Machine</h3>","<h3>-</h3>"];
 
    btn9 = document.querySelector(".btn9");
    btn9.addEventListener("click", enduranceTwoEx);
@@ -233,6 +260,34 @@
       if (index == enduranceTwoArray.length) index = 0;
       var result = enduranceTwoArray[index];
       ex9.innerHTML = result;
+
+      // Fill up table depend from exercise column
+      if (ex9.innerText === "Treadmill") {
+         or9.innerHTML = "<h3>F2</h3>";
+         se9.innerHTML = "<h3>1</h3>";
+         rep9.innerHTML = "<h3>15 min</h3>";
+         res9.innerHTML = "<h3>-</h3>";
+         wei9.innerHTML = "<h3>65-70 %MHR</h3>";
+      } else if (ex9.innerText === "Air Bike") {
+         or9.innerHTML = "<h3>F2</h3>";
+         se9.innerHTML = "<h3>1</h3>";
+         rep9.innerHTML = "<h3>15 min</h3>";
+         res9.innerHTML = "<h3>-</h3>";
+         wei9.innerHTML = "<h3>65-70 %MHR</h3>";
+      } else if (ex9.innerText === "Rowing Machine") {
+         or9.innerHTML = "<h3>F2</h3>";
+         se9.innerHTML = "<h3>1</h3>";
+         rep9.innerHTML = "<h3>15 min</h3>";
+         res9.innerHTML = "<h3>-</h3>";
+         wei9.innerHTML = "<h3> 65-70 %MHR</h3>";
+      } else {
+         or9.innerHTML = "<h3>-</h3>";
+         se9.innerHTML = "<h3>-</h3>";
+         rep9.innerHTML = "<h3>-</h3>";
+         res9.innerHTML = "<h3>-</h3>";
+         wei9.innerHTML = "<h3>-</h3>";
+      };
+
       return;
    };
 
@@ -700,7 +755,7 @@
       // };
    };
 
-   function pumpDefault(){
+   function pumpDefault() {
       or6.innerHTML = "<h3>E1</h3>";
       ex6.innerHTML = "<h3>-</h3>";
       se6.innerHTML = "<h3>3</h3>";
