@@ -43,9 +43,9 @@ body {
 
 .heading img {
     position: absolute;
-    right: 50px;
+    right: 0px;
     bottom: 0px;
-    width: 54%;
+    width: 55%;
     height: auto;
 }
 
@@ -344,7 +344,7 @@ body {
 
 .bottom-container {
     color: #eeeeee;
-    height: 400px;
+    height: 600px;
     display: block;
     width: 100%;
     border-radius: 0px 0px 10px 10px;
@@ -354,11 +354,13 @@ body {
 }
 
 .image-container {
-    padding-top: 30px;
-    padding-left: 300px;
+    padding-top: 80px;
+    padding-left: 100px;
 }
 
 .exercise-image {
+    
+box-shadow: 0px 0px 10px #00adb5;
 
     width: 40%;
     float: left;
@@ -366,9 +368,9 @@ body {
 
 .exercise-title {
     font-size: 24px;
-    float: right;
-    width: 40%;
-    padding-right: 120px;
+    float: left;
+    width: 50%;
+    padding-left: 50px;
     padding-top: 30px;
 
 
@@ -376,9 +378,9 @@ body {
 
 .exercise-text {
     font-size: 16px;
-    float: right;
+    float: left;
     width: 40%;
-    padding-right: 120px;
+    padding-left: 50px;
 
     height: 180px;
 }

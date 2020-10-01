@@ -785,6 +785,15 @@
       wei7.innerHTML = "<h3>adjust</h3>";
    };
 
+// Hide containers six to nine Function
+
+function containersSixToNineDisplayNone(){
+   containerSix.style.display = "none";
+   containerSeven.style.display = "none";
+   containerEight.style.display = "none";
+   containerNine.style.display = "none";
+};
+
    //Show buttons Function
 
    function showButtons() {
@@ -804,13 +813,10 @@
       enduranceRadio.checked = false;
       strengthRadio.checked = false;
 
-      exerciseImage.src = "./images/hulk.jpg";
+      exerciseImage.src = "./images/bottomimage.jpg";
 
-      containerSix.style.display = "none";
-      containerSeven.style.display = "none";
-      containerEight.style.display = "none";
-      containerNine.style.display = "none";
-
+   containersSixToNineDisplayNone()
+   
       for (i = 1; i < 9; i++) {
          buttons[i] = document.querySelector(".btn" + i).style.display = "inline-block";
       };
@@ -821,7 +827,7 @@
 
       //All Stats Default
       defStats();
-      pumpDefault()
+      pumpDefault();
    };
 
    //FBW Button
@@ -1024,16 +1030,31 @@
 
    function copy() {
 
-      var stringOne = or1.textContent + " ) " + ex1.textContent + " " + se1.textContent + " sets " + rep1.textContent + " reps " + res1.textContent + " rest " + wei1.textContent + "\n";
-      var stringTwo = or2.textContent + " ) " + ex2.textContent + " " + se2.textContent + " sets " + rep2.textContent + " reps " + res2.textContent + " rest " + wei2.textContent + "\n";
-      var stringThree = or3.textContent + " ) " + ex3.textContent + " " + se3.textContent + " sets " + rep3.textContent + " reps " + res3.textContent + " rest " + wei3.textContent + "\n";
-      var stringFour = or4.textContent + " ) " + ex4.textContent + " " + se4.textContent + " sets " + rep4.textContent + " reps " + res4.textContent + " rest " + wei4.textContent + "\n";
-      var stringFive = or5.textContent + " ) " + ex5.textContent + " " + se5.textContent + " sets " + rep5.textContent + " reps " + res5.textContent + " rest " + wei5.textContent + "\n";
-      var stringSix = or6.textContent + " ) " + ex6.textContent + " " + se6.textContent + " sets " + rep6.textContent + " reps " + res6.textContent + " rest " + wei6.textContent + "\n";
-      var stringSeven = or7.textContent + " ) " + ex7.textContent + " " + se7.textContent + " sets " + rep7.textContent + " reps " + res7.textContent + " rest " + wei7.textContent + "\n";
-      var stringEight = or8.textContent + " ) " + ex8.textContent + " " + se8.textContent + " sets " + rep8.textContent + " reps " + res8.textContent + " rest " + wei8.textContent + "\n";
-      var stringNine = or9.textContent + " ) " + ex9.textContent + " " + se9.textContent + " sets " + rep9.textContent + " reps " + res9.textContent + " rest " + wei9.textContent + "\n";
-      var fullString = [];
+var stringOne, stringTwo, stringThree, stringFour, stringFive, stringSix, stringSeven, stringEight, stringNine;
+
+
+
+      stringOne = or1.textContent + " ) " + ex1.textContent + " " + se1.textContent + " sets " + rep1.textContent + " reps " + res1.textContent + " rest " + wei1.textContent + "\n";
+      stringTwo = or2.textContent + " ) " + ex2.textContent + " " + se2.textContent + " sets " + rep2.textContent + " reps " + res2.textContent + " rest " + wei2.textContent + "\n";
+      stringThree = or3.textContent + " ) " + ex3.textContent + " " + se3.textContent + " sets " + rep3.textContent + " reps " + res3.textContent + " rest " + wei3.textContent + "\n";
+      stringFour = or4.textContent + " ) " + ex4.textContent + " " + se4.textContent + " sets " + rep4.textContent + " reps " + res4.textContent + " rest " + wei4.textContent + "\n";
+      stringFive = or5.textContent + " ) " + ex5.textContent + " " + se5.textContent + " sets " + rep5.textContent + " reps " + res5.textContent + " rest " + wei5.textContent + "\n";
+      stringSix = or6.textContent + " ) " + ex6.textContent + " " + se6.textContent + " sets " + rep6.textContent + " reps " + res6.textContent + " rest " + wei6.textContent + "\n";
+      stringSeven = or7.textContent + " ) " + ex7.textContent + " " + se7.textContent + " sets " + rep7.textContent + " reps " + res7.textContent + " rest " + wei7.textContent + "\n";
+      stringEight = or8.textContent + " ) " + ex8.textContent + " " + se8.textContent + " sets " + rep8.textContent + " reps " + res8.textContent + " rest " + wei8.textContent + "\n";
+      stringNine = or9.textContent + " ) " + ex9.textContent + " " + se9.textContent + " sets " + rep9.textContent + " reps " + res9.textContent + " rest " + wei9.textContent + "\n";
+      
+
+      // stringOne= stringOneComplex.toString();
+      // stringTwo= stringTwoComplex.toString();
+      // stringThree= stringThreeComplex.toString();
+      // stringFour= stringFourComplex.toString();
+      // stringFive= stringFiveComplex.toString();
+      // stringSix= stringSixComplex.toString();
+      // stringSeven= stringSevenComplex.toString();
+      // stringEight= stringEightComplex.toString();
+      // stringNine= stringNineComplex.toString();
+      fullString = [];
 
       function fullStrings() {
          // dodac tylko jesli display elementu jest grid
@@ -1078,3 +1099,7 @@
       console.log(copyContentReady);
       navigator.clipboard.writeText(copyContentReady);
    };
+
+   // Reset Strony Do podstawowych ustawien
+   showButtons();
+   
