@@ -91,7 +91,7 @@
    containerNine = document.querySelector(".container-nine");
 
    //  Shoulders
-   var shoulderArray = ["<h3>Military Press</h3>", "<h3>Shoulder press with dumbbells</h3>", "<h3>Behind neck barbell press</h3>"];
+   var shoulderArray = ["<h3>Military press</h3>", "<h3>Shoulder press with dumbbells</h3>", "<h3>Behind neck barbell press</h3>"];
    btn1 = document.querySelector(".btn1");
    btn1.addEventListener("click", shoulderEx);
    ex1.innerHTML = "<h3>-</h3>";
@@ -106,7 +106,7 @@
       return;
    }
    // Legs 
-   var legsArray = ["<h3>Back Squat</h3>", "<h3>Goblet Squat</h3>", "<h3>Leg press machine</h3>"];
+   var legsArray = ["<h3>Back squat</h3>", "<h3>Goblet squat</h3>", "<h3>Leg press machine</h3>"];
 
    btn2 = document.querySelector(".btn2");
    btn2.addEventListener("click", legsEx);
@@ -122,7 +122,7 @@
       return;
    }
    //Chest
-   var chestArray = ["<h3>Barbell bench press</h3>", "<h3>Push ups</h3>", "<h3>Dumbbells incline chest press</h3>"];
+   var chestArray = ["<h3>Barbell bench press</h3>", "<h3>Push ups</h3>", "<h3>Incline dumbbells bench press</h3>"];
 
    btn3 = document.querySelector(".btn3");
    btn3.addEventListener("click", chestEx);
@@ -154,7 +154,7 @@
       return;
    }
    //Abs
-   var absArray = ["<h3>Hanging legs raises</h3>", "<h3>Sit ups</h3>", "<h3>Crunches</h3>"];
+   var absArray = ["<h3>Hanging legs raises</h3>", "<h3>Sit ups</h3>", "<h3>Lying legs raises</h3>"];
 
    btn5 = document.querySelector(".btn5");
    btn5.addEventListener("click", absEx);
@@ -170,7 +170,7 @@
       return;
    }
    // Pump1
-   var pumpOneArray = ["<h3>Ez bar supinated biceps curls</h3>", "<h3>Dumbbells neutral grip biceps curls</h3>", "<h3>Dumbbells Incline Curls</h3>"];
+   var pumpOneArray = ["<h3>Ez bar supinated biceps curls</h3>", "<h3>Dumbbells neutral grip biceps curls</h3>", "<h3>Incline dumbbells biceps curls</h3>"];
 
    btn6 = document.querySelector(".btn6");
    btn6.addEventListener("click", pumpOneEx);
@@ -203,7 +203,7 @@
    };
 
    // Endurance1
-   var enduranceOneArray = ["<h3>Treadmill Push</h3>", "<h3>Farmer Walks</h3>", "<h3>Slum Ball</h3>", "<h3>-</h3>"];
+   var enduranceOneArray = ["<h3>Treadmill push</h3>", "<h3>Farmer walks</h3>", "<h3>Slum ball</h3>", "<h3>-</h3>"];
 
    btn8 = document.querySelector(".btn8");
    btn8.addEventListener("click", enduranceOneEx);
@@ -224,13 +224,13 @@
          rep8.innerHTML = "<h3> 12-15</h3>";
          res8.innerHTML = "<h3> 90-120s</h3>";
          wei8.innerHTML = "<h3> adjust</h3>";
-      } else if (ex8.innerText === "Farmer Walks") {
+      } else if (ex8.innerText === "Farmer walks") {
          or8.innerHTML = "<h3>F1</h3>";
          se8.innerHTML = "<h3> 3-5</h3>";
          rep8.innerHTML = "<h3> 45 meters</h3>";
          res8.innerHTML = "<h3> 120s</h3>";
          wei8.innerHTML = "<h3> adjust</h3>";
-      } else if (ex8.innerText === "Treadmill Push") {
+      } else if (ex8.innerText === "Treadmill push") {
          or8.innerHTML = "<h3>F1</h3>";
          se8.innerHTML = "<h3> 3-5</h3>";
          rep8.innerHTML = "<h3> 15s</h3>";
@@ -247,7 +247,7 @@
    };
 
    //Endurance2
-   var enduranceTwoArray = ["<h3>Treadmill </h3>", "<h3>Air Bike</h3>", "<h3>Rowing Machine</h3>", "<h3>-</h3>"];
+   var enduranceTwoArray = ["<h3>Treadmill </h3>", "<h3>Air bike</h3>", "<h3>Rowing machine</h3>", "<h3>-</h3>"];
 
    btn9 = document.querySelector(".btn9");
    btn9.addEventListener("click", enduranceTwoEx);
@@ -268,13 +268,13 @@
          rep9.innerHTML = "<h3>15 min</h3>";
          res9.innerHTML = "<h3>-</h3>";
          wei9.innerHTML = "<h3>65-70 %MHR</h3>";
-      } else if (ex9.innerText === "Air Bike") {
+      } else if (ex9.innerText === "Air bike") {
          or9.innerHTML = "<h3>F2</h3>";
          se9.innerHTML = "<h3>1</h3>";
          rep9.innerHTML = "<h3>15 min</h3>";
          res9.innerHTML = "<h3>-</h3>";
          wei9.innerHTML = "<h3>65-70 %MHR</h3>";
-      } else if (ex9.innerText === "Rowing Machine") {
+      } else if (ex9.innerText === "Rowing machine") {
          or9.innerHTML = "<h3>F2</h3>";
          se9.innerHTML = "<h3>1</h3>";
          rep9.innerHTML = "<h3>15 min</h3>";
@@ -292,7 +292,7 @@
    };
 
 
-   
+
 
    //Strength
    var strengthRadio = document.getElementById("strength");
@@ -507,7 +507,7 @@
 
    function checkExerciseTitle() {
       switch (exerciseTitleExternal.textContent) {
-         case "Military Press":
+         case "Military press":
             exerciseDetailsContent.textContent = "opis prostego cwiczenia Military press";
             exerciseImage.src = "./images/military.jpg";
             break;
@@ -519,18 +519,104 @@
             exerciseDetailsContent.textContent = "opis prostego cwiczenia Behind neck barbell press";
             exerciseImage.src = "./images/behindNeckPress.jpg";
             break;
-         case "Back Squat":
+         case "Back squat":
             exerciseDetailsContent.textContent = "opis prostego cwiczenia Back Squat";
             exerciseImage.src = "./images/backSquat.jpg";
             break;
-         case "Goblet Squat":
+         case "Goblet squat":
             exerciseDetailsContent.textContent = "opis prostego cwiczenia Goblet Squat";
             exerciseImage.src = "./images/gobletSquat.jpg";
             break;
          case "Dips":
             exerciseDetailsContent.textContent = "opis prostego cwiczenia Dips";
-            exerciseImage.src = "./images/dips.png";
+            exerciseImage.src = "./images/dips.jpg";
             break;
+         case "Leg press machine":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Leg Press";
+            exerciseImage.src = "./images/legPressMachine.jpg";
+            break;
+         case "Barbell bench press":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Barbell bench press";
+            exerciseImage.src = "./images/benchPress.jpg";
+            break;
+         case "Push ups":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Barbell Push ups";
+            exerciseImage.src = "./images/pushUps.jpg";
+            break;
+         case "Incline dumbbells bench press":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Dumbbells incline bench press";
+            exerciseImage.src = "./images/inclineDbPress.png";
+            break;
+         case "Pull ups":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Pull ups";
+            exerciseImage.src = "./images/pullUps.jpg";
+            break;
+         case "Reversed rows":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Reversed rows";
+            exerciseImage.src = "./images/reversedRows.jpg";
+            break;
+         case "Dumbbell rows":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Dumbbell rows";
+            exerciseImage.src = "./images/dbRows.jpg";
+            break;
+         case "Hanging legs raises":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Hanging legs raises";
+            exerciseImage.src = "./images/hangRaises.jpg";
+            break;
+         case "Sit ups":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Sit ups";
+            exerciseImage.src = "./images/sitUps.jpg";
+            break;
+         case "Lying legs raises":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Lying leg raises";
+            exerciseImage.src = "./images/lyingLegsRaises.jpg";
+            break;
+         case "Decline barbell bench press":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Decline barbell bench press";
+            exerciseImage.src = "./images/declineBenchPress.jpg";
+            break;
+         case "Dumbbells flyes":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Dumbbells flyes";
+            exerciseImage.src = "./images/dbFlyesFlat.jpg";
+            break;
+            case "Incline barbell bench press":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Incline barbell bench press";
+            exerciseImage.src = "./images/inclineBbPress.jpg";
+            break;
+            case "Incline barbell bench press":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Incline barbell bench press";
+            exerciseImage.src = "./images/inclineBbPress.jpg";
+            break;
+            case "Incline dumbbells flyes":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Incline dumbbells flyes";
+            exerciseImage.src = "./images/dbFlyesIncline.jpg";
+            break;
+            case "Cable crossover":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Cable crossover";
+            exerciseImage.src = "./images/cableCrossover.jpg";
+            break;
+            case "Dumbbells bench press":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Dumbbells bench press";
+            exerciseImage.src = "./images/dbBenchPress.jpg";
+            break;
+            case "Pec deck":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Pec deck";
+            exerciseImage.src = "./images/pecDec.jpg";
+            break;
+            case "Triceps pushdowns cable machine":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Triceps pushdowns cable machine";
+            exerciseImage.src = "./images/tricepsPushdown.jpg";
+            break;
+            case "Bar dips":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Bar Dips";
+            exerciseImage.src = "./images/barDips.jpg";
+            break;
+            case "Dumbbells flor press":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Dumbbells flor press";
+            exerciseImage.src = "./images/dbFloorPress.jpg";
+            break;
+
+            
 
          default:
             exerciseDetailsContent.textContent = "This exercise doesn't have details yet";
@@ -540,168 +626,6 @@
 
 
    };
-
-
-
-
-
-   // var exerciseTitle
-
-   // var exerciseTitleOne, exerciseTitleTwo, exerciseTitleThree;
-   // var exerciseTextOne, exerciseTextTwo, exerciseTextThree;
-   // var exerciseImgOne, exerciseImgTwo;
-
-
-
-   // function bottomContainerUpdate() {
-   //    if (exerciseTitle === exerciseTitleOne) {
-   //       exerciseTitleExternal.innerHTML = exerciseTitle;
-   //       exerciseDetailsContent.innerHTML = exerciseTextOne;
-   //       exerciseImage.src = exerciseImgOne;
-
-   //    } else if (exerciseTitle === exerciseTitleTwo) {
-   //       exerciseTitleExternal.innerHTML = exerciseTitle;
-   //       exerciseDetailsContent.innerHTML = exerciseTextTwo;
-   //       exerciseImage.src = exerciseImgTwo;
-   //    } else {
-   //       exerciseTitleExternal.innerHTML = exerciseTitle;
-   //       exerciseDetailsContent.innerHTML = exerciseTextThree;
-   //       exerciseImage.src = exerciseImgThree;
-   //    };
-   // };
-   // // Image Hyperlinks Exercise One
-   // function exerciseDetailsOne() {
-   //    exerciseTitle = ex1.textContent;
-   //    exerciseTitleOne = "Military Press";
-   //    exerciseTitleTwo = "Shoulder press with dumbbells";
-
-
-   //    exerciseTextOne = "<p>Opis ćwiczenia Military Press</p>";
-   //    exerciseTextTwo = "<p>Opis ćwiczenia Shoulder Press Dummbeells</p>";
-   //    exerciseTextThree = "<p>Opis ćwiczenia Behind NeckPress</p>";
-
-   //    exerciseImgOne = "./images/military.jpg";
-   //    exerciseImgTwo = "./images/shoulderPress.jpg";
-   //    exerciseImgThree = "./images/behingNeckPress.jpg";
-
-   //    bottomContainerUpdate();
-   // };
-
-   // //Function Two
-
-   // function exerciseDetailsTwo() {
-   //    exerciseTitle = ex2.textContent;
-   //    exerciseTitleOne = "Back Squat";
-   //    exerciseTitleTwo = "Goblet Squat";
-
-
-   //    exerciseTextOne = "<p>Opis ćwiczenia Back Squat</p>";
-   //    exerciseTextTwo = "<p>Opis ćwiczenia Goblet Squat</p>";
-   //    exerciseTextThree = "<p>Opis ćwiczenia Leg Press Machine</p>";
-
-   //    exerciseImgOne = "./images/backSquat.jpg";
-   //    exerciseImgTwo = "./images/gobletSquat.jpg";
-   //    exerciseImgThree = "./images/legPressMachine.jpg";
-
-   //    bottomContainerUpdate();
-   // };
-
-   // //Function Three
-
-   // function exerciseDetailsThree() {
-   //    exerciseTitle = ex3.textContent;
-   //    exerciseTitleOne = "Barbell bench press";
-   //    exerciseTitleTwo = "Push ups";
-
-
-   //    exerciseTextOne = "<p>Opis ćwiczenia Barbell bench press </p>";
-   //    exerciseTextTwo = "<p>Opis ćwiczenia Push ups </p>";
-   //    exerciseTextThree = "<p>Opis ćwiczenia Dumbbells incline chest press</p>";
-
-   //    exerciseImgOne = "./images/";
-   //    exerciseImgTwo = "./images/";
-   //    exerciseImgThree = "./images/";
-
-   //    bottomContainerUpdate();
-   // };
-
-   // //Function Four
-
-   // function exerciseDetailsFour() {
-   //    exerciseTitle = ex4.textContent;
-   //    exerciseTitleOne = "Pull ups";
-   //    exerciseTitleTwo = "Reversed rows";
-
-
-   //    exerciseTextOne = "<p>Opis ćwiczenia Pull ups </p>";
-   //    exerciseTextTwo = "<p>Opis ćwiczenia Reversed rows </p>";
-   //    exerciseTextThree = "<p>Opis ćwiczenia Dumbbell rows</p>";
-
-   //    exerciseImgOne = "./images/";
-   //    exerciseImgTwo = "./images/";
-   //    exerciseImgThree = "./images/";
-
-   //    bottomContainerUpdate();
-   // };
-
-   // //Function Five
-
-   // function exerciseDetailsFive() {
-   //    exerciseTitle = ex5.textContent;
-   //    exerciseTitleOne = "Hanging legs raises";
-   //    exerciseTitleTwo = "Sit ups";
-
-
-   //    exerciseTextOne = "<p>Opis ćwiczenia Hanging legs raises</p>";
-   //    exerciseTextTwo = "<p>Opis ćwiczenia Sit ups </p>";
-   //    exerciseTextThree = "<p>Opis ćwiczenia Crunches </p>";
-
-   //    exerciseImgOne = "./images/";
-   //    exerciseImgTwo = "./images/";
-   //    exerciseImgThree = "./images/";
-
-   //    bottomContainerUpdate();
-   // };
-
-   // //Function Six
-
-   // function exerciseDetailsSix() {
-   //    exerciseTitle = ex6.textContent;
-   //    exerciseTitleOne = "Ez bar supinated biceps curls";
-   //    exerciseTitleTwo = "Dumbbells neutral grip biceps curls";
-
-
-   //    exerciseTextOne = "<p>Opis ćwiczenia Ez bar supinated biceps curls </p>";
-   //    exerciseTextTwo = "<p>Opis ćwiczenia Dumbbells neutral grip biceps curls </p>";
-   //    // exerciseTextThree = "<p>Opis ćwiczenia </p>";
-
-   //    exerciseImgOne = "./images/";
-   //    exerciseImgTwo = "./images/";
-   //    exerciseImgThree = "./images/";
-
-   //    bottomContainerUpdate();
-   // };
-
-   // //Function Seven
-
-   // function exerciseDetailsSeven() {
-   //    exerciseTitle = ex7.textContent;
-   //    exerciseTitleOne = "Ez bar scullcrushers";
-   //    exerciseTitleTwo = "Triceps pushdown high pulley";
-
-
-   //    exerciseTextOne = "<p>Opis ćwiczenia Ez bar scullcrushers </p>";
-   //    exerciseTextTwo = "<p>Opis ćwiczenia Triceps pushdown high pulley </p>";
-   //    // exerciseTextThree = "<p>Opis ćwiczenia </p>";
-
-   //    exerciseImgOne = "./images/";
-   //    exerciseImgTwo = "./images/";
-   //    exerciseImgThree = "./images/";
-
-   //    bottomContainerUpdate();
-   // };
-
-   //Hide buttons Function
 
    function hideButtons() {
       document.getElementById("super-pump-header").textContent = "Random Workout";
@@ -785,14 +709,14 @@
       wei7.innerHTML = "<h3>adjust</h3>";
    };
 
-// Hide containers six to nine Function
+   // Hide containers six to nine Function
 
-function containersSixToNineDisplayNone(){
-   containerSix.style.display = "none";
-   containerSeven.style.display = "none";
-   containerEight.style.display = "none";
-   containerNine.style.display = "none";
-};
+   function containersSixToNineDisplayNone() {
+      containerSix.style.display = "none";
+      containerSeven.style.display = "none";
+      containerEight.style.display = "none";
+      containerNine.style.display = "none";
+   };
 
    //Show buttons Function
 
@@ -815,8 +739,8 @@ function containersSixToNineDisplayNone(){
 
       exerciseImage.src = "./images/bottomimage.jpg";
 
-   containersSixToNineDisplayNone()
-   
+      containersSixToNineDisplayNone()
+
       for (i = 1; i < 9; i++) {
          buttons[i] = document.querySelector(".btn" + i).style.display = "inline-block";
       };
@@ -850,10 +774,10 @@ function containersSixToNineDisplayNone(){
       //Podmiana Exercises
 
       ex1.innerHTML = "<h3>Dips</h3>";
-      ex2.innerHTML = "<h3>Barbell Bench Press</h3>";
-      ex3.innerHTML = "<h3>Incline Dumbbells Press</h3>";
-      ex4.innerHTML = "<h3>Decline Barbell Press</h3>";
-      ex5.innerHTML = "<h3>Dumbbells Flyes</h3>";
+      ex2.innerHTML = "<h3>Barbell bench press</h3>";
+      ex3.innerHTML = "<h3>Incline dumbbells bench press</h3>";
+      ex4.innerHTML = "<h3>Decline barbell bench press</h3>";
+      ex5.innerHTML = "<h3>Dumbbells flyes</h3>";
 
       //Podmiana Sets
       se1.innerHTML = "<h3>5</h3>";
@@ -904,13 +828,13 @@ function containersSixToNineDisplayNone(){
 
       //Podmiana Exercises
 
-      ex1.innerHTML = "<h3>Barbell incline bench press</h3>";
-      ex2.innerHTML = "<h3>Incline Dumbbell Fly</h3>";
+      ex1.innerHTML = "<h3>Incline barbell bench press</h3>";
+      ex2.innerHTML = "<h3>Incline dumbbells flyes</h3>";
       ex3.innerHTML = "<h3>Push ups</h3>";
-      ex4.innerHTML = "<h3>Cable Crossover</h3>";
+      ex4.innerHTML = "<h3>Cable crossover</h3>";
       ex5.innerHTML = "<h3>Dumbbells bench press</h3>";
       ex6.innerHTML = "<h3>Pec deck</h3>";
-      ex7.innerHTML = "<h3>Triceps pushdowns machine</h3>";
+      ex7.innerHTML = "<h3>Triceps pushdowns cable machine</h3>";
 
 
       //Podmiana Sets
@@ -1030,7 +954,7 @@ function containersSixToNineDisplayNone(){
 
    function copy() {
 
-var stringOne, stringTwo, stringThree, stringFour, stringFive, stringSix, stringSeven, stringEight, stringNine;
+      var stringOne, stringTwo, stringThree, stringFour, stringFive, stringSix, stringSeven, stringEight, stringNine;
 
 
 
@@ -1043,7 +967,7 @@ var stringOne, stringTwo, stringThree, stringFour, stringFive, stringSix, string
       stringSeven = or7.textContent + " ) " + ex7.textContent + " " + se7.textContent + " sets " + rep7.textContent + " reps " + res7.textContent + " rest " + wei7.textContent + "\n";
       stringEight = or8.textContent + " ) " + ex8.textContent + " " + se8.textContent + " sets " + rep8.textContent + " reps " + res8.textContent + " rest " + wei8.textContent + "\n";
       stringNine = or9.textContent + " ) " + ex9.textContent + " " + se9.textContent + " sets " + rep9.textContent + " reps " + res9.textContent + " rest " + wei9.textContent + "\n";
-      
+
 
       // stringOne= stringOneComplex.toString();
       // stringTwo= stringTwoComplex.toString();
@@ -1102,4 +1026,3 @@ var stringOne, stringTwo, stringThree, stringFour, stringFive, stringSix, string
 
    // Reset Strony Do podstawowych ustawien
    showButtons();
-   
