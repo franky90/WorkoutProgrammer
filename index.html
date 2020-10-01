@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workout Programmer</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -13,7 +14,7 @@
         <div class="heading">
             <h1>COMPLETE </h1>
             <h1>WORKOUT </h1>
-            <h1>ROUTINE</h1>
+            <h1 id="programm">Programmer</h1>
             <h3> Compose your own training !</h3>
             <img src="./images/workoutman.png" alt="">
         </div>
@@ -132,7 +133,7 @@
                 <div class="grid-item or1">
                     <h3>-</h3>
                 </div>
-                <div class="grid-item ex ex1">
+                <div id="exercise1" class="grid-item ex ex1">
                     <h3>-</h3>
                 </div>
                 <div class="grid-item se1">
@@ -351,6 +352,16 @@
                 </div>
 
             </div>
+
+            <div class="copy-container">
+                <div class="copy-button">
+                    <img class="copy-img" src="./images/copy.png" alt="copy">
+                    <div class="pump-txt">
+                        <h3 id="super-pump-header">  Copy Workout</h3>
+                    </div>
+                </div>
+            </div>
+
             <div class="bottom-container">
                 <div class="image-container">
                     <img class="exercise-image" src="./images/hulk.jpg" alt="photo-exercise">
@@ -360,6 +371,9 @@
                     </div>
                 </div>
             </div>
+            
+               
+            
         </div>
     </div>
     <script type="text/javascript" src="app.js"></script>

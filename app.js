@@ -247,7 +247,7 @@
    };
 
    //Endurance2
-   var enduranceTwoArray = ["<h3>Treadmill </h3>", "<h3>Air Bike</h3>", "<h3>Rowing Machine</h3>","<h3>-</h3>"];
+   var enduranceTwoArray = ["<h3>Treadmill </h3>", "<h3>Air Bike</h3>", "<h3>Rowing Machine</h3>", "<h3>-</h3>"];
 
    btn9 = document.querySelector(".btn9");
    btn9.addEventListener("click", enduranceTwoEx);
@@ -292,7 +292,7 @@
    };
 
 
-
+   
 
    //Strength
    var strengthRadio = document.getElementById("strength");
@@ -444,8 +444,8 @@
    //Function that Scroll To Exercise Details 
    function scrollWin() {
       window.scrollTo(0, 2500);
-    }
-    
+   }
+
 
 
    //Functions for Exercises from 1 - 7 which display name of exercise in exercise-title 
@@ -799,6 +799,11 @@
       superButton.classList.remove("super-pump-center");
       superButton.classList.add("super-pump");
 
+      supersetsRadio.checked = false;
+      regularRadio.checked = false;
+      enduranceRadio.checked = false;
+      strengthRadio.checked = false;
+
       exerciseImage.src = "./images/hulk.jpg";
 
       containerSix.style.display = "none";
@@ -1009,4 +1014,67 @@
       superButton.removeEventListener("click", superPump);
       superButton.addEventListener("click", splitChestTwo);
 
+   };
+
+   //Copy Grid Content 
+
+   var copyButton = document.querySelector(".copy-button");
+   copyButton.addEventListener("click", copy);
+
+
+   function copy() {
+
+      var stringOne = or1.textContent + " ) " + ex1.textContent + " " + se1.textContent + " sets " + rep1.textContent + " reps " + res1.textContent + " rest " + wei1.textContent + "\n";
+      var stringTwo = or2.textContent + " ) " + ex2.textContent + " " + se2.textContent + " sets " + rep2.textContent + " reps " + res2.textContent + " rest " + wei2.textContent + "\n";
+      var stringThree = or3.textContent + " ) " + ex3.textContent + " " + se3.textContent + " sets " + rep3.textContent + " reps " + res3.textContent + " rest " + wei3.textContent + "\n";
+      var stringFour = or4.textContent + " ) " + ex4.textContent + " " + se4.textContent + " sets " + rep4.textContent + " reps " + res4.textContent + " rest " + wei4.textContent + "\n";
+      var stringFive = or5.textContent + " ) " + ex5.textContent + " " + se5.textContent + " sets " + rep5.textContent + " reps " + res5.textContent + " rest " + wei5.textContent + "\n";
+      var stringSix = or6.textContent + " ) " + ex6.textContent + " " + se6.textContent + " sets " + rep6.textContent + " reps " + res6.textContent + " rest " + wei6.textContent + "\n";
+      var stringSeven = or7.textContent + " ) " + ex7.textContent + " " + se7.textContent + " sets " + rep7.textContent + " reps " + res7.textContent + " rest " + wei7.textContent + "\n";
+      var stringEight = or8.textContent + " ) " + ex8.textContent + " " + se8.textContent + " sets " + rep8.textContent + " reps " + res8.textContent + " rest " + wei8.textContent + "\n";
+      var stringNine = or9.textContent + " ) " + ex9.textContent + " " + se9.textContent + " sets " + rep9.textContent + " reps " + res9.textContent + " rest " + wei9.textContent + "\n";
+      var fullString = [];
+
+      function fullStrings() {
+         // dodac tylko jesli display elementu jest grid
+
+         if (containerOne.style.display !== "none") {
+            fullString.push(stringOne);
+         };
+
+         if (containerTwo.style.display !== "none") {
+            fullString.push(stringTwo);
+         };
+
+         if (containerThree.style.display !== "none") {
+            fullString.push(stringThree);
+         };
+
+         if (containerFour.style.display !== "none") {
+            fullString.push(stringFour);
+         };
+         if (containerFive.style.display !== "none") {
+            fullString.push(stringFive);
+         };
+         if (containerSix.style.display !== "none") {
+            fullString.push(stringSix);
+         };
+         if (containerSeven.style.display !== "none") {
+            fullString.push(stringSeven);
+         };
+         if (containerEight.style.display !== "none") {
+            fullString.push(stringEight);
+         };
+         if (containerNine.style.display !== "none") {
+            fullString.push(stringNine);
+         };
+
+         return fullString;
+      };
+      fullStrings();
+
+      var copyContent = fullString.toString();
+      copyContentReady = copyContent.split(',').join('');
+      console.log(copyContentReady);
+      navigator.clipboard.writeText(copyContentReady);
    };
