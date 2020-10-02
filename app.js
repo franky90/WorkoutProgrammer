@@ -186,7 +186,7 @@
       return;
    };
    //Pump2
-   var pumpTwoArray = ["<h3>Ez bar scullcrushers</h3>", "<h3>Triceps pushdown high pulley</h3>", "<h3>Dumbbell triceps extension above head</h3>"];
+   var pumpTwoArray = ["<h3>Ez bar scullcrushers</h3>", "<h3>Triceps pushdowns cable machine</h3>", "<h3>Dumbbell triceps extension above head</h3>"];
 
    btn7 = document.querySelector(".btn7");
    btn7.addEventListener("click", pumpTwoEx);
@@ -203,7 +203,7 @@
    };
 
    // Endurance1
-   var enduranceOneArray = ["<h3>Treadmill push</h3>", "<h3>Farmer walks</h3>", "<h3>Slum ball</h3>", "<h3>-</h3>"];
+   var enduranceOneArray = ["<h3>Treadmill push</h3>", "<h3>Farmer walk</h3>", "<h3>Slam ball</h3>", "<h3>-</h3>"];
 
    btn8 = document.querySelector(".btn8");
    btn8.addEventListener("click", enduranceOneEx);
@@ -247,7 +247,7 @@
    };
 
    //Endurance2
-   var enduranceTwoArray = ["<h3>Treadmill </h3>", "<h3>Air bike</h3>", "<h3>Rowing machine</h3>", "<h3>-</h3>"];
+   var enduranceTwoArray = ["<h3>Treadmill run</h3>", "<h3>Air bike</h3>", "<h3>Rowing machine</h3>", "<h3>-</h3>"];
 
    btn9 = document.querySelector(".btn9");
    btn9.addEventListener("click", enduranceTwoEx);
@@ -615,6 +615,55 @@
             exerciseDetailsContent.textContent = "opis prostego cwiczenia Dumbbells flor press";
             exerciseImage.src = "./images/dbFloorPress.jpg";
             break;
+            case "Ez bar supinated biceps curls":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Ez bar supinated biceps curls";
+            exerciseImage.src = "./images/ezBicepsCurls.jpg";
+            break;
+            case "Dumbbells neutral grip biceps curls":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Dumbbells neutral grip biceps curls";
+            exerciseImage.src = "./images/dbNeutralBicepsCurls.jpg";
+            break;
+            case "Incline dumbbells biceps curls":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Incline dumbbells biceps curls";
+            exerciseImage.src = "./images/inclineDbBicepsCurls.jpg";
+            break;
+            case "Ez bar scullcrushers":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Ez bar scullcrushers";
+            exerciseImage.src = "./images/ezScullcrushers.jpg";
+            break;
+            case "Dumbbell triceps extension above head":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Dumbbell triceps extension above head";
+            exerciseImage.src = "./images/dbTricepsExtension.jpg";
+            break;
+            case "Treadmill push":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Treadmill push";
+            exerciseImage.src = "./images/treadmillPush.jpg";
+            break;
+            case "Farmer walk":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Farmer walk";
+            exerciseImage.src = "./images/farmerWalk.jpg";
+            break;
+            case "Slam ball":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Slam ball";
+            exerciseImage.src = "./images/slamBall.jpg";
+            break;
+            case "Treadmill run":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Treadmill run";
+            exerciseImage.src = "./images/treadmillRun.jpeg";
+            break;
+            case "Air bike":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Air bike";
+            exerciseImage.src = "./images/airBike.jpg";
+            break;
+            case "Rowing machine":
+            exerciseDetailsContent.textContent = "opis prostego cwiczenia Rowing machine";
+            exerciseImage.src = "./images/rowingMachine.jpg";
+            break;
+            case "-":
+            exerciseTitleExternal.textContent = "Please select exercise";
+            exerciseDetailsContent.textContent = "...";
+            exerciseImage.src = "./images/noExercise.jpg";
+            break;
 
             
 
@@ -636,7 +685,7 @@
       document.querySelector(".super-endurance").style.display = "none";
       superButton.classList.add("super-pump-center");
 
-      exerciseImage.src = "./images/hulk.jpg";
+      exerciseImage.src = "./images/bottomimage.jpg";
 
 
 
