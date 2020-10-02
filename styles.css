@@ -52,6 +52,13 @@ body {
     
     padding: 40px 0px;
 }
+.welcome-container h1{
+    
+    margin: auto;
+    width:80%;
+    text-align: center;
+    color: #eeeeee;
+}
 .welcome{
     line-height: 20px;
     margin: auto;
@@ -92,10 +99,11 @@ body {
 }
 
 .topnav-centered {
-    width: 36%;
+    
+    width: 50%;
     padding-top: 25px;
     margin: 0px auto;
-
+    padding-left: 180px;
 }
 
 /* Links inside the navbar */
@@ -123,7 +131,7 @@ body {
     color: white;
     padding: 14px 16px;
     background-color: inherit;
-    width: 150px;
+    width: 160px;
 
 }
 

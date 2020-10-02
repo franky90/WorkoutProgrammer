@@ -226,13 +226,13 @@ function tableContent(){
       ex8.innerHTML = result;
 
       // Fill up table depend from exercise column
-      if (ex8.innerText === "Slum Ball") {
+      if (ex8.innerText === "Slam ball") {
          or8.innerHTML = "<h3>F1</h3>";
          se8.innerHTML = "<h3> 3</h3>";
          rep8.innerHTML = "<h3> 12-15</h3>";
          res8.innerHTML = "<h3> 90-120s</h3>";
          wei8.innerHTML = "<h3> adjust</h3>";
-      } else if (ex8.innerText === "Farmer walks") {
+      } else if (ex8.innerText === "Farmer walk") {
          or8.innerHTML = "<h3>F1</h3>";
          se8.innerHTML = "<h3> 3-5</h3>";
          rep8.innerHTML = "<h3> 45 meters</h3>";
@@ -270,7 +270,7 @@ function tableContent(){
       ex9.innerHTML = result;
 
       // Fill up table depend from exercise column
-      if (ex9.innerText === "Treadmill") {
+      if (ex9.innerText === "Treadmill run") {
          or9.innerHTML = "<h3>F2</h3>";
          se9.innerHTML = "<h3>1</h3>";
          rep9.innerHTML = "<h3>15 min</h3>";
@@ -516,155 +516,155 @@ function tableContent(){
    function checkExerciseTitle() {
       switch (exerciseTitleExternal.textContent) {
          case "Military press":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Military press";
+            exerciseDetailsContent.textContent = "Tips for Military press";
             exerciseImage.src = "./images/military.jpg";
             break;
          case "Shoulder press with dumbbells":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Shoulder press";
+            exerciseDetailsContent.textContent = "Tips for Shoulder press";
             exerciseImage.src = "./images/shoulderPress.jpg";
             break;
          case "Behind neck barbell press":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Behind neck barbell press";
+            exerciseDetailsContent.textContent = "Tips for Behind neck barbell press";
             exerciseImage.src = "./images/behindNeckPress.jpg";
             break;
          case "Back squat":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Back Squat";
+            exerciseDetailsContent.textContent = "Tips for Back Squat";
             exerciseImage.src = "./images/backSquat.jpg";
             break;
          case "Goblet squat":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Goblet Squat";
+            exerciseDetailsContent.textContent = "Tips for Goblet Squat";
             exerciseImage.src = "./images/gobletSquat.jpg";
             break;
          case "Dips":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Dips";
+            exerciseDetailsContent.textContent = "Tips for Dips";
             exerciseImage.src = "./images/dips.jpg";
             break;
          case "Leg press machine":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Leg Press";
+            exerciseDetailsContent.textContent = "Tips for Leg Press";
             exerciseImage.src = "./images/legPressMachine.jpg";
             break;
          case "Barbell bench press":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Barbell bench press";
+            exerciseDetailsContent.textContent = "Tips for Barbell bench press";
             exerciseImage.src = "./images/benchPress.jpg";
             break;
          case "Push ups":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Barbell Push ups";
+            exerciseDetailsContent.textContent = "Tips for Barbell Push ups";
             exerciseImage.src = "./images/pushUps.jpg";
             break;
          case "Incline dumbbells bench press":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Dumbbells incline bench press";
+            exerciseDetailsContent.textContent = "Tips for Dumbbells incline bench press";
             exerciseImage.src = "./images/inclineDbPress.png";
             break;
          case "Pull ups":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Pull ups";
+            exerciseDetailsContent.textContent = "Tips for Pull ups";
             exerciseImage.src = "./images/pullUps.jpg";
             break;
          case "Reversed rows":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Reversed rows";
+            exerciseDetailsContent.textContent = "Tips for Reversed rows";
             exerciseImage.src = "./images/reversedRows.jpg";
             break;
          case "Dumbbell rows":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Dumbbell rows";
+            exerciseDetailsContent.textContent = "Tips for Dumbbell rows";
             exerciseImage.src = "./images/dbRows.jpg";
             break;
          case "Hanging legs raises":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Hanging legs raises";
+            exerciseDetailsContent.textContent = "Tips for Hanging legs raises";
             exerciseImage.src = "./images/hangRaises.jpg";
             break;
          case "Sit ups":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Sit ups";
+            exerciseDetailsContent.textContent = "Tips for Sit ups";
             exerciseImage.src = "./images/sitUps.jpg";
             break;
          case "Lying legs raises":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Lying leg raises";
+            exerciseDetailsContent.textContent = "Tips for Lying leg raises";
             exerciseImage.src = "./images/lyingLegsRaises.jpg";
             break;
          case "Decline barbell bench press":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Decline barbell bench press";
+            exerciseDetailsContent.textContent = "Tips for Decline barbell bench press";
             exerciseImage.src = "./images/declineBenchPress.jpg";
             break;
          case "Dumbbells flyes":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Dumbbells flyes";
+            exerciseDetailsContent.textContent = "Tips for Dumbbells flyes";
             exerciseImage.src = "./images/dbFlyesFlat.jpg";
             break;
          case "Incline barbell bench press":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Incline barbell bench press";
+            exerciseDetailsContent.textContent = "Tips for Incline barbell bench press";
             exerciseImage.src = "./images/inclineBbPress.jpg";
             break;
          case "Incline barbell bench press":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Incline barbell bench press";
+            exerciseDetailsContent.textContent = "Tips for Incline barbell bench press";
             exerciseImage.src = "./images/inclineBbPress.jpg";
             break;
          case "Incline dumbbells flyes":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Incline dumbbells flyes";
+            exerciseDetailsContent.textContent = "Tips for Incline dumbbells flyes";
             exerciseImage.src = "./images/dbFlyesIncline.jpg";
             break;
          case "Cable crossover":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Cable crossover";
+            exerciseDetailsContent.textContent = "Tips for Cable crossover";
             exerciseImage.src = "./images/cableCrossover.jpg";
             break;
          case "Dumbbells bench press":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Dumbbells bench press";
+            exerciseDetailsContent.textContent = "Tips for Dumbbells bench press";
             exerciseImage.src = "./images/dbBenchPress.jpg";
             break;
          case "Pec deck":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Pec deck";
+            exerciseDetailsContent.textContent = "Tips for Pec deck";
             exerciseImage.src = "./images/pecDec.jpg";
             break;
          case "Triceps pushdowns cable machine":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Triceps pushdowns cable machine";
+            exerciseDetailsContent.textContent = "Tips for Triceps pushdowns cable machine";
             exerciseImage.src = "./images/tricepsPushdown.jpg";
             break;
          case "Bar dips":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Bar Dips";
+            exerciseDetailsContent.textContent = "Tips for Bar Dips";
             exerciseImage.src = "./images/barDips.jpg";
             break;
          case "Dumbbells flor press":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Dumbbells flor press";
+            exerciseDetailsContent.textContent = "Tips for Dumbbells flor press";
             exerciseImage.src = "./images/dbFloorPress.jpg";
             break;
          case "Ez bar supinated biceps curls":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Ez bar supinated biceps curls";
+            exerciseDetailsContent.textContent = "Tips for Ez bar supinated biceps curls";
             exerciseImage.src = "./images/ezBicepsCurls.jpg";
             break;
          case "Dumbbells neutral grip biceps curls":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Dumbbells neutral grip biceps curls";
+            exerciseDetailsContent.textContent = "Tips for Dumbbells neutral grip biceps curls";
             exerciseImage.src = "./images/dbNeutralBicepsCurls.jpg";
             break;
          case "Incline dumbbells biceps curls":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Incline dumbbells biceps curls";
+            exerciseDetailsContent.textContent = "Tips for Incline dumbbells biceps curls";
             exerciseImage.src = "./images/inclineDbBicepsCurls.jpg";
             break;
          case "Ez bar scullcrushers":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Ez bar scullcrushers";
+            exerciseDetailsContent.textContent = "Tips for Ez bar scullcrushers";
             exerciseImage.src = "./images/ezScullcrushers.jpg";
             break;
          case "Dumbbell triceps extension above head":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Dumbbell triceps extension above head";
+            exerciseDetailsContent.textContent = "Tips for Dumbbell triceps extension above head";
             exerciseImage.src = "./images/dbTricepsExtension.jpg";
             break;
          case "Treadmill push":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Treadmill push";
+            exerciseDetailsContent.textContent = "Tips for Treadmill push";
             exerciseImage.src = "./images/treadmillPush.jpg";
             break;
          case "Farmer walk":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Farmer walk";
+            exerciseDetailsContent.textContent = "Tips for Farmer walk";
             exerciseImage.src = "./images/farmerWalk.jpg";
             break;
          case "Slam ball":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Slam ball";
+            exerciseDetailsContent.textContent = "Tips for Slam ball";
             exerciseImage.src = "./images/slamBall.jpg";
             break;
          case "Treadmill run":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Treadmill run";
+            exerciseDetailsContent.textContent = "Tips for Treadmill run";
             exerciseImage.src = "./images/treadmillRun.jpeg";
             break;
          case "Air bike":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Air bike";
+            exerciseDetailsContent.textContent = "Tips for Air bike";
             exerciseImage.src = "./images/airBike.jpg";
             break;
          case "Rowing machine":
-            exerciseDetailsContent.textContent = "opis prostego cwiczenia Rowing machine";
+            exerciseDetailsContent.textContent = "Tips for Rowing machine";
             exerciseImage.src = "./images/rowingMachine.jpg";
             break;
          case "-":
@@ -815,6 +815,7 @@ function tableContent(){
 
    document.querySelector(".fbw").addEventListener("click", showButtons);
 
+   // Split Chest
    function splitChestOne() {
       containerSix.style.display = "none";
       containerSeven.style.display = "none";
@@ -991,11 +992,11 @@ function tableContent(){
    };
 
 
-   //Split Button
-   var splitButton = document.querySelector(".split-chest");
-   splitButton.addEventListener("click", handleSplitButton);
+   //Split Chest Button
+   var splitChest = document.querySelector(".split-chest");
+   splitChest.addEventListener("click", handleSplitChest);
 
-   function handleSplitButton() {
+   function handleSplitChest() {
       hideButtons();
       splitChestOne();
       superButton.removeEventListener("click", superPump);
@@ -1003,6 +1004,36 @@ function tableContent(){
 
    };
 
+     function notAvailable(){
+     alert("This content is not available yet");
+   };
+
+
+
+
+
+   // Split Shoulder Button
+   var splitShoulders = document.querySelector(".split-shoulders");
+   splitShoulders.addEventListener("click", notAvailable);
+
+   // Split Legs Button
+   var splitLegs = document.querySelector(".split-legs");
+   splitLegs.addEventListener("click", notAvailable);
+
+   //Lower Back Pain
+   var backPain = document.querySelector(".lower-back-pain");
+   backPain.addEventListener("click", notAvailable);
+  
+   //Back pain
+   var upperBackPain = document.querySelector(".back-pain");
+   upperBackPain.addEventListener("click", notAvailable);
+   //Acl Treatment
+   var aclTreatment = document.querySelector(".acl-treatment");
+   aclTreatment.addEventListener("click", notAvailable);
+
+   //Shoulder Mobility
+   var shoulderMobility = document.querySelector(".shoulder-mobility");
+   shoulderMobility.addEventListener("click", notAvailable);
    //Copy Grid Content 
 
    var copyButton = document.querySelector(".copy-button");
@@ -1035,7 +1066,7 @@ function tableContent(){
       // stringSeven= stringSevenComplex.toString();
       // stringEight= stringEightComplex.toString();
       // stringNine= stringNineComplex.toString();
-      fullString = [];
+      fullString = ["Complete Workout Programmer \n"];
 
       function fullStrings() {
          // dodac tylko jesli display elementu jest grid
@@ -1079,6 +1110,7 @@ function tableContent(){
       copyContentReady = copyContent.split(',').join('');
       console.log(copyContentReady);
       navigator.clipboard.writeText(copyContentReady);
+      alert("Workout Copied");
    };
 
    // Reset Strony Do podstawowych ustawien
