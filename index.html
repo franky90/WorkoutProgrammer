@@ -14,10 +14,33 @@
         <div class="heading">
             <h1>COMPLETE </h1>
             <h1>WORKOUT </h1>
-            <h1 id="programm">Programmer</h1>
-            <h3> Compose your own training !</h3>
+            <h1 id="programm">Programmer</h1><br><br>
+            <h3> Compose your own training ! or...</h3>
+            <h3>use trusted one</h3>
             <img src="./images/workoutman.png" alt="">
         </div>
+        <!-- Welcome Info -->
+        <div class="welcome-container">
+        <div class="welcome">
+<h3>Welcome !!!</h3>
+<p>
+    By using this app you will create your own Full Body training routine.<br>
+    To do this -> plase <span class="blue">Select Your Goal </span>, <span class="blue">Choose Intensity</span> and use buttons below
+    to generate your favourite exercises.<br><br>
+    Also you can use Ready To Go workouts which was tailored by our trusted trainers.<br>
+    From the menu below select which routine you are interested in.<br><br>
+    
+    To save your training please click  <span class="blue">Copy Workout </span> button below table with exercises. <br>
+    Now you can paste it to your google sheets or send it via messager/email.<br><br>
+    Buttons <span class="blue">Extra Pump</span> and <span class="blue">Extra Endurance</span> adding additional exercises to your workout.
+<br><br>
+    If you are willing to check more details about an exercise just click at it's name.
+</p>
+            <div class="extend-container">
+                <img class="extend" src="./images/extend.png" alt="extend">
+            </div>
+        </div>
+    </div>
         <!-- Dropdown menu -->
         <div class="navbar">
             <div class="topnav-centered">
@@ -60,7 +83,7 @@
         <div class="training-options">
             <div class="training-style1">
 
-                <h3> Select Your Goal</h3>
+                <h3 class="blue"> Select Your Goal</h3>
                 <input id="strength" type="radio" name="training" value="strength">
                 <label for="strength">Strength</label>
                 <input id="endurance" type="radio" name="training" value="endurance">
@@ -69,7 +92,7 @@
             </div>
             <div class="training-style2">
 
-                <h3> Choose Intensity</h3>
+                <h3 class="blue"> Choose Intensity</h3>
                 <input id="regular" type="radio" name="intensity" value="regular">
                 <label for="regular">Regular</label>
                 <input id="supersets" type="radio" name="intensity" value="supersets">
@@ -116,7 +139,7 @@
             <div class="table-title res0">
                 <h3>Rest</h3>
             </div>
-            <div class="table-title wei0">
+            <div class="table-title wei0 remove-line">
                 <h3>Weight</h3>
             </div>
 

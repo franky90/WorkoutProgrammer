@@ -89,6 +89,14 @@
    containerSeven = document.querySelector(".container-seven");
    containerEight = document.querySelector(".container-eight");
    containerNine = document.querySelector(".container-nine");
+   // Extend button
+var transformButton = document.querySelector(".extend");
+transformButton.addEventListener("click",tableContent);
+
+function tableContent(){
+   window.scrollTo(0, 940);
+};
+
 
    //  Shoulders
    var shoulderArray = ["<h3>Military press</h3>", "<h3>Shoulder press with dumbbells</h3>", "<h3>Behind neck barbell press</h3>"];
@@ -579,93 +587,93 @@
             exerciseDetailsContent.textContent = "opis prostego cwiczenia Dumbbells flyes";
             exerciseImage.src = "./images/dbFlyesFlat.jpg";
             break;
-            case "Incline barbell bench press":
+         case "Incline barbell bench press":
             exerciseDetailsContent.textContent = "opis prostego cwiczenia Incline barbell bench press";
             exerciseImage.src = "./images/inclineBbPress.jpg";
             break;
-            case "Incline barbell bench press":
+         case "Incline barbell bench press":
             exerciseDetailsContent.textContent = "opis prostego cwiczenia Incline barbell bench press";
             exerciseImage.src = "./images/inclineBbPress.jpg";
             break;
-            case "Incline dumbbells flyes":
+         case "Incline dumbbells flyes":
             exerciseDetailsContent.textContent = "opis prostego cwiczenia Incline dumbbells flyes";
             exerciseImage.src = "./images/dbFlyesIncline.jpg";
             break;
-            case "Cable crossover":
+         case "Cable crossover":
             exerciseDetailsContent.textContent = "opis prostego cwiczenia Cable crossover";
             exerciseImage.src = "./images/cableCrossover.jpg";
             break;
-            case "Dumbbells bench press":
+         case "Dumbbells bench press":
             exerciseDetailsContent.textContent = "opis prostego cwiczenia Dumbbells bench press";
             exerciseImage.src = "./images/dbBenchPress.jpg";
             break;
-            case "Pec deck":
+         case "Pec deck":
             exerciseDetailsContent.textContent = "opis prostego cwiczenia Pec deck";
             exerciseImage.src = "./images/pecDec.jpg";
             break;
-            case "Triceps pushdowns cable machine":
+         case "Triceps pushdowns cable machine":
             exerciseDetailsContent.textContent = "opis prostego cwiczenia Triceps pushdowns cable machine";
             exerciseImage.src = "./images/tricepsPushdown.jpg";
             break;
-            case "Bar dips":
+         case "Bar dips":
             exerciseDetailsContent.textContent = "opis prostego cwiczenia Bar Dips";
             exerciseImage.src = "./images/barDips.jpg";
             break;
-            case "Dumbbells flor press":
+         case "Dumbbells flor press":
             exerciseDetailsContent.textContent = "opis prostego cwiczenia Dumbbells flor press";
             exerciseImage.src = "./images/dbFloorPress.jpg";
             break;
-            case "Ez bar supinated biceps curls":
+         case "Ez bar supinated biceps curls":
             exerciseDetailsContent.textContent = "opis prostego cwiczenia Ez bar supinated biceps curls";
             exerciseImage.src = "./images/ezBicepsCurls.jpg";
             break;
-            case "Dumbbells neutral grip biceps curls":
+         case "Dumbbells neutral grip biceps curls":
             exerciseDetailsContent.textContent = "opis prostego cwiczenia Dumbbells neutral grip biceps curls";
             exerciseImage.src = "./images/dbNeutralBicepsCurls.jpg";
             break;
-            case "Incline dumbbells biceps curls":
+         case "Incline dumbbells biceps curls":
             exerciseDetailsContent.textContent = "opis prostego cwiczenia Incline dumbbells biceps curls";
             exerciseImage.src = "./images/inclineDbBicepsCurls.jpg";
             break;
-            case "Ez bar scullcrushers":
+         case "Ez bar scullcrushers":
             exerciseDetailsContent.textContent = "opis prostego cwiczenia Ez bar scullcrushers";
             exerciseImage.src = "./images/ezScullcrushers.jpg";
             break;
-            case "Dumbbell triceps extension above head":
+         case "Dumbbell triceps extension above head":
             exerciseDetailsContent.textContent = "opis prostego cwiczenia Dumbbell triceps extension above head";
             exerciseImage.src = "./images/dbTricepsExtension.jpg";
             break;
-            case "Treadmill push":
+         case "Treadmill push":
             exerciseDetailsContent.textContent = "opis prostego cwiczenia Treadmill push";
             exerciseImage.src = "./images/treadmillPush.jpg";
             break;
-            case "Farmer walk":
+         case "Farmer walk":
             exerciseDetailsContent.textContent = "opis prostego cwiczenia Farmer walk";
             exerciseImage.src = "./images/farmerWalk.jpg";
             break;
-            case "Slam ball":
+         case "Slam ball":
             exerciseDetailsContent.textContent = "opis prostego cwiczenia Slam ball";
             exerciseImage.src = "./images/slamBall.jpg";
             break;
-            case "Treadmill run":
+         case "Treadmill run":
             exerciseDetailsContent.textContent = "opis prostego cwiczenia Treadmill run";
             exerciseImage.src = "./images/treadmillRun.jpeg";
             break;
-            case "Air bike":
+         case "Air bike":
             exerciseDetailsContent.textContent = "opis prostego cwiczenia Air bike";
             exerciseImage.src = "./images/airBike.jpg";
             break;
-            case "Rowing machine":
+         case "Rowing machine":
             exerciseDetailsContent.textContent = "opis prostego cwiczenia Rowing machine";
             exerciseImage.src = "./images/rowingMachine.jpg";
             break;
-            case "-":
+         case "-":
             exerciseTitleExternal.textContent = "Please select exercise";
             exerciseDetailsContent.textContent = "...";
             exerciseImage.src = "./images/noExercise.jpg";
             break;
 
-            
+
 
          default:
             exerciseDetailsContent.textContent = "This exercise doesn't have details yet";

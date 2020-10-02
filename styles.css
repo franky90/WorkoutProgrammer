@@ -9,7 +9,6 @@ body {
     margin: 0px auto;
     width: 1280px;
     background-color: inherit;
-
 }
 
 .heading {
@@ -29,12 +28,11 @@ body {
 }
 
 .heading h3 {
-
     color: #eeeeee;
+    margin: 0px;
     font-size: 18px;
-    margin-top: 20px;
+    }
 
-}
 
 #programm {
     font-family: 'Nanum Gothic Coding', monospace;
@@ -48,11 +46,41 @@ body {
     width: 55%;
     height: auto;
 }
-
+/* Welcome info */
+.welcome-container{
+    border-bottom:1px solid #00adb5;
+    
+    padding: 40px 0px;
+}
+.welcome{
+    line-height: 20px;
+    margin: auto;
+    width:80%;
+    text-align: left;
+    color: #eeeeee;
+}
+.extend-container{
+    
+    padding-top: 10px;
+    text-align: center;
+}
+.extend{
+    border-radius: 5px;
+    width: 4%;
+}
+.extend:hover{
+    border:2px solid #eeeeee;
+}
+.extend:active{
+    transform: translateY(4px);
+}
+.blue{
+    color: #00adb5;
+}
 
 /* Navbar container */
 .navbar {
-    border-bottom: 2px solid #00adb5;
+    /* border-bottom: 2px solid #00adb5; */
 
     margin: auto;
     overflow: hidden;
@@ -285,7 +313,6 @@ body {
     padding: 20px 0px;
     color: #eeeeee;
     height: 30px;
-
     background-color: #393e46;
     grid-gap: 5px;
 }
@@ -296,6 +323,9 @@ body {
     background-color: transparent;
     font-size: 20px;
     text-align: center;
+}
+.remove-line{
+    border: none ;
 }
 
 .table-title h3 {
@@ -343,6 +373,7 @@ body {
 }
 
 .bottom-container {
+    border-top:1px solid #00adb5;
     color: #eeeeee;
     height: 480px;
     display: block;
