@@ -72,14 +72,19 @@ Yeah still to much birght colors. Let our eyes rest, let's change it to darker o
 Design 13
 
 There is no good training at the gym without girls on gym floor. Main image swapped !
+Ok so you have created you own workout and now what ? 
+New feature - Copy Workout button. Click it -> then paste to google sheets, messenger, email or whereever. Done <3 Sweet.
 
+Design 16
 
+I know it's not so user friendly (you have to read before click) but I created the Welcome message which explains how to use app. 
 
-What is important to me it's not just a regular clicker. Every click makes sense here-> every exercise has it proper place. Whole workout is compatible with professional training standards and it's provides complex training routine (full body workouts works on all our joints).
+Design 17
 
+What is most important to me it's not just a regular clicker app. Every click makes sense here-> every exercise has it proper place. Whole workout is compatible with professional training standards and it's provides complex training routines (full body workouts works on all our joints).
 
+If u are persistent and you reached to this point. 
+Please give it a go, do some click, Copy workout , paste and give it a try at the gym floor.
+Enjoy.
 
-
-
-I decided to create this app as it was my old dream to do it. 
-![alt text](./design1.jpg)
+Piotr F.
