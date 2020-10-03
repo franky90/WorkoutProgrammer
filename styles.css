@@ -338,7 +338,10 @@ body {
 .table-title h3 {
     margin: 0px 0px;
 }
-
+.exover:hover{
+    border:1px solid #00adb5;
+background-color: #393e46;
+}
 .ex {
     text-align: left;
     padding-left: 20px;
