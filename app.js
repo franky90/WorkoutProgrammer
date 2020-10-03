@@ -90,7 +90,7 @@
    containerEight = document.querySelector(".container-eight");
    containerNine = document.querySelector(".container-nine");
    // Extend button
-var transformButton = document.querySelector(".extend");
+var transformButton = document.querySelector(".extend-container");
 transformButton.addEventListener("click",tableContent);
 
 function tableContent(){

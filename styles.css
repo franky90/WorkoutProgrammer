@@ -67,16 +67,15 @@ body {
     color: #eeeeee;
 }
 .extend-container{
-    
     padding-top: 10px;
     text-align: center;
 }
+.extend-container:hover{
+    background-color: #393e46;
+}
 .extend{
     border-radius: 5px;
-    width: 4%;
-}
-.extend:hover{
-    border:2px solid #eeeeee;
+    width: 3%;
 }
 .extend:active{
     transform: translateY(4px);
