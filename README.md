@@ -1,15 +1,14 @@
 # WorkoutProgrammer
 
-When I was working as full time Personal Trainer I was thinking about creating the app which will help with creating and adjusting training plans for my clients. 
-There was an idea but no skill to do it by myself.<br>
+When I was working as full time Personal Trainer I was planing on crating an app which would be a great tool of designing and adjusting workout plans for my clients. Idea was there, but no skills in that field to proceed.  <br>
 
-Finally in 2020 I decided to change my profession to something what I always wanted to do. Apart from that I enjoy to train hard and be active I also love to spend time on front of computer. I feel constant need to feed my brain with new stuff and I found that it works perfectly with programming.<br>
+The way 2020 has turned out, gave me all the time and facilities to develop a new career path in the field I normally played around as a hobby. Active lifestyle, heavy lifting and being in shape is the lifestyle I love the most, but I was always curios in I.T fields, therefore I treated it as a side hobby. I feel a constant hunger of progression and developing therefore to keep my brain as occupied as my body, I started playing around programming.<br>
 
-After few months of studying here it is -> my first, created from nothing, from chaos in my head -> Workout Programmer.<br>
+And now, I would love to share with YOU, the end product of my latest months work! fro the chaos and just what was only an idea - "Workout Programmer".<br>
 
 It's not the app which I planned to create in past but I think it's also great. <br>
-At the beggining of this project, my goal was just to test of HTML/CSS/JS functionalities. <br>
-I mean by that "if you click this, do sth etc...".<br>
+At the beginning of this project my goal was just to test the HTML/CSS/JS functionalities, therefore I decided to create an app which create complete full body workout.  <br>
+
 So I decided to create an App which will create complete Full Body Workout.<br>
 
 1.
@@ -47,21 +46,21 @@ So by selecting Regular or Supersets you can change the record of order exercise
 ![alt text](/design/design3small.jpg)
 
 4.
-For those whos not familiar with exercises I created feature which presents images of exercises. To check how exercise suppose to looks like you have to click on it's name.<br>
+For those whos not familiar with exercises I created feature which presents images of exercises. To check how the exercises meant to be completed correctly, user would click on it's name.<br>
 Also I added button Super Pump which extends list of exercises by 2. It's adding 2 exercises for ARMS (biceps, triceps. <br>
 
 ![alt text](/design/design6small.jpg)
 
 5.
-Next step was extension of my begninning idea. App won't allow you only to generate workout but also use training routine which was already created. <br>
-For now available it's only CHEST SPLIT routine. To get access to it click SPLIT -> Chest. <br>
+NExt step was to extend my idea from the beginning, To develop it more.<br> App won't allow you only to generate workout but also use training routine which was already created. <br>
+At this very time, user can only choose chest split routine To get access to it click SPLIT -> Chest. <br>
 New button above table appeared -> Random Workout. I prepared 3 effective chest routines. <br>
 In future I plan to add more training routines. As I'm big fan of "health training" so there will be workouts to fix back pain, knee pain etc...<br>
 
 ![alt text](/design/design7small.jpg)
 
 6.
-Then I focused on design. Which at the beggining was .... Yeahh..I...know ... ok It just was there.<br>
+Then I focused on design. Which at the beggining was .... Yeahh..I...know ...ok it was just there.<br>
 But I added another feature -> button Super Endurance. It adds 2 more exercises slots filled with .... yes endurance exercises.<br>
 Once you will decite to perform whole routine with extended Pump and Endurance exercises probably you will "die" that day, but I encourage you to give it a try. <br>
 
@@ -74,12 +73,13 @@ Then I added description of Split-Chest routine. It gives you basic knowledge ab
 ![alt text](/design/design10small.jpg)
 
 8.
-Here we are. App gets new colors !. Do you like it ?<br>
+Here we are. App gets new colors. Do you like it ?<br>
 
 ![alt text](/design/design12small.jpg)
 
 9.
-Yeah still to much birght colors. Let our eyes rest, let's change it to darker one.<br>
+Ok so the coloures do look a bit bright. Let our eyes rest and swtich to colorues to a bit darker ones <br>
+
 
 ![alt text](/design/design13small.jpg)
 
