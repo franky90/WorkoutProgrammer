@@ -1137,7 +1137,6 @@ function tableContent(){
       }
 
       if (email.value.match(mailformat)){
-         return true;
       }else{
          messages.push('Incorrect email format') 
       }
