@@ -398,14 +398,40 @@
 <!-- Form Container-->
         <div class="form-container">
             <div id="error"></div>
-            <form action="P:/Programowanie/WorkoutProgrammer/index.html" method="GET">
+            <form id="form" action="P:/Programowanie/WorkoutProgrammer/index.html" method="GET">
             <div>
-                <label for="name">Name</label>
-                <input id="name" name="name" type="text">
+                <label for="firstName">First Name</label>
+                <input id="firstName" name="firstName" type="text">
             </div>
             <div>
+                <label for="lastName">Last Name</label>
+                <input id="lastName" name="lastName" type="text">
+            </div>
+            
+            <div>
                 <label for="email">Email</label>
-                <input id="email" name="email" type="email">
+                <input id="email" name="email" type="text">
+            </div>
+            <div>
+                <label for="experience">Training Experience</label>
+                <select name="experience" id="experience">
+                    <option value="empty">---Choose Option---</option>
+                    <option value="begginer">Begginer - less then 1 year</option>
+                    <option value="intermediate">Intermediate - less then 2 years</option> 
+                    <option value="advanced">Advanced - more then 2 years </option> 
+                </select>
+            </div>
+            <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+            <div>
+                <label for="textArea">Message</label>
+                <textarea id="textArea" name="textArea" rows="4" cols="50"></textarea>
+                
+               
             </div>
             <button type="submit">Submit</button>
             </form>

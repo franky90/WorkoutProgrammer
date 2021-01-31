@@ -1118,16 +1118,40 @@ function tableContent(){
 
 
    //Contact Form
-   const name = document.getElementById('name')
+   const firstName = document.getElementById('firstName')
+   const lastName = document.getElementById('lastName')
    const email = document.getElementById('email')
-   const name = document.getElementById('form')
+   const mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+   const textArea = document.getElementById('textArea')
+   const experience = document.getElementById('experience')
+   const form = document.getElementById('form')
    const errorElement = document.getElementById('error')
 
    form.addEventListener('submit', (e)=>{
       let messages = []
-      if (name.value === "" || name.value == null){
-         messages.push('Name is required')
+      if (firstName.value === "" || firstName == null){
+         messages.push('First Name is required')
       }
+      if (lastName.value === "" || lastName == null){
+         messages.push('Last Name is required')
+      }
+
+      if (email.value.match(mailformat)){
+         return true;
+      }else{
+         messages.push('Incorrect email format') 
+      }
+
+      
+      if (textArea.value.length < 10){
+         messages.push('Message has to be longer then 10 characters')
+      }
+
+      if (experience.value == "empty"){
+         messages.push('Please select training experience level')  
+      }
+
+      
 
       if(messages.length > 0){
       e.preventDefault()
