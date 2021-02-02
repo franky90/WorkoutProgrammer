@@ -1127,11 +1127,22 @@ function tableContent(){
    const form = document.getElementById('form')
    const errorElement = document.getElementById('error')
    const successElement = document.getElementById('success')
-   const oFile = document.getElementById("fileUpload").files[0];
+   const oFile = document.getElementById("fileUpload").files;
+ 
    
-   
+   function ValidateSize(file) {
+      
+      var FileSize = file.files[0].size / 1024 / 1024; // in MiB
+      if (FileSize > 2) {
+        
+          alert('File size exceeds 2 MiB');
+         $(file).val(''); //for clearing with Jquery
+      }
+  }
+
 
    form.addEventListener('submit', (e)=>{
+      
       let messages = []
       if (firstName.value === "" || firstName == null){
          messages.push('First Name is required')
@@ -1154,10 +1165,10 @@ function tableContent(){
          messages.push('Please select training experience level')  
       }
 
-      // if (oFile.name < 2){
-      //    messages.push('File Problem')  
+      // if (oFile.size > 2097152{
+      // messages.push('File Problem')
       // }
-           
+       
       
 
       if(messages.length > 0){

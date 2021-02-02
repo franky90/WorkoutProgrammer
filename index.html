@@ -430,11 +430,11 @@
             <label for="female">Female</label>
         </div>
         <div>
-            <input class="form-input" type="file" id="fileUpload" accept="image/png, image/jpeg">
+            <input class="form-input" type="file" id="fileUpload" name="fileUpload" accept="image/png, image/jpeg" onchange="ValidateSize(this)">
         </div>
             <div>
                 <label for="textArea">Message</label>
-                <textarea class="form-input" id="textArea" name="textArea" rows="4" cols="50"></textarea>
+                <textarea class="form-input" id="textArea" name="userMessage" rows="4" cols="50"></textarea>
             </div>
             <button type="submit">Submit</button>
             <!-- <div class="form-success" id="success"></div> -->
