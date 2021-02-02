@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workout Programmer</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
 </head>
 
@@ -110,13 +110,13 @@
 
         <div class="pump-container">
             <div class="super-pump">
-                <img class="pump-img" src="./images/pump.png" alt="pump">
+                <img class="pump-img" src="./images/pump.jpg" alt="pump">
                 <div class="pump-txt">
                     <h3 id="super-pump-header"> Extra Pump</h3>
                 </div>
             </div>
             <div class="super-endurance">
-                <img class="pump-img" src="./images/heart.png" alt="endurance">
+                <img class="pump-img" src="./images/heart.jpg" alt="endurance">
                 <div class="pump-txt">
                     <h3 id="super-pump-header"> Extra Endurance</h3>
                 </div>
@@ -430,7 +430,12 @@
             <label for="female">Female</label>
         </div>
         <div>
-            <input class="form-input" type="file" id="fileUpload" accept="image/png, image/jpeg">
+            <input 
+                class="form-input" 
+                type="file" 
+                id="fileUpload" 
+                accept="image/png, image/jpeg"
+            >
         </div>
             <div>
                 <label for="textArea">Message</label>
@@ -445,7 +450,9 @@
 
         </div>
     </div>
-    <script type="text/javascript" src="app.js"></script>
-</body>
 
+    <script type="text/javascript" src="./js/validation.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+
+</body>
 </html>
