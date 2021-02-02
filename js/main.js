@@ -1193,11 +1193,27 @@ function tableContent(){
 
       validateFileData(messages, FormState.file)
 
+      // Will need to run this on express! Should not work locally
+      try {
+         fetch('/api/form')
+         .then((goodResponse) => goodResponse.json())
+         .then((Response) => {
+            debugger
+            console.dir(Response)
+         }).catch(() => {
+            debugger
+            console.dir('Error getting this data from server')
+         })         
+      } catch (error) {
+         console.log('ERROR')
+      }
+
+
       if(messages.length > 0){
          e.preventDefault()
          errorElement.innerHTML = ''
          messages.forEach(msg => createErrorNode(msg, errorElement))
       } else {
-         alert('now submitting the form!')// write code that will submit this via HTTP
+
       }
 })
