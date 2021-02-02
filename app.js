@@ -1126,6 +1126,10 @@ function tableContent(){
    const experience = document.getElementById('experience')
    const form = document.getElementById('form')
    const errorElement = document.getElementById('error')
+   const successElement = document.getElementById('success')
+   const oFile = document.getElementById("fileUpload").files[0];
+   
+   
 
    form.addEventListener('submit', (e)=>{
       let messages = []
@@ -1150,11 +1154,22 @@ function tableContent(){
          messages.push('Please select training experience level')  
       }
 
+      // if (oFile.name < 2){
+      //    messages.push('File Problem')  
+      // }
+           
       
 
       if(messages.length > 0){
       e.preventDefault()
       errorElement.innerText = messages.join(', ')
       }
+      // else
+      // {
+      //    e.preventDefault()
+      //    successElement.innerText = "Thank you! Your message has been successfully sent."
+      // }
       
+
+
    })

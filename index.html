@@ -397,44 +397,49 @@
             </div>
 <!-- Form Container-->
         <div class="form-container">
-            <div id="error"></div>
+            <div class="inputs-container">
+            <div class="form-error" id="error"></div>
             <form id="form" action="P:/Programowanie/WorkoutProgrammer/index.html" method="GET">
             <div>
                 <label for="firstName">First Name</label>
-                <input id="firstName" name="firstName" type="text">
+                <input class="form-input" id="firstName" name="firstName" type="text">
             </div>
             <div>
                 <label for="lastName">Last Name</label>
-                <input id="lastName" name="lastName" type="text">
+                <input class="form-input" id="lastName" name="lastName" type="text">
             </div>
             
             <div>
                 <label for="email">Email</label>
-                <input id="email" name="email" type="text">
+                <input class="form-input" id="email" name="email" type="text">
             </div>
             <div>
                 <label for="experience">Training Experience</label>
-                <select name="experience" id="experience">
+                <select class="form-input" name="experience" id="experience">
                     <option value="empty">---Choose Option---</option>
                     <option value="begginer">Begginer - less then 1 year</option>
                     <option value="intermediate">Intermediate - less then 2 years</option> 
                     <option value="advanced">Advanced - more then 2 years </option> 
                 </select>
             </div>
-            <div>
+            <div class="form-input">
+            <label for="gender">Gender</label>
             <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label><br>
+            <label for="male">Male</label>
             <input type="radio" id="female" name="gender" value="female">
             <label for="female">Female</label>
         </div>
+        <div>
+            <input class="form-input" type="file" id="fileUpload" accept="image/png, image/jpeg">
+        </div>
             <div>
                 <label for="textArea">Message</label>
-                <textarea id="textArea" name="textArea" rows="4" cols="50"></textarea>
-                
-               
+                <textarea class="form-input" id="textArea" name="textArea" rows="4" cols="50"></textarea>
             </div>
             <button type="submit">Submit</button>
+            <!-- <div class="form-success" id="success"></div> -->
             </form>
+        </div>
         </div>
 
 

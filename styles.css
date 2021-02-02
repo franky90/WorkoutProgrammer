@@ -460,3 +460,28 @@ box-shadow: 0px 0px 10px #00adb5;
 .copy-button:active {
     transform: translateY(4px);
 }
+
+.form-container{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #222831;
+    padding: 40px 0 40px 0;
+    color:#eeeeee;
+}
+
+.form-error{
+    color:red
+}
+.form-success{
+    color:green;
+}
+.inputs-container{
+    width:30%;
+}
+.form-input{
+    padding: 5px 0 5px 0;
+    margin-bottom: 5px;
+    width: 100%;
+    
+}
