@@ -1,5 +1,4 @@
    // Gloabal Variables for Table
-
    var sets, se1, se2, se3, se4, se5, se8, se9;
    var reps, rep1, rep2, rep3, rep4, rep5, rep8, rep9;
    var rest, res1, res2, res3, res4, res5, res8, res9;
@@ -1191,7 +1190,12 @@ function tableContent(){
          messages.push('Please select training experience level')  
       }
 
-      validateFileData(messages, FormState.file)
+      const validFile = validateFileData(messages, FormState)
+      if(validFile === false) {
+         // clear the file from file input!
+         const fileInputRef = document.getElementById('fileUpload')
+         console.dir(fileInputRef)
+      }
 
       if(messages.length > 0){
          e.preventDefault()
