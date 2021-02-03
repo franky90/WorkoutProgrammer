@@ -1,6 +1,9 @@
 function validateFileData(messagesStringCollection, stateRef) {
+
     let isValid = true
     const file = stateRef.file
+    if(file === null) return
+
     const isValidFile = typeof file === 'object' 
         && file !== null 
         && typeof file.size === 'number' && file.size/1024/1024 < 2
