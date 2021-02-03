@@ -1,0 +1,495 @@
+body {
+    font-family: Lato;
+    background: rgb(0, 173, 181);
+    background: linear-gradient(0deg, rgba(0, 173, 181, 1) 0%, rgba(34, 40, 49, 1) 72%);
+}
+
+.main-component {
+    display: block;
+    margin: 0px auto;
+    width: 1280px;
+    background-color: inherit;
+}
+
+.heading {
+    position: relative;
+    text-align: left;
+    width: 80%;
+    padding-top: 80px;
+    margin: 0px auto;
+    height: 400px;
+}
+
+.heading h1 {
+
+    color: #eeeeee;
+    margin: 0px;
+    font-size: 70px;
+}
+
+.heading h3 {
+    color: #eeeeee;
+    margin: 0px;
+    font-size: 18px;
+    }
+
+
+#programm {
+    font-family: 'Nanum Gothic Coding', monospace;
+    color: #00adb5;
+}
+
+.heading img {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 55%;
+    height: auto;
+}
+/* Welcome info */
+.welcome-container{
+    border-bottom:1px solid #00adb5;
+    
+    padding: 40px 0px;
+}
+.welcome-container h1{
+    
+    margin: auto;
+    width:80%;
+    text-align: center;
+    color: #eeeeee;
+}
+.welcome{
+    line-height: 20px;
+    margin: auto;
+    width:80%;
+    text-align: left;
+    color: #eeeeee;
+}
+.extend-container{
+    padding-top: 10px;
+    text-align: center;
+}
+.extend-container:hover{
+    background-color: #393e46;
+}
+.extend{
+    border-radius: 5px;
+    width: 3%;
+}
+.extend:active{
+    transform: translateY(4px);
+}
+.blue{
+    color: #00adb5;
+}
+
+/* Navbar container */
+.navbar {
+    /* border-bottom: 2px solid #00adb5; */
+
+    margin: auto;
+    overflow: hidden;
+    background-color: #222831;
+    height: 100px;
+    border-radius: 10px 10px 0px 0px;
+
+
+}
+
+.topnav-centered {
+    
+    width: 50%;
+    padding-top: 25px;
+    margin: 0px auto;
+    padding-left: 180px;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    width: 160px;
+
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    color: #00adb5
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #00adb5;
+    color: #eeeeee;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.active {
+    background-color: #14b1ab;
+    color: white;
+}
+
+.training-options {
+    color: #eeeeee;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #393e46;
+    padding: 10px;
+    grid-gap: 5px;
+    height: 150px;
+}
+
+.training-options h3 {
+    padding-top: 25px;
+}
+
+.training-style1 {
+    text-align: center;
+    padding-left: 350px;
+}
+
+.training-style2 {
+    text-align: center;
+    padding-right: 350px;
+}
+
+.routine-details {
+    display: none;
+    height: 200px;
+    margin: auto;
+    width: 100%;
+    background-color: #393e46;
+    color: #eeeeee;
+
+}
+
+.routine-details img {
+    padding-top: 5px;
+    float: left;
+    width: 30%;
+
+}
+
+.routine-name {
+    margin-left: 50px;
+    padding-top: 80px;
+    width: 20%;
+    float: left;
+    font-size: 30px;
+
+}
+
+.routine-text {
+    margin-left: 20px;
+    padding-right: 50px;
+    padding-top: 40px;
+    width: 40%;
+    float: left;
+
+
+}
+
+.pump-container {
+
+    padding: 20px 0px 20px;
+    height: 70px;
+    width: 100%;
+    background-color: #222831;
+
+}
+
+.super-pump {
+    border: 1px solid #00adb5;
+    color: #eeeeee;
+    margin-left: 350px;
+    margin-right: 50px;
+    background-color: #393e46;
+    width: 20%;
+    float: left;
+    padding: 5px 10px 0px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.super-pump:hover {
+    border-color: #eeeeee;
+    background-color: #222831;
+}
+
+.super-pump:active {
+    transform: translateY(4px);
+}
+
+.super-pump-center {
+    margin-right: 0px;
+    margin-left: 500px;
+}
+
+.pump-img {
+    padding-left: 20px;
+    height: 50px;
+    float: left;
+    padding-right: 5px;
+}
+
+.super-endurance {
+    color: #eeeeee;
+    background-color: #393e46;
+    width: 20%;
+    float: left;
+    padding: 5px 10px 0px;
+    border: 2px solid #00adb5;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.super-endurance:hover {
+    border-color: #eeeeee;
+    background-color: #222831;
+}
+
+.super-endurance:active {
+    transform: translateY(4px);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 100px 100px auto 150px 150px 150px 150px;
+    background-color: #393e46;
+    color: #eeeeee;
+    padding: 2px;
+    grid-gap: 5px;
+
+}
+
+.grid-item {
+
+    background-color: #222831;
+    font-size: 20px;
+    text-align: center;
+}
+
+.container-zero {
+    padding: 20px 0px;
+    color: #eeeeee;
+    height: 30px;
+    background-color: #393e46;
+    grid-gap: 5px;
+}
+
+.table-title {
+    margin: 0px 0px;
+    border-right: 2px solid;
+    background-color: transparent;
+    font-size: 20px;
+    text-align: center;
+}
+.remove-line{
+    border: none ;
+}
+
+.table-title h3 {
+    margin: 0px 0px;
+}
+.exover:hover{
+    border:1px solid #00adb5;
+background-color: #393e46;
+}
+.ex {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.btn {
+
+    height: 60px;
+    width: 90px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #222831;
+    border-radius: 5px;
+    box-shadow: 0 5px #222831;
+    border: 1px solid #00adb5;
+}
+
+.btn:hover {
+    border-color: #eeeeee;
+}
+
+.btn:active {
+
+    transform: translateY(4px);
+}
+
+.btn-container {
+    margin: 10px auto;
+
+}
+
+.random-img {
+    height: 20px;
+    width: 20px;
+
+}
+
+.bottom-container {
+    border-top:1px solid #00adb5;
+    color: #eeeeee;
+    height: 480px;
+    display: block;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    margin: 0px auto 30px;
+    background-color: #393e46;
+
+}
+
+.image-container {
+    padding-top: 80px;
+    padding-left: 100px;
+}
+
+.exercise-image {
+    
+box-shadow: 0px 0px 10px #00adb5;
+
+    width: 40%;
+    float: left;
+}
+
+.exercise-title {
+    font-size: 24px;
+    float: left;
+    width: 50%;
+    padding-left: 50px;
+    padding-top: 30px;
+
+
+}
+
+.exercise-text {
+    font-size: 16px;
+    float: left;
+    width: 40%;
+    padding-left: 50px;
+
+    height: 250px;
+}
+
+.copy-container {
+    padding-top: 20px;
+    width: 100%;
+    background-color: #222831;
+    height: 80px;
+}
+
+.copy-button {
+    border: 1px solid #eeeeee;
+    color: #eeeeee;
+    margin: auto;
+
+    background-color: #393e46;
+    width: 200px;
+
+    padding: 5px 0px 0px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.copy-img {
+    padding-left: 10px;
+    height: 50px;
+    float: left;
+    padding-right: 5px;
+
+}
+.copy-button:hover {
+    border-color: #00adb5;
+}
+
+.copy-button:active {
+    transform: translateY(4px);
+}
+
+.form-container{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #222831;
+    padding: 40px 0 40px 0;
+    color:#eeeeee;
+}
+
+.form-error{
+    color:red
+}
+.form-success{
+    color:green;
+}
+.inputs-container{
+    width:30%;
+}
+.form-input{
+    padding: 5px 0 5px 0;
+    margin-bottom: 5px;
+    width: 100%;
+    
+}
+
+.errorCell {
+    background: #0b8088;
+    color: #222831;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
