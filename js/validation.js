@@ -3,7 +3,6 @@ function validateFileData(messagesStringCollection, stateRef) {
     const file = stateRef.file
     const isValidFile = typeof file === 'object' 
         && file !== null 
-        // PLEASE FIX THIS PIOTR
         && typeof file.size === 'number' && file.size/1024/1024 < 2
 
     // if we have an invalid file - invalidFile
@@ -22,5 +21,7 @@ function validateFileData(messagesStringCollection, stateRef) {
         stateRef.file = null
         isValid = false
     }
-    return isValid
+
+    if(!isValid)
+        resetFileInput()
 }

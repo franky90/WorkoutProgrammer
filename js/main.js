@@ -1139,9 +1139,13 @@ function tableContent(){
    const form = document.getElementById('form')
    const errorElement = document.getElementById('error')
    const successElement = document.getElementById('success')
+   const fileUploadElement = document.getElementById('fileUpload')
 
-   // updating fileState.file when we change file like this
-   document.getElementById('fileUpload').addEventListener('change', function (fileChangeEvent) {
+   function resetFileInput() {
+      fileUploadElement.value = ''
+   }
+   
+   fileUploadElement.addEventListener('change', function (fileChangeEvent) {
       FormState.file = fileChangeEvent.target.files.length > 0 ? fileChangeEvent.target.files[0] : null
    })
 
@@ -1166,8 +1170,6 @@ function tableContent(){
 
    form.addEventListener('submit', (e) => {
 
-
-
       let messages = []
       if (firstName.value === "" || firstName == null) {
          messages.push('First Name is required')
@@ -1190,12 +1192,7 @@ function tableContent(){
          messages.push('Please select training experience level')  
       }
 
-      const validFile = validateFileData(messages, FormState)
-      if(validFile === false) {
-         // clear the file from file input!
-         const fileInputRef = document.getElementById('fileUpload')
-         console.dir(fileInputRef)
-      }
+      validateFileData(messages, FormState)
 
       if(messages.length > 0){
          e.preventDefault()
