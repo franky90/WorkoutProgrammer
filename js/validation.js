@@ -1,15 +1,16 @@
 function validateFileData(messagesStringCollection, stateRef) {
+
     let isValid = true
     const file = stateRef.file
+    if(file === null) return
+
     const isValidFile = typeof file === 'object' 
         && file !== null 
-        // PLEASE FIX THIS PIOTR
         && typeof file.size === 'number' && file.size/1024/1024 < 2
 
     // if we have an invalid file - invalidFile
     if(!isValidFile) {
         messagesStringCollection.push('File Problem')
-        stateRef.file = null
         isValid = false
     }
     const re = /(\.jpg|\.jpeg|\.bmp|\.gif|\.png)$/i
@@ -19,8 +20,9 @@ function validateFileData(messagesStringCollection, stateRef) {
     const isInvalidFileExt = !isValidFileExt
     if (isInvalidFileExt) {
         messagesStringCollection.push('File Type Problem')
-        stateRef.file = null
         isValid = false
     }
-    return isValid
+
+    if(!isValid)
+        resetFileInput()
 }

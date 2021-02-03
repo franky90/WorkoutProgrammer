@@ -1139,10 +1139,6 @@ function tableContent(){
    const form = document.getElementById('form')
    const errorElement = document.getElementById('error')
    const successElement = document.getElementById('success')
-<<<<<<< HEAD:app.js
-   const oFile = document.getElementById("fileUpload").files;
- 
-=======
 
    // updating fileState.file when we change file like this
    document.getElementById('fileUpload').addEventListener('change', function (fileChangeEvent) {
@@ -1166,7 +1162,6 @@ function tableContent(){
    }
 
    
->>>>>>> a1fe63bc6f441f452368388b3a9825b2fe4f163e:js/main.js
    
    function ValidateSize(file) {
       
@@ -1179,15 +1174,10 @@ function tableContent(){
   }
 
 
-<<<<<<< HEAD:app.js
-   form.addEventListener('submit', (e)=>{
-      
-=======
    form.addEventListener('submit', (e) => {
 
 
 
->>>>>>> a1fe63bc6f441f452368388b3a9825b2fe4f163e:js/main.js
       let messages = []
       if (firstName.value === "" || firstName == null) {
          messages.push('First Name is required')
