@@ -1143,6 +1143,7 @@ function tableContent(){
 
    function resetFileInput() {
       fileUploadElement.value = ''
+      FormState.file = null
    }
    
    fileUploadElement.addEventListener('change', function (fileChangeEvent) {

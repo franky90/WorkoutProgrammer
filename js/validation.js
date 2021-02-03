@@ -8,7 +8,6 @@ function validateFileData(messagesStringCollection, stateRef) {
     // if we have an invalid file - invalidFile
     if(!isValidFile) {
         messagesStringCollection.push('File Problem')
-        stateRef.file = null
         isValid = false
     }
     const re = /(\.jpg|\.jpeg|\.bmp|\.gif|\.png)$/i
@@ -18,7 +17,6 @@ function validateFileData(messagesStringCollection, stateRef) {
     const isInvalidFileExt = !isValidFileExt
     if (isInvalidFileExt) {
         messagesStringCollection.push('File Type Problem')
-        stateRef.file = null
         isValid = false
     }
 
