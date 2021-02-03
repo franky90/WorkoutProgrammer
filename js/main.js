@@ -1199,6 +1199,7 @@ function tableContent(){
       if (experience.value == "empty"){
          messages.push('Please select training experience level')  
       }
+<<<<<<< HEAD
 
       const validFile = validateFileData(messages, FormState)
       if(validFile === false) {
@@ -1207,9 +1208,14 @@ function tableContent(){
          console.dir(fileInputRef)
       }
 
+=======
+      validateFileData(messages, FormState)
+      
+      errorElement.innerHTML = ''
+      
+>>>>>>> d0098fd49ac492696a645ceb8dd036ab8cd9d62e
       if(messages.length > 0){
          e.preventDefault()
-         errorElement.innerHTML = ''
          messages.forEach(msg => createErrorNode(msg, errorElement))
       } else {
          alert('now submitting the form!')// write code that will submit this via HTTP
