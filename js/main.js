@@ -1192,12 +1192,12 @@ function tableContent(){
       if (experience.value == "empty"){
          messages.push('Please select training experience level')  
       }
-
       validateFileData(messages, FormState)
-
+      
+      errorElement.innerHTML = ''
+      
       if(messages.length > 0){
          e.preventDefault()
-         errorElement.innerHTML = ''
          messages.forEach(msg => createErrorNode(msg, errorElement))
       } else {
          alert('now submitting the form!')// write code that will submit this via HTTP
