@@ -1,4 +1,5 @@
 const express = require("express")
+const cors = require('cors')
 const app = express()
 const port = process.env.PORT || 3000;
 ['js', 'css', 'images'].forEach(folderName => app.use(`/${folderName}`, express.static(folderName)));
@@ -15,8 +16,8 @@ app.post("/api/form", function(req,res){
 
 
 (function SetApplicationMiddleware(App) {
-        // Do I need to add this?
-        // App.use(Cors())
+        // Do I need to add this? - Added the cors dep
+        App.use(cors())
         // Already did this...
         // App.use(express.urlencoded({ extended: true }))// Parse URL-encoded bodies
         // App.use(express.json())

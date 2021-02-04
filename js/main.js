@@ -1206,3 +1206,7 @@ function tableContent(){
          submitFormData()
       }
 })
+
+
+// doing this...
+submitFormData()
