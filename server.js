@@ -1,12 +1,9 @@
 const express = require("express")
 const app = express()
-const port = 3000
-const staticFolders = ['js', 'css', 'images']
-staticFolders.forEach(folderName => app.use(`/${folderName}`, express.static(folderName)))
-
-app.use(express.urlencoded({ extended: true }))
+const port = process.env.PORT || 3000;
+['js', 'css', 'images'].forEach(folderName => app.use(`/${folderName}`, express.static(folderName)));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
 app.use(express.static('public'))
 app.get("/", function(req,res){
     res.sendFile(__dirname  + "/index.html");
