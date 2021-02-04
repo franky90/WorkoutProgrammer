@@ -1202,6 +1202,7 @@ function tableContent(){
       } else {
          messages = "";
          form.reset();
-         alert('now submitting the form!')// write code that will submit this via HTTP
+         // alert('now submitting the form!')// write code that will submit this via HTTP
+         submitFormData()
       }
 })
