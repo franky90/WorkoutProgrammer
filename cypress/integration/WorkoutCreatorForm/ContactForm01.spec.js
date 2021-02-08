@@ -49,4 +49,9 @@ it('Type correct First Name and check does this pole contain correct first name'
     cy.get('#form').submit() 
   })
 
+  // it('Does form has been send', ()=>{
+  //   cy.visit('GET','http://localhost:3000/api/form').its('status').should('include', '200')
+  // })
+  
+
 })
