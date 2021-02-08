@@ -1129,6 +1129,7 @@ function tableContent(){
    const firstName = document.getElementById('firstName')
    bindTextInput(firstName, 'first')
    const lastName = document.getElementById('lastName')
+   
    bindTextInput(lastName, 'last')
    const email = document.getElementById('email')
    bindTextInput(email, 'email')
@@ -1166,11 +1167,15 @@ function tableContent(){
       papaNode.appendChild(node)
    }
 
-   
-   
+   const success = document.getElementById('success');
+   // const genderMale = document.getElementById('male')
+   //    const gender = "not Selected"
+
+     
 
    form.addEventListener('submit', (e) => {
-
+      const gender = document.querySelector('input[name="gender"]:checked').value
+      
       let messages = []
       if (firstName.value === "" || firstName == null) {
          messages.push('First Name is required')
@@ -1183,7 +1188,6 @@ function tableContent(){
       }else{
          messages.push('Incorrect email address') 
       }
-
       
       if (textArea.value.length < 10){
          messages.push('Message has to be longer then 10 characters')
@@ -1201,12 +1205,21 @@ function tableContent(){
          messages.forEach(msg => createErrorNode(msg, errorElement))
       } else {
          messages = "";
-         form.reset();
-         // alert('now submitting the form!')// write code that will submit this via HTTP
+         e.preventDefault();
+         success.textContent = "Form Sent Successfully";
+         alert(`First Name : ${firstName.value}\n
+         Last Name: ${lastName.value}\n
+         Email : ${email.value}\n
+         Experience : ${experience.value}\n
+         Gender : ${gender}\n
+         Message : ${textArea.value}\n
+         Form Submitted Successfully!`);
+         // alert('Namenow submitting the form!')// write code that will submit this via HTTP
+         
          submitFormData()
+         form.reset();
       }
 })
-
 
 // doing this...
 submitFormData()

@@ -44,14 +44,21 @@ it('Type correct First Name and check does this pole contain correct first name'
     cy.get('#textArea')
     .type('This is test message').should('have.value', 'This is test message')
   })
-
-  it('Submit Form',()=>{
-    cy.get('#form').submit() 
-  })
-
-  // it('Does form has been send', ()=>{
-  //   cy.visit('GET','http://localhost:3000/api/form').its('status').should('include', '200')
+ 
+  // it('Submit Form',()=>{
+  //   cy.get('#form').submit() 
   // })
+  // And now we have to check does API has correct data 
+  
+it('Now is submitting and checking respond', ()=>{
+    cy.request('GET', 'http://localhost:3000/', {)
+  .then((response) => {
+    // response.body is automatically serialized into JSON
+    expect(response.status).to.eq(200)
+    // expect(response.body).to.have.property('first', 'Piotr') // true
+  })
+    // cy.request('GET','http://localhost:3000/api/form').its('status').should('include', '200')
+  })
   
 
 })
