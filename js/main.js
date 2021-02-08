@@ -1175,7 +1175,6 @@ function tableContent(){
 
    form.addEventListener('submit', (e) => {
       const gender = document.querySelector('input[name="gender"]:checked').value
-      
       let messages = []
       if (firstName.value === "" || firstName == null) {
          messages.push('First Name is required')
@@ -1206,7 +1205,7 @@ function tableContent(){
       } else {
          messages = "";
          e.preventDefault();
-         success.textContent = "Form Sent Successfully";
+         success.textContent = "Form Sent Succesfully";
          alert(`First Name : ${firstName.value}\n
          Last Name: ${lastName.value}\n
          Email : ${email.value}\n
