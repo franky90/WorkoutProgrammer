@@ -256,11 +256,13 @@ body {
     padding: 5px 10px 0px;
     height: 60px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .super-pump:hover {
     border-color: #eeeeee;
     background-color: #222831;
+   
 }
 
 .super-pump:active {
@@ -288,6 +290,7 @@ body {
     border: 2px solid #00adb5;
     height: 60px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .super-endurance:hover {
@@ -310,11 +313,11 @@ body {
 }
 
 .grid-item {
-
     background-color: #222831;
     font-size: 20px;
     text-align: center;
 }
+
 
 .container-zero {
     padding: 20px 0px;
@@ -413,8 +416,6 @@ box-shadow: 0px 0px 10px #00adb5;
     width: 50%;
     padding-left: 50px;
     padding-top: 30px;
-
-
 }
 
 .exercise-text {
@@ -437,7 +438,7 @@ box-shadow: 0px 0px 10px #00adb5;
     border: 1px solid #eeeeee;
     color: #eeeeee;
     margin: auto;
-
+    cursor: pointer;
     background-color: #393e46;
     width: 200px;
 
@@ -513,5 +514,5 @@ box-shadow: 0px 0px 10px #00adb5;
     color: #eeeeee;
     background-color: #393e46;
     border-radius: 5px;
-    
+    cursor: pointer;
 }
