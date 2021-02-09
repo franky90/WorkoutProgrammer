@@ -29,7 +29,7 @@ it('Check is selector value "---Choose Option----"', () => {
 })
 
 it('Check is Gender not selected', ()=>{
-  cy.get('.form-input > [type="radio"]').should('have.value','')
+  cy.get('.form-input > [type="radio"]').should('have.value','Not Selected')
 })
 it('Check is pole "Message" empty', () => {
   cy.get('#textArea').should('have.value', '')

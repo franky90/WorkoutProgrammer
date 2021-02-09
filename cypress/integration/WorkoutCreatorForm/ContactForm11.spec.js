@@ -33,7 +33,7 @@ it('Type correct First Name and check does this pole contain correct first name'
   })
 
     it('Check is Gender not selected', ()=>{
-    cy.get('.form-input > [type="radio"]').should('have.value','')
+    cy.get('.form-input > [type="radio"]').should('have.value','Not Selected')
     })
 
   it('Select Gender as female and check does it have value "female"', ()=>{

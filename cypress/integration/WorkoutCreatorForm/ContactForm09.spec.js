@@ -31,7 +31,7 @@ it('Type correct First Name and check does this pole contain correct first name'
   })
 
   it('Check is Gender not selected', ()=>{
-    cy.get('.form-input > [type="radio"]').should('have.value','')
+    cy.get('.form-input > [type="radio"]').should('have.value','Not Selected')
 })
 
   it('Type correct Message and check does this pole contain correct message', () => {
@@ -39,8 +39,21 @@ it('Type correct First Name and check does this pole contain correct first name'
     .type('This is test message').should('have.value', 'This is test message')
   })
 
-  it('Submit Form',()=>{
-    cy.get('#form').submit() 
+// Submittion Validation 
+  
+it('Verify alert about successful submission and its text content.', ()=>{
+          
+  var alerted = false;
+  cy.on('window:alert', msg => alerted = msg);
+
+  cy.get('#submitButton').click() //or whatever code that triggers alert
+  .then(() => expect(alerted).to.contains('Form Submitted Successfully')); //or whatever regex is appropriate
+
   })
+  
+
+  it('Verify message about successful submission ', ()=>{
+  cy.get('#success').contains('Form Sent Succesfully')
+  }) 
 
 })

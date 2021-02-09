@@ -30,7 +30,7 @@ it('Check is pole "Last Name" empty', () => {
   })
 
   it('Check is Gender not selected', ()=>{
-    cy.get('.form-input > [type="radio"]').should('have.value','')
+    cy.get('.form-input > [type="radio"]').should('have.value','Not Selected')
 })
     it('Select Gender as female and check does it have value "female"', ()=>{
      cy.get('.form-input > [type="radio"]').check('female').should('have.value','female')

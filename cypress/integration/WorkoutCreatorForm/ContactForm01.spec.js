@@ -31,7 +31,7 @@ it('Type correct First Name and check does this pole contain correct first name'
   })
 
     it('Check is Gender not selected', ()=>{
-      cy.get('.form-input > [type="radio"]').should('have.value','')
+      cy.get('.form-input > [type="radio"]').should('have.value','Not Selected')
 })
 
 // Check Gender as Female
@@ -45,20 +45,23 @@ it('Type correct First Name and check does this pole contain correct first name'
     .type('This is test message').should('have.value', 'This is test message')
   })
  
-  // it('Submit Form',()=>{
-  //   cy.get('#form').submit() 
-  // })
-  // And now we have to check does API has correct data 
   
-it('Now is submitting and checking respond', ()=>{
-    cy.request('GET', 'http://localhost:3000/', {)
-  .then((response) => {
-    // response.body is automatically serialized into JSON
-    expect(response.status).to.eq(200)
-    // expect(response.body).to.have.property('first', 'Piotr') // true
-  })
-    // cy.request('GET','http://localhost:3000/api/form').its('status').should('include', '200')
-  })
+// Submittion Validation 
   
+    it('Verify alert about successful submission and its text content.', ()=>{
+          
+      var alerted = false;
+      cy.on('window:alert', msg => alerted = msg);
+   
+      cy.get('#submitButton').click() //or whatever code that triggers alert
+      .then(() => expect(alerted).to.contains('Form Submitted Successfully')); //or whatever regex is appropriate
+    
+      })
+      
+
+      it('Verify message about successful submission ', ()=>{
+      cy.get('#success').contains('Form Sent Succesfully')
+      }) 
 
 })
+// Testing whole folder with testing scrypts npm run cy:run -- --record --key 945156a9-8da2-4e30-92d4-396e082b9402 --spec  "cypress/integration/WorkoutCreatorForm/*.js"
